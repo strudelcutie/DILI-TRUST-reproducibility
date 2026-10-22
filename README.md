@@ -83,7 +83,7 @@ model repositories.
 ## Traceability
 
 | Step | Source |
-|---|---|---|
+|---|---|
 | Compound records | DILIrank 2.0, DILIst|
 | Structures and labels | PubChem, LiverTox |
 | Splits | Bemis-Murcko scaffold, Butina clusters |
