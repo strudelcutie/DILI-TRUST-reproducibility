@@ -1,0 +1,428 @@
+﻿DILIst source and cohort construction audit,,,,,,,,,,,
+step,filter_rule,n_before,excluded_n,n_after,mutually_exclusive,reason_category,source_field,notes,,,
+0,Original DILIst supplementary records,,,1279,not applicable,source_records,raw_data\dilist\DILIst Supplementary Table.xlsx,Original DILIst resource read from the source workbook.,,,
+1,Keep records with binary DILIst labels,1279,0,1279,yes,non_binary_or_missing_label,DILIst Classification ,DILIst source labels are already binary in the current source workbook.,,,
+2,Map source records to Endpoint and split definition parent-level DILIst candidate records,1279,103,1176,yes at record accounting level,parent_standardization_or_duplicate_collapse,dilist_nonoverlap_external_split + dilist_nonoverlap_removed_overlap + dilist_conflict_external_review,"This step accounts for parent-level standardization, duplicate collapse, and unmapped source records as represented in the Endpoint and split definition logs.",,,
+3,Remove parent-level candidates flagged for label/source conflict,1176,101,1075,yes,conflict_flag,dilist_conflict_external_review.csv: conflict_flag,Conflict-flagged candidates are not included in the clean external candidate set.,,,
+4,Remove parent-level candidates overlapping the training reference at the initial non-overlap stage,1075,613,462,yes,initial_parent_overlap,dilist_nonoverlap_removed_overlap.csv: overlap_reason,The resulting clean candidate set is the 462-sample starting point for the stricter 462 to 399 audit in Table S26b.,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Table S26b: DILIst 462 to 399 mutually exclusive,,,,,,,,,,,
+Step,Description,n before,Excluded,n after,Rule,Mutually exclusive,Output/reference,,,,
+0,Starting DILIst non-overlap candidate set after initial name/structure matching and conflict filtering,,,462,Existing Endpoint and split definition clean external DILIst candidate set,Yes,splits\external_dilist\taskA\dilist_nonoverlap_external_split.csv,,,,
+1,Remove compounds overlapping DILIrank 2.0 by parent InChIKey / first block,462,61,401,Strict DILIrank 2.0 overlap removal using standardized parent InChIKey information; removal_reason in strict overlap file,Yes,splits\external_dilist\taskA\dilist_strict_removed_dilirank2_overlap.csv,,,,
+2,Remove compounds without valid parent InChIKey / parent structure,401,2,399,no_parent_inchikey_no_structure,Yes,splits\external_dilist\taskA\dilist_strict_unmapped_review.csv,,,,
+3,Remove non-small-molecule or otherwise non-eligible entries,399,11,388,"biologic / polymer / organometallic / inorganic salt / un-stripped counter-ion / peptide, per Supplementary Table S4 small-molecule rules",Yes,Supplementary Table S26c (reason detail); S26d (final sample list),,,,
+4,Final evaluable strict external small-molecule DILIst set,388,0,388,Final strict non-overlap external validation set (small molecules only),Yes,Supplementary Table S26d,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Table S26c: DILIst exclusion detail,,,,,,,,,,,
+Reason category,Count,Mutually exclusive flow step,Notes,,,,,,,,
+DILIrank 2.0 overlap after strict parent InChIKey check,61,Step 1,ik_overlap=46; first_block_overlap=15,,,,,,,,
+no_parent_inchikey_no_structure,2,Step 2,Removed from strict external test,,,,,,,,
+non-small-molecule or otherwise non-eligible entry,11,Step 3,"biologic (secretin, somatropin, growth hormone), polymer (simethicone), mixture (gentamicin), organometallic (aurothioglucose), metal salts (bismuth subsalicylate, calcium carbimide), un-stripped counter-ion (iodipamide meglumine), arsenical (acetarsol), decapeptide (triptorelin)",,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Table S26d: DILIst 399 included samples,,,,,,,,,,,
+parent_sample_id,compound_name,parent_inchikey,parent_inchikey_first_block,dilist_label,external_label,split,overlap_removed,overlap_reason,conflict_flag,seed,split_type
+PARENT_001220,estradiol,VOXZDWNPVJITMN-ZBRFXRBCSA-N,VOXZDWNPVJITMN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001223,tetracycline,NWXMGUDVXFXRIG-WESIUVDSSA-N,NWXMGUDVXFXRIG,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001224,abacavir,MCGSCOLBFJQGHM-SCZZXKLOSA-N,MCGSCOLBFJQGHM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001229,erythromycin,ULGZDMOVFRHVEP-RWJQBGPGSA-N,ULGZDMOVFRHVEP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001230,fenoprofen,RDJGLLICXDHJDY-UHFFFAOYSA-N,RDJGLLICXDHJDY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001232,pentamidine,XDRYMKDFEDOLFX-UHFFFAOYSA-N,XDRYMKDFEDOLFX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001233,physostigmine,PIJVFDBKTWXHHD-HIFRSBDPSA-N,PIJVFDBKTWXHHD,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001234,streptomycin,UCSJYZPVAKXKNQ-HZYVHMACSA-N,UCSJYZPVAKXKNQ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001235,tamoxifen,NKANXQFJJICGDU-QPLCGJKRSA-N,NKANXQFJJICGDU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001236,theophylline,ZFXYFBGIUFBOJW-UHFFFAOYSA-N,ZFXYFBGIUFBOJW,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001237,vitamin a,FPIPGXGPPPQFEQ-OVSJKPMPSA-N,FPIPGXGPPPQFEQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001238,zolpidem,ZAFYATHCZYHLPB-UHFFFAOYSA-N,ZAFYATHCZYHLPB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001242,hydrocortisone,JYGXADMDTFJGBT-VWUMJDOOSA-N,JYGXADMDTFJGBT,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001243,ketorolac,OZWKMVRBQXNZKK-UHFFFAOYSA-N,OZWKMVRBQXNZKK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001244,testosterone,MUMGGOZAMZWBJJ-DYKIIFRCSA-N,MUMGGOZAMZWBJJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001245,clomiphene,GKIRPKYJQBWNGO-UHFFFAOYSA-N,GKIRPKYJQBWNGO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001246,iothalamate sodium,UXIGWFXRQKWHHA-UHFFFAOYSA-M,UXIGWFXRQKWHHA,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001247,atorvastatin,XUKUURHRXDUEBC-KAYWLYCHSA-N,XUKUURHRXDUEBC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001248,rabeprazole,YREYEVIYCVEVJK-UHFFFAOYSA-N,YREYEVIYCVEVJK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001249,quetiapine,URKOMYMAXPYINW-UHFFFAOYSA-N,URKOMYMAXPYINW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001250,metoprolol,IUBSYMUCCVWXPE-UHFFFAOYSA-N,IUBSYMUCCVWXPE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001253,fludrocortisone,AAXVEMMRQDVLJB-BULBTXNYSA-N,AAXVEMMRQDVLJB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001254,haloperidol,LNEPOXFFQSENCJ-UHFFFAOYSA-N,LNEPOXFFQSENCJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001256,bromfenac,ZBPLOVFIXSTCRZ-UHFFFAOYSA-N,ZBPLOVFIXSTCRZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001257,sunitinib,WINHZLLDWRZWRT-ATVHPVEESA-N,WINHZLLDWRZWRT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001258,desvenlafaxine,KYYIDSXMWOZKMP-UHFFFAOYSA-N,KYYIDSXMWOZKMP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001259,pantoprazole,IQPSEEYGBUAQFF-UHFFFAOYSA-N,IQPSEEYGBUAQFF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001264,pafuramidine,UKOQVLAXCBRRGH-UHFFFAOYSA-N,UKOQVLAXCBRRGH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001265,doxylamine,HCFDWZZGGLSKEP-UHFFFAOYSA-N,HCFDWZZGGLSKEP,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001269,dextroamphetamine,KWTSXDURSIMDCE-QMMMGPOBSA-N,KWTSXDURSIMDCE,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001270,terbutaline,XWTYSIMOBUGWOL-UHFFFAOYSA-N,XWTYSIMOBUGWOL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001271,pentetic acid,QPCDCPDFJACHGM-UHFFFAOYSA-N,QPCDCPDFJACHGM,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001273,fluorescein,GNBHRKFJIUUOQI-UHFFFAOYSA-N,GNBHRKFJIUUOQI,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001274,morphine,BQJCRHHNABKAKU-KBQPJGBKSA-N,BQJCRHHNABKAKU,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001275,sufentanil,GGCSSNBKKAUURC-UHFFFAOYSA-N,GGCSSNBKKAUURC,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001276,perindopril,IPVQLZZIHOAWMC-QXKUPLGCSA-N,IPVQLZZIHOAWMC,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001277,ibutilide,ALOBUEHUHMBRLE-UHFFFAOYSA-N,ALOBUEHUHMBRLE,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001281,candesartan,HTQMVQVXFRQIKW-UHFFFAOYSA-N,HTQMVQVXFRQIKW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001282,rizatriptan,ULFRLSNUDGIQQP-UHFFFAOYSA-N,ULFRLSNUDGIQQP,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001283,sildenafil,BNRNXUUZRGQAQC-UHFFFAOYSA-N,BNRNXUUZRGQAQC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001284,almotriptan,WKEMJKQOLOHJLZ-UHFFFAOYSA-N,WKEMJKQOLOHJLZ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001285,frovatriptan,XPSQPHWEGNHMSK-SECBINFHSA-N,XPSQPHWEGNHMSK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001287,cefditoren,KMIPKYQIOVAHOP-YLGJWRNMSA-N,KMIPKYQIOVAHOP,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001289,olmesartan,VTRAEEWXHOVJFV-UHFFFAOYSA-N,VTRAEEWXHOVJFV,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001292,bisoprolol,VHYCDWMUTMEGQY-UHFFFAOYSA-N,VHYCDWMUTMEGQY,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001294,acamprosate,AFCGFAGUEYAMAO-UHFFFAOYSA-N,AFCGFAGUEYAMAO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001295,adefovir,SUPKOOSCJHTBAH-UHFFFAOYSA-N,SUPKOOSCJHTBAH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001298,cefadroxil,BOEGTKLJZSQCCD-UEKVPHQBSA-N,BOEGTKLJZSQCCD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001304,cefpodoxime,WYUSVOMTXWRGEK-HBWVYFAYSA-N,WYUSVOMTXWRGEK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001305,ceftriaxone,VAAUVRVFOQPIGI-SPQHTLEESA-N,VAAUVRVFOQPIGI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001308,solifenacin,FBOUYBDGKBSUES-VXKWHMMOSA-N,FBOUYBDGKBSUES,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001311,aliskiren,UXOWGYHJODZGMF-QORCZRPOSA-N,UXOWGYHJODZGMF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001313,codeine,OROGSEYTTFOCAN-DNJOTXNNSA-N,OROGSEYTTFOCAN,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001316,estramustine,FRPJXPJMRWBBIH-RBRWEJTLSA-N,FRPJXPJMRWBBIH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001318,fludarabine,HBUBKKRHXORPQB-FJFJXFQQSA-N,HBUBKKRHXORPQB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001320,fosfomycin,YMDXZJFXQJVXBF-STHAYSLISA-N,YMDXZJFXQJVXBF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001324,riboflavin,AUNGANRZJHBGPY-SCRDCRAPSA-N,AUNGANRZJHBGPY,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001325,losartan,PSIFNNKUMBGKDQ-UHFFFAOYSA-N,PSIFNNKUMBGKDQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001326,loxapine,XJGVXQDUIWGIRW-UHFFFAOYSA-N,XJGVXQDUIWGIRW,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001331,penbutolol,KQXKVJAGOJTNJS-HNNXBMFYSA-N,KQXKVJAGOJTNJS,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001332,penicillin g,JGSARLDLIJGVTE-MBNYWOFBSA-N,JGSARLDLIJGVTE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001334,pentazocine,VOKSWYLNZZRQPF-GDIGMMSISA-N,VOKSWYLNZZRQPF,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001337,pyrantel,YSAUAVHXTIETRK-AATRIKPKSA-N,YSAUAVHXTIETRK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001338,quinidine,LOUPRKONTZGTKE-LHHVKLHASA-N,LOUPRKONTZGTKE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001339,sumatriptan,KQKPFRSPSRPDEB-UHFFFAOYSA-N,KQKPFRSPSRPDEB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001343,caffeine,RYYVLZVUVIJVGH-UHFFFAOYSA-N,RYYVLZVUVIJVGH,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001346,quinine,LOUPRKONTZGTKE-WZBLMQSHSA-N,LOUPRKONTZGTKE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001347,rosuvastatin,BPRHUIZQVSMCRT-VEUZHWNKSA-N,BPRHUIZQVSMCRT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001352,nandrolone decanoate,JKWKMORAXJQQSR-MOPIKTETSA-N,JKWKMORAXJQQSR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001355,apomorphine,VMWNQDUVQKEIOC-CYBMUJFWSA-N,VMWNQDUVQKEIOC,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001356,tenofovir,SGOIRFVFHAKUTI-ZCFIWIBFSA-N,SGOIRFVFHAKUTI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001357,exametazime,BPNZYADGDZPRTK-UDUYQYQQSA-N,BPNZYADGDZPRTK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001358,Floxuridine,ODKNJVUHOIMIIZ-RRKCRQDMSA-N,ODKNJVUHOIMIIZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001359,Flucloxacillin,UIOFUWFRIANQPC-JKIFEVAISA-N,UIOFUWFRIANQPC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001360,Halothane,BCQZXOMGPXTTIC-UHFFFAOYSA-N,BCQZXOMGPXTTIC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001361,Acetohexamide,VGZSUPCWNCWDAN-UHFFFAOYSA-N,VGZSUPCWNCWDAN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001362,Dabigatran,YBSJFWOBGCMAKL-UHFFFAOYSA-N,YBSJFWOBGCMAKL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001363,Gliclazide,BOVGTQGAOIONJV-UHFFFAOYSA-N,BOVGTQGAOIONJV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001364,Imipenem,ZSKVGTPCRGIANV-ZXFLCMHBSA-N,ZSKVGTPCRGIANV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001365,Lopinavir,KJHKTHWMRKYKJE-SUGCFTRWSA-N,KJHKTHWMRKYKJE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001367,Plicamycin,CFCUWKMKBJTWLW-BKHRDMLASA-N,CFCUWKMKBJTWLW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001368,Tibolone,WZDGZWOAQTVYBX-XOINTXKNSA-N,WZDGZWOAQTVYBX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001369,Tobramycin,NLVFBUXFDBBNBW-PBSUHMDJSA-N,NLVFBUXFDBBNBW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001370,Hydrocodone,LLPOLZWFYMWNKH-CMKMFDCUSA-N,LLPOLZWFYMWNKH,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001371,Zalcitabine,WREGKURFCTUGRC-POYBYMJQSA-N,WREGKURFCTUGRC,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001372,Acrivastine,PWACSDKDOHSSQD-IUTFFREVSA-N,PWACSDKDOHSSQD,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001373,Amobarbital,VIROVYVQCGLCII-UHFFFAOYSA-N,VIROVYVQCGLCII,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001374,Artemether,SXYIRMFQILZOAM-HVNFFKDJSA-N,SXYIRMFQILZOAM,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001375,Bitolterol,FZGVEKPRDOIXJY-UHFFFAOYSA-N,FZGVEKPRDOIXJY,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001376,Butalbital,UZVHFVZFNXBMQJ-UHFFFAOYSA-N,UZVHFVZFNXBMQJ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001377,Butobarbital,STDBAQMTJLUMFW-UHFFFAOYSA-N,STDBAQMTJLUMFW,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001378,Carmustine,DLGOEMSEDOSKAD-UHFFFAOYSA-N,DLGOEMSEDOSKAD,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001379,Chloral hydrate,RNFNDJAIBTYOQL-UHFFFAOYSA-N,RNFNDJAIBTYOQL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001380,Chlortetracycline,DHPRQBPJLMKORJ-XRNKAMNCSA-N,DHPRQBPJLMKORJ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001381,Cilastatin,DHSUYTOATWAVLW-WFVMDLQDSA-N,DHSUYTOATWAVLW,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001382,Cisapride,DCSUBABJRXZOMT-IRLDBZIGSA-N,DCSUBABJRXZOMT,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001383,Docusate,HNSDLXPSAYFUHK-UHFFFAOYSA-N,HNSDLXPSAYFUHK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001384,Ergotamine,XCGSFFUVFURLIX-VFGNJEKYSA-N,XCGSFFUVFURLIX,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001385,Fentanyl,PJMPHNIQZUBGLI-UHFFFAOYSA-N,PJMPHNIQZUBGLI,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001386,Formoterol,BPZSYCZIITTYBL-UHFFFAOYSA-N,BPZSYCZIITTYBL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001388,Homatropine,ZTVIKZXZYLEVOL-DGKWVBSXSA-N,ZTVIKZXZYLEVOL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001390,Ipratropium,OEXHQOGQTVQTAT-BZQJJPTISA-N,OEXHQOGQTVQTAT,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001391,Levamisole,HLFSDGLLUJUHTE-SNVBAGLBSA-N,HLFSDGLLUJUHTE,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001392,Levodopa,WTDRDQBEARUVNC-LURJTMIESA-N,WTDRDQBEARUVNC,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001393,Proguanil,SSOLNOMRVKKSON-UHFFFAOYSA-N,SSOLNOMRVKKSON,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001394,Salmeterol,GIIZNNXWQWCKIB-UHFFFAOYSA-N,GIIZNNXWQWCKIB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001395,Tazobactam,LPQZKKCYTLCDGQ-WEDXCCLWSA-N,LPQZKKCYTLCDGQ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001396,Thiopental,IUJDSEJGGMCXSG-UHFFFAOYSA-N,IUJDSEJGGMCXSG,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001397,Ticarcillin,OHKOGUYZJXTSFX-KZFFXBSXSA-N,OHKOGUYZJXTSFX,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001398,Tiotropium,LERNTVKEWCAPOY-FPISHFTHSA-N,LERNTVKEWCAPOY,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001399,Zanamivir,ARAIBEBZBOPLMB-UFGQHTETSA-N,ARAIBEBZBOPLMB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001400,ACEMETACIN,FSQKKOOTNAMONP-UHFFFAOYSA-N,FSQKKOOTNAMONP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001402,Alimemazine,ZZHLYYDVIOPZBE-UHFFFAOYSA-N,ZZHLYYDVIOPZBE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001403,ANDROSTANOLONE,NVKAWKQGWWIWPM-ABEVXSGRSA-N,NVKAWKQGWWIWPM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001404,Artemisinin,BLUAFEHZUWYNDE-NNWCWBAJSA-N,BLUAFEHZUWYNDE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001407,CARBIMAZOLE,CFOYWRHIYXMDOT-UHFFFAOYSA-N,CFOYWRHIYXMDOT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001408,Cerivastatin,SEERZIQQUAZTOL-ANMDKAQQSA-N,SEERZIQQUAZTOL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001409,CILAZAPRIL,HHHKFGXWKKUNCY-FHWLQOOXSA-N,HHHKFGXWKKUNCY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001410,CINITAPRIDE,ZDLBNXXKDMLZMF-UHFFFAOYSA-N,ZDLBNXXKDMLZMF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001411,CLOMETHIAZOLE,PCLITLDOTJTVDJ-UHFFFAOYSA-N,PCLITLDOTJTVDJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001412,CLOTIAZEPAM,CHBRHODLKOZEPZ-UHFFFAOYSA-N,CHBRHODLKOZEPZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001413,COCAINE,ZPUCINDJVBIVPJ-LJISPDSOSA-N,ZPUCINDJVBIVPJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001414,CYPROTERONE,DUSHUSLJJMDGTE-ZJPMUUANSA-N,DUSHUSLJJMDGTE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001415,Dehydroepiandrosterone,FMGSKLZLMKYGDP-USOAJAOKSA-N,FMGSKLZLMKYGDP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001416,Desflurane,DPYMFVXJLLWWEU-UHFFFAOYSA-N,DPYMFVXJLLWWEU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001418,DICOUMAROL,DOBMPNYZJYQDGZ-UHFFFAOYSA-N,DOBMPNYZJYQDGZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001419,EBASTINE,MJJALKDDGIKVBE-UHFFFAOYSA-N,MJJALKDDGIKVBE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001420,ENFLURANE,JPGQOUSTVILISH-UHFFFAOYSA-N,JPGQOUSTVILISH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001421,ESTRIOL,PROQIPRRNZUXQM-ZXXIGWHRSA-N,PROQIPRRNZUXQM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001422,Ethinylestradiol,BFPYWIDHMRZLRN-SLHNCBLASA-N,BFPYWIDHMRZLRN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001423,ETRETINATE,HQMNCQVAMBCHCO-DJRRULDNSA-N,HQMNCQVAMBCHCO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001424,FLUPENTIXOL,NJMYODHXAKYRHW-DVZOWYKESA-N,NJMYODHXAKYRHW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001425,Fusidic Acid,IECPWNUMDGFDKC-MZJAQBGESA-N,IECPWNUMDGFDKC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001426,GLUCOSAMINE,MSWZFWKMSRAUBD-IVMDWMLBSA-N,MSWZFWKMSRAUBD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001428,JOSAMYCIN,XJSFLOJWULLJQS-NGVXBBESSA-N,XJSFLOJWULLJQS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001429,LEVOMEPROMAZINE,VRQVVMDWGGWHTJ-CQSZACIVSA-N,VRQVVMDWGGWHTJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001430,Melperone,DKMFBWQBDIGMHM-UHFFFAOYSA-N,DKMFBWQBDIGMHM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001431,METAMIZOLE,LVWZTYCIRDMTEY-UHFFFAOYSA-N,LVWZTYCIRDMTEY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001432,Methoxyflurane,RFKMCNOHBTXSMU-UHFFFAOYSA-N,RFKMCNOHBTXSMU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001433,NIFLUMIC ACID,JZFPYUNJRRFVQU-UHFFFAOYSA-N,JZFPYUNJRRFVQU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001435,Pivmecillinam,NPGNOVNWUSPMDP-HLLBOEOZSA-N,NPGNOVNWUSPMDP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001436,RITODRINE,IOVGROKTTNBUGK-SJCJKPOMSA-N,IOVGROKTTNBUGK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001437,ROFECOXIB,RZJQGNCSTQAWON-UHFFFAOYSA-N,RZJQGNCSTQAWON,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001438,ROXITHROMYCIN,RXZBMPWDPOLZGW-XMRMVWPWSA-N,RXZBMPWDPOLZGW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001439,STANOZOLOL,LKAJKIOFIWVMDJ-IYRCEVNGSA-N,LKAJKIOFIWVMDJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001441,TENOXICAM,LZNWYQJJBLGYLT-UHFFFAOYSA-N,LZNWYQJJBLGYLT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001442,TIRATRICOL,UOWZUVNAGUAEQC-UHFFFAOYSA-N,UOWZUVNAGUAEQC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001444,phenacetin,CPJSUEIXXCENMM-UHFFFAOYSA-N,CPJSUEIXXCENMM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001445,bithionol,JFIOVJDNOJYLKP-UHFFFAOYSA-N,JFIOVJDNOJYLKP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001446,hexachlorophene,ACGUYXCXAPNIKK-UHFFFAOYSA-N,ACGUYXCXAPNIKK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001447,methapyrilene,HNJJXZKZRAWDPF-UHFFFAOYSA-N,HNJJXZKZRAWDPF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001448,tripelennamine,UFLGIAIHIAPJJC-UHFFFAOYSA-N,UFLGIAIHIAPJJC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001449,oxyquinoline,MCJGNVYPOGVAJF-UHFFFAOYSA-N,MCJGNVYPOGVAJF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001450,meticillin,RJQXTJLFIWVMTO-TYNCELHUSA-N,RJQXTJLFIWVMTO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001451,amsacrine,XCPGHVQEEXUHNC-UHFFFAOYSA-N,XCPGHVQEEXUHNC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001452,furazolidone,PLHJDBGFXBMTGZ-WEVVVXLNSA-N,PLHJDBGFXBMTGZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001453,hycanthone,MFZWMTSUNYWVBU-UHFFFAOYSA-N,MFZWMTSUNYWVBU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001454,idoxuridine,XQFRJNBWHJMXHO-RRKCRQDMSA-N,XQFRJNBWHJMXHO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001455,novobiocin,YJQPYGGHQPGBLI-KGSXXDOSSA-N,YJQPYGGHQPGBLI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001456,tianeptine,JICJBGPOMZQUBB-UHFFFAOYSA-N,JICJBGPOMZQUBB,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001457,methacycline,XIYOPDCBBDCGOE-IWVLMIASSA-N,XIYOPDCBBDCGOE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001458,bepridil,UIEATEWHFDRYRU-UHFFFAOYSA-N,UIEATEWHFDRYRU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001459,betahistine,UUQMNUMQCIQDMZ-UHFFFAOYSA-N,UUQMNUMQCIQDMZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001460,ciprofibrate,KPSRODZRAIWAKH-UHFFFAOYSA-N,KPSRODZRAIWAKH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001461,diethylcarbamazine,RCKMWOKWVGPNJF-UHFFFAOYSA-N,RCKMWOKWVGPNJF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001462,fenoterol,LSLYOANBFKQKPT-UHFFFAOYSA-N,LSLYOANBFKQKPT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001463,phenylbutazone,VYMDGNCVAMGZFE-UHFFFAOYSA-N,VYMDGNCVAMGZFE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001464,ethynodiol diacetate,ONKUMRGIYFNPJW-KIEAKMPYSA-N,ONKUMRGIYFNPJW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001465,atractyloside,FYQXODZRNSCOTR-QLKRWLHJSA-L,FYQXODZRNSCOTR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001466,temafloxacin,QKDHBVNJCZBTMR-UHFFFAOYSA-N,QKDHBVNJCZBTMR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001467,cefamandole,OLVCFLKTBJRLHI-AXAPSJFSSA-N,OLVCFLKTBJRLHI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001468,amodiaquine,OVCDSSHSILBFBN-UHFFFAOYSA-N,OVCDSSHSILBFBN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001469,glutethimide,JMBQKKAJIKAWKF-UHFFFAOYSA-N,JMBQKKAJIKAWKF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001470,sulfanilamide,FDDDEECHVMSUSB-UHFFFAOYSA-N,FDDDEECHVMSUSB,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001471,2-acetylaminofluorene,CZIHNRWJTSTCEX-UHFFFAOYSA-N,CZIHNRWJTSTCEX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001472,demecarium bromide,RWZVPVOZTJJMNU-UHFFFAOYSA-N,RWZVPVOZTJJMNU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001473,cefalotin,XIURVHNZVLADCM-IUODEOHRSA-N,XIURVHNZVLADCM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001474,uracil mustard,IDPUKCWIGUEADI-UHFFFAOYSA-N,IDPUKCWIGUEADI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001475,methylphenobarbital,ALARQZQTBTVLJV-UHFFFAOYSA-N,ALARQZQTBTVLJV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001476,acenocoumarol,VABCILAOYCMVPS-UHFFFAOYSA-N,VABCILAOYCMVPS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001477,1-naphthylisothiocyanate,JBDOSUUXMYMWQH-UHFFFAOYSA-N,JBDOSUUXMYMWQH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001478,aflatoxin b1,OQIQSTLJSLGHID-WNWIJWBNSA-N,OQIQSTLJSLGHID,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001479,indacrinone,PRKWVSHZYDOZLP-UHFFFAOYSA-N,PRKWVSHZYDOZLP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001480,cefotiam,QYQDKDWGWDOFFU-IUODEOHRSA-N,QYQDKDWGWDOFFU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001481,troleandomycin,LQCLVBQBTUVCEQ-QTFUVMRISA-N,LQCLVBQBTUVCEQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001482,ciglitazone,YZFWTZACSRHJQD-UHFFFAOYSA-N,YZFWTZACSRHJQD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001483,fluspirilene,QOYHHIBFXOOADH-UHFFFAOYSA-N,QOYHHIBFXOOADH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001484,carbon tetrachloride,VZGDMQKNWNREIO-UHFFFAOYSA-N,VZGDMQKNWNREIO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001486,phenothiazine,WJFKNYWRSNBZNX-UHFFFAOYSA-N,WJFKNYWRSNBZNX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001487,allyl alcohol,XXROGKLTLUQVRX-UHFFFAOYSA-N,XXROGKLTLUQVRX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001488,bromobenzene,QARVLSVVCXYDNA-UHFFFAOYSA-N,QARVLSVVCXYDNA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001489,azatadine,SEBMTIQKRHYNIT-UHFFFAOYSA-N,SEBMTIQKRHYNIT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001490,allyl formate,ZHHZHHSFKCANOC-UHFFFAOYSA-N,ZHHZHHSFKCANOC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001491,tauroursodeoxycholic acid,BHTRKEVKTKCXOH-LBSADWJPSA-N,BHTRKEVKTKCXOH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001492,octylmethoxycinnamate,YBGZDTIWKVFICR-JLHYYAGUSA-N,YBGZDTIWKVFICR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001493,ketotifen,ZCVMWBYGMWKGHF-UHFFFAOYSA-N,ZCVMWBYGMWKGHF,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001494,permethrin,RLLPVAHGXHCWKJ-UHFFFAOYSA-N,RLLPVAHGXHCWKJ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001495,oxyphenonium,GFRUPHOKLBPHTQ-UHFFFAOYSA-N,GFRUPHOKLBPHTQ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001496,pyridoxal phosphate,NGVDGCNFYWLIFO-UHFFFAOYSA-N,NGVDGCNFYWLIFO,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001497,aminoglutethimide,ROBVIMPUHSLWNV-UHFFFAOYSA-N,ROBVIMPUHSLWNV,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001498,tetracaine,GKCBAIGFKIBETG-UHFFFAOYSA-N,GKCBAIGFKIBETG,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001499,miconazole,BYBLEWFAAKGYCD-UHFFFAOYSA-N,BYBLEWFAAKGYCD,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001500,lindane,JLYXXMFPNIAWKQ-UHFFFAOYSA-N,JLYXXMFPNIAWKQ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001501,astemizole,GXDALQBWZGODGZ-UHFFFAOYSA-N,GXDALQBWZGODGZ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001502,ciclopirox,SCKYRAXSEDYPSA-UHFFFAOYSA-N,SCKYRAXSEDYPSA,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001503,pinacidil,IVVNZDGDKPTYHK-UHFFFAOYSA-N,IVVNZDGDKPTYHK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001504,terfenadine,GUGOEEXESWIERI-UHFFFAOYSA-N,GUGOEEXESWIERI,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001505,methoxamine,WJAJPNHVVFWKKL-UHFFFAOYSA-N,WJAJPNHVVFWKKL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001506,beclomethasone,NBMKJKDGKREAPL-DVTGEIKXSA-N,NBMKJKDGKREAPL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001508,bezafibrate,IIBYAHWJQTYFKB-UHFFFAOYSA-N,IIBYAHWJQTYFKB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001509,bambuterol,ANZXOIAKUNOVQU-UHFFFAOYSA-N,ANZXOIAKUNOVQU,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001510,gallamine triethiodide,OZLPUNFFCJDMJD-UHFFFAOYSA-N,OZLPUNFFCJDMJD,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001511,melatonin,DRLFMBDRBRZALE-UHFFFAOYSA-N,DRLFMBDRBRZALE,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001512,nocodazole,KYRVNWMVYQXFEU-UHFFFAOYSA-N,KYRVNWMVYQXFEU,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001513,zomepirac,ZXVNMYWKKDOREA-UHFFFAOYSA-N,ZXVNMYWKKDOREA,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001514,alloxan,HIMXGTXNXJYFGB-UHFFFAOYSA-N,HIMXGTXNXJYFGB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001515,pargyline,DPWPWRLQFGFJFI-UHFFFAOYSA-N,DPWPWRLQFGFJFI,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001516,probucol,FYPMFJGVHOHGLL-UHFFFAOYSA-N,FYPMFJGVHOHGLL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001517,lactose,GUBGYTABKSRVRQ-QKKXKWKRSA-N,GUBGYTABKSRVRQ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001518,anileridine,LKYQLAWMNBFNJT-UHFFFAOYSA-N,LKYQLAWMNBFNJT,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001519,citicoline,RZZPDXZPRHQOCG-OJAKKHQRSA-N,RZZPDXZPRHQOCG,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001520,mometasone,QLIIKPVHVRXHRI-CXSFZGCWSA-N,QLIIKPVHVRXHRI,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001521,capsaicin,YKPUWZUDDOIDPM-SOFGYWHQSA-N,YKPUWZUDDOIDPM,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001522,ergonovine,WVVSZNPYNCNODU-XTQGRXLLSA-N,WVVSZNPYNCNODU,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001523,econazole,LEZWWPYKPKIXLL-UHFFFAOYSA-N,LEZWWPYKPKIXLL,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001524,sulconazole nitrate,AFNXATANNDIXLG-UHFFFAOYSA-N,AFNXATANNDIXLG,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001525,sulfabenzamide,PBCZLFBEBARBBI-UHFFFAOYSA-N,PBCZLFBEBARBBI,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001526,cephapirin,UQLLWWBDSUHNEB-CZUORRHYSA-N,UQLLWWBDSUHNEB,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001527,azlocillin,JTWOMNBEOCYFNV-NFFDBFGFSA-N,JTWOMNBEOCYFNV,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001528,butoconazole,SWLMUYACZKCSHZ-UHFFFAOYSA-N,SWLMUYACZKCSHZ,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001529,mibefradil,HBNPJJILLOYFJU-VMPREFPWSA-N,HBNPJJILLOYFJU,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001530,ragaglitazar,WMUIIGVAWPWQAW-XMMPIXPASA-N,WMUIIGVAWPWQAW,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001532,isoxicam,YYUAYBYLJSNDCX-UHFFFAOYSA-N,YYUAYBYLJSNDCX,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001533,inositol,CDAISMWEOUEBRE-UHFFFAOYSA-N,CDAISMWEOUEBRE,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001534,latamoxef,JWCSIUVGFCSJCK-CAVRMKNVSA-N,JWCSIUVGFCSJCK,dilist_negative,0,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001535,Abiraterone,GZOSMCIZMLWJML-VJLLXTKPSA-N,GZOSMCIZMLWJML,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001536,Acetorphan,ODUOJXZPIYUATO-UHFFFAOYSA-N,ODUOJXZPIYUATO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001537,Alfacalcidol,OFHCOWSQAMBJIW-AVJTYSNKSA-N,OFHCOWSQAMBJIW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001538,Ambroxol,JBDGDEWWOUBZPM-UHFFFAOYSA-N,JBDGDEWWOUBZPM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001539,Aminolevulinic acid,ZGXJTSGNIOSYLO-UHFFFAOYSA-N,ZGXJTSGNIOSYLO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001540,Ampiroxicam,LSNWBKACGXCGAJ-UHFFFAOYSA-N,LSNWBKACGXCGAJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001541,Anethole,RUVINXPYWBROJD-ONEGZZNKSA-N,RUVINXPYWBROJD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001542,Arbekacin,MKKYBZZTJQGVCD-XTCKQBCOSA-N,MKKYBZZTJQGVCD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001543,Azelnidipine,ZKFQEACEUNWPMT-UHFFFAOYSA-N,ZKFQEACEUNWPMT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001544,Bacampicillin,PFOLLRNADZZWEX-FFGRCDKISA-N,PFOLLRNADZZWEX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001545,Benidipine,QZVNQOLPLYWLHQ-ZEQKJWHPSA-N,QZVNQOLPLYWLHQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001546,Beraprost,CTPOHARTNNSRSR-APJZLKAGSA-N,CTPOHARTNNSRSR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001547,Boceprevir,LHHCSNFAOIFYRV-DOVBMPENSA-N,LHHCSNFAOIFYRV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001548,Bromazepam,VMIYHDSEFNYJSL-UHFFFAOYSA-N,VMIYHDSEFNYJSL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001549,Bromhexine,OJGDCBLYJGHCIH-UHFFFAOYSA-N,OJGDCBLYJGHCIH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001550,Bromisoval,CMCCHHWTTBEZNM-UHFFFAOYSA-N,CMCCHHWTTBEZNM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001551,Brotizolam,UMSGKTJDUHERQW-UHFFFAOYSA-N,UMSGKTJDUHERQW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001552,Bucillamine,VUAFHZCUKUDDBC-BYPYZUCNSA-N,VUAFHZCUKUDDBC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001553,Buflomedil,OWYLAEYXIQKAOL-UHFFFAOYSA-N,OWYLAEYXIQKAOL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001554,Buprenorphine,RMRJXGBAOAMLHD-IHFGGWKQSA-N,RMRJXGBAOAMLHD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001555,Cefcapene,HJJRIJDTIPFROI-NVKITGPLSA-N,HJJRIJDTIPFROI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001556,Cefmetazole,SNBUBQHDYVFSQF-HIFRSBDPSA-N,SNBUBQHDYVFSQF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001557,Cefozopran,QDUIJCOKQCCXQY-WHJQOFBOSA-N,QDUIJCOKQCCXQY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001558,Cefpirome,DKOQGJHPHLTOJR-WHRDSVKCSA-N,DKOQGJHPHLTOJR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001559,Celiprolol,JOATXPAWOHTVSZ-UHFFFAOYSA-N,JOATXPAWOHTVSZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001560,Chlormadinone,VUHJZBBCZGVNDZ-TTYLFXKOSA-N,VUHJZBBCZGVNDZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001561,Cibenzoline,IPOBOOXFSRWSHL-UHFFFAOYSA-N,IPOBOOXFSRWSHL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001562,Cilnidipine,KJEBULYHNRNJTE-DHZHZOJOSA-N,KJEBULYHNRNJTE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001563,Clobetasol,FCSHDIVRCWTZOX-DVTGEIKXSA-N,FCSHDIVRCWTZOX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001564,Clodronic acid,ACSIXWWBWUQEHA-UHFFFAOYSA-N,ACSIXWWBWUQEHA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001565,Clofazimine,WDQPAMHFFCXSNU-UHFFFAOYSA-N,WDQPAMHFFCXSNU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001566,Cloperastine,FLNXBVJLPJNOSI-UHFFFAOYSA-N,FLNXBVJLPJNOSI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001567,Curcumin,VFLDPWHFBUODDF-FCXRPNKRSA-N,VFLDPWHFBUODDF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001568,Cyamemazine,SLFGIOIONGJGRT-UHFFFAOYSA-N,SLFGIOIONGJGRT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001569,Cyclothiazide,BOCUKUHCLICSIY-UHFFFAOYSA-N,BOCUKUHCLICSIY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001570,Desogestrel,RPLCPCMSCLEKRS-BPIQYHPVSA-N,RPLCPCMSCLEKRS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001571,Diacerein,TYNLGDBUJLVSMA-UHFFFAOYSA-N,TYNLGDBUJLVSMA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001572,Dihydrocodeine,RBOXVHNMENFORY-DNJOTXNNSA-N,RBOXVHNMENFORY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001573,Dirithromycin,WLOHNSSYAXHWNR-DWIOZXRMSA-N,WLOHNSSYAXHWNR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001574,Domperidone,FGXWKSZFVQUSTL-UHFFFAOYSA-N,FGXWKSZFVQUSTL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001575,Doxifluridine,ZWAOHEXOSAUJHY-ZIYNGMLESA-N,ZWAOHEXOSAUJHY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001576,Dydrogesterone,JGMOKGBVKVMRFX-HQZYFCCVSA-N,JGMOKGBVKVMRFX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001577,Eltrombopag,SVOQIEJWJCQGDQ-UHFFFAOYSA-N,SVOQIEJWJCQGDQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001578,Eperisone,SQUNAWUMZGQQJD-UHFFFAOYSA-N,SQUNAWUMZGQQJD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001579,Epinastine,WHWZLSFABNNENI-UHFFFAOYSA-N,WHWZLSFABNNENI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001580,Ethyl loflazepate,CUCHJCMWNFEYOM-UHFFFAOYSA-N,CUCHJCMWNFEYOM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001581,Ethylene glycol,LYCAIKOWRPUZTN-UHFFFAOYSA-N,LYCAIKOWRPUZTN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001582,Etizolam,VMZUTJCNQWMAGF-UHFFFAOYSA-N,VMZUTJCNQWMAGF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001583,Etoricoxib,MNJVRJDLRVPLFE-UHFFFAOYSA-N,MNJVRJDLRVPLFE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001584,Flomoxef,UHRBTBZOWWGKMK-DOMZBBRYSA-N,UHRBTBZOWWGKMK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001585,Fluindione,NASXCEITKQITLD-UHFFFAOYSA-N,NASXCEITKQITLD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001586,Flunitrazepam,PPTYJKAXVCCBDU-UHFFFAOYSA-N,PPTYJKAXVCCBDU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001587,Flupirtine,JUUFBMODXQKSTD-UHFFFAOYSA-N,JUUFBMODXQKSTD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001588,Fominoben,KSNNEUZOAFRTDS-UHFFFAOYSA-N,KSNNEUZOAFRTDS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001589,Fosfluconazole,GHJWNRRCRIGGIO-UHFFFAOYSA-N,GHJWNRRCRIGGIO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001590,Fudosteine,KINWYTAUPKOPCQ-YFKPBYRVSA-N,KINWYTAUPKOPCQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001591,Gabexate,YKGYIDJEEQRWQH-UHFFFAOYSA-N,YKGYIDJEEQRWQH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001592,Garenoxacin,NJDRXTDGYFKORP-LLVKDONJSA-N,NJDRXTDGYFKORP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001593,Glutathione,RWSXRVCMGQZWBV-WDSKDSINSA-N,RWSXRVCMGQZWBV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001594,Glycerol,PEDCQBHIVMGVHV-UHFFFAOYSA-N,PEDCQBHIVMGVHV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001595,Glycyrrhizin,LPLVUJXQOOQHMX-QWBHMCJMSA-N,LPLVUJXQOOQHMX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001596,Halofantrine,FOHHNHSLJDZUGQ-UHFFFAOYSA-N,FOHHNHSLJDZUGQ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001597,Heptaminol,LREQLEBVOXIEOM-UHFFFAOYSA-N,LREQLEBVOXIEOM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001598,Hypericin,YDOIFHVUBCIUHF-UHFFFAOYSA-N,YDOIFHVUBCIUHF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001599,Ibudilast,ZJVFLBOZORBYFE-UHFFFAOYSA-N,ZJVFLBOZORBYFE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001600,Iloprost,HIFJCPQKFCZDDL-ACWOEMLNSA-N,HIFJCPQKFCZDDL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001601,Irsogladine,ATCGGEJZONJOCL-UHFFFAOYSA-N,ATCGGEJZONJOCL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001602,Isepamicin,UDIIBEDMEYAVNG-ZKFPOVNWSA-N,UDIIBEDMEYAVNG,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001603,Isosorbide,KLDXJTOLSGUMSJ-JGWLITMVSA-N,KLDXJTOLSGUMSJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001604,Itopride,QQQIECGTIMUVDS-UHFFFAOYSA-N,QQQIECGTIMUVDS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001605,Lafutidine,KMZQAVXSMUKBPD-DJWKRKHSSA-N,KMZQAVXSMUKBPD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001606,Lercanidipine,ZDXUKAKRHYTAKV-UHFFFAOYSA-N,ZDXUKAKRHYTAKV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001607,Lodenosine,KBEMFSMODRNJHE-JFWOZONXSA-N,KBEMFSMODRNJHE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001608,Lormetazepam,FJIKWRGCXUCUIG-UHFFFAOYSA-N,FJIKWRGCXUCUIG,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001609,Lornoxicam,WLHQHAUOOXYABV-UHFFFAOYSA-N,WLHQHAUOOXYABV,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001610,Loxoprofen,YMBXTVYHTMGZDW-UHFFFAOYSA-N,YMBXTVYHTMGZDW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001611,Manidipine,ANEBWFXPVPTEET-UHFFFAOYSA-N,ANEBWFXPVPTEET,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001612,Mazindol,ZPXSCAKFGYXMGA-UHFFFAOYSA-N,ZPXSCAKFGYXMGA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001613,Menatetrenone,DKHGMERMDICWDU-GHDNBGIDSA-N,DKHGMERMDICWDU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001614,Mequitazine,HOKDBMAJZXIPGC-UHFFFAOYSA-N,HOKDBMAJZXIPGC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001615,Metopimazine,BQDBKDMTIJBJLA-UHFFFAOYSA-N,BQDBKDMTIJBJLA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001616,Mitiglinide,WPGGHFDDFPHPOB-BBWFWOEESA-N,WPGGHFDDFPHPOB,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001617,Mizoribine,HZQDCMWJEBCWBR-UUOKFMHZSA-N,HZQDCMWJEBCWBR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001618,Molsidomine,XLFWDASMENKTKL-UHFFFAOYSA-N,XLFWDASMENKTKL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001619,Mosapride,YPELFRMCRYSPKZ-UHFFFAOYSA-N,YPELFRMCRYSPKZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001620,Moxonidine,WPNJAUFVNXKLIM-UHFFFAOYSA-N,WPNJAUFVNXKLIM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001621,Nafamostat,MQQNFDZXWVTQEH-UHFFFAOYSA-N,MQQNFDZXWVTQEH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001622,Naftidrofuryl,KBAFPSLPKGSANY-UHFFFAOYSA-N,KBAFPSLPKGSANY,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001623,Nandrolone,NPAGDVCDWIYMMC-IZPLOLCNSA-N,NPAGDVCDWIYMMC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001624,Nefopam,RGPDEAGGEXEMMM-UHFFFAOYSA-N,RGPDEAGGEXEMMM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001625,Netilmicin,CIDUJQMULVCIBT-MQDUPKMGSA-N,CIDUJQMULVCIBT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001626,Nicergoline,YSEXMKHXIOCEJA-FVFQAYNVSA-N,YSEXMKHXIOCEJA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001627,Nicorandil,LBHIOVVIQHSOQN-UHFFFAOYSA-N,LBHIOVVIQHSOQN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001628,Nitrazepam,KJONHKAYOJNZEC-UHFFFAOYSA-N,KJONHKAYOJNZEC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001629,Nitrendipine,PVHUJELLJLJGLN-UHFFFAOYSA-N,PVHUJELLJLJGLN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001630,Nordazepam,AKPLHCDWDRPJGD-UHFFFAOYSA-N,AKPLHCDWDRPJGD,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001631,Olopatadine,JBIMVDZLSHOPLA-LSCVHKIXSA-N,JBIMVDZLSHOPLA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001632,Oxatomide,BAINIUMDFURPJM-UHFFFAOYSA-N,BAINIUMDFURPJM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001633,Oxyphenbutazone,HFHZKZSRXITVMK-UHFFFAOYSA-N,HFHZKZSRXITVMK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001634,Ozagrel,SHZKQBHERIJWAO-AATRIKPKSA-N,SHZKQBHERIJWAO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001635,Pazufloxacin,XAGMUUZPGZWTRP-ZETCQYMHSA-N,XAGMUUZPGZWTRP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001636,Phenformin,ICFJFFQQTFMIBG-UHFFFAOYSA-N,ICFJFFQQTFMIBG,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001637,Phenprocoumon,DQDAYGNAKTZFIW-UHFFFAOYSA-N,DQDAYGNAKTZFIW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001638,Phenylephrine,SONNWYBIRXJNDC-VIFPVBQESA-N,SONNWYBIRXJNDC,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001639,Phloroglucinol,QCDYQQDYXPDABM-UHFFFAOYSA-N,QCDYQQDYXPDABM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001640,Picolamine,HDOUGSFASVGDCS-UHFFFAOYSA-N,HDOUGSFASVGDCS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001641,Pilsicainide,BCQTVJKBTWGHCX-UHFFFAOYSA-N,BCQTVJKBTWGHCX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001642,Pimecrolimus,KASDHRXLYQOAKZ-XDSKOBMDSA-N,KASDHRXLYQOAKZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001643,Pinaverium,DDHUTBKXLWCZCO-UHFFFAOYSA-N,DDHUTBKXLWCZCO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001644,Piperacetazine,BTFMCMVEUCGQDX-UHFFFAOYSA-N,BTFMCMVEUCGQDX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001645,Pipobroman,NJBFOOCLYDNZJN-UHFFFAOYSA-N,NJBFOOCLYDNZJN,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001646,Piracetam,GMZVRMREEHBGGF-UHFFFAOYSA-N,GMZVRMREEHBGGF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001647,Pirarubicin,KMSKQZKKOZQFFG-YXRRJAAWSA-N,KMSKQZKKOZQFFG,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001648,Pranlukast,NBQKINXMPLXUET-UHFFFAOYSA-N,NBQKINXMPLXUET,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001649,Pranoprofen,TVQZAMVBTVNYLA-UHFFFAOYSA-N,TVQZAMVBTVNYLA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001650,Prazepam,MWQCHHACWWAQLJ-UHFFFAOYSA-N,MWQCHHACWWAQLJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001651,Propacetamol,QTGAJCQTLIRCFL-UHFFFAOYSA-N,QTGAJCQTLIRCFL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001652,Propiverine,QPCVHQBVMYCJOM-UHFFFAOYSA-N,QPCVHQBVMYCJOM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001653,Raltitrexed,IVTVGDXNLFLDRM-HNNXBMFYSA-N,IVTVGDXNLFLDRM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001654,Rebamipide,ALLWOAVDORUJLA-UHFFFAOYSA-N,ALLWOAVDORUJLA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001655,Rilmenidine,CQXADFVORZEARL-UHFFFAOYSA-N,CQXADFVORZEARL,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001656,Roxatidine,BCCREUFCSIMJFS-UHFFFAOYSA-N,BCCREUFCSIMJFS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001658,Sarpogrelate,FFYNAVGJSYHHFO-UHFFFAOYSA-N,FFYNAVGJSYHHFO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001659,Sennoside,IPQVTOJGNYVQEO-JLDSCGAUSA-N,IPQVTOJGNYVQEO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001660,Sofalcone,GFWRVVCDTLRWPK-KPKJPENVSA-N,GFWRVVCDTLRWPK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001661,Sparfloxacin,DZZWHBIBMUVIIW-DTORHVGOSA-N,DZZWHBIBMUVIIW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001662,Sulfamethoxazole,JLKIGFTWXXRPMT-UHFFFAOYSA-N,JLKIGFTWXXRPMT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001663,Sulpiride,BGRJTUBHPOOWDU-UHFFFAOYSA-N,BGRJTUBHPOOWDU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001664,Suplatast,DYZJXZOQQRXDLE-UHFFFAOYSA-O,DYZJXZOQQRXDLE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001665,Tandospirone,CEIJFEGBUDEYSX-FZDBZEDMSA-N,CEIJFEGBUDEYSX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001666,Telaprevir,BBAWEDCPNXPBQM-GDEBMMAJSA-N,BBAWEDCPNXPBQM,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001667,Temocapril,FIQOFIRCTOWDOW-BJLQDIEVSA-N,FIQOFIRCTOWDOW,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001668,Teprenone,HUCXKZBETONXFO-NJFMWZAGSA-N,HUCXKZBETONXFO,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001669,Tetrazepam,IQWYAQCHYZHJOS-UHFFFAOYSA-N,IQWYAQCHYZHJOS,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001670,Theobromine,YAPQBXQYLJRXSA-UHFFFAOYSA-N,YAPQBXQYLJRXSA,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001671,Thiocolchicoside,LEQAKWQJCITZNK-AXHKHJLKSA-N,LEQAKWQJCITZNK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001672,Tiapride,JTVPZMFULRWINT-UHFFFAOYSA-N,JTVPZMFULRWINT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001673,Tiaprofenic acid,GUHPRPJDBZHYCJ-UHFFFAOYSA-N,GUHPRPJDBZHYCJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001674,Tiquizium,ZGSDGGRVFIYKKE-OXQOHEQNSA-N,ZGSDGGRVFIYKKE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001675,Tocainide,BUJAGSGYPOAWEI-UHFFFAOYSA-N,BUJAGSGYPOAWEI,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001676,Tranilast,NZHGWWWHIYHZNX-CSKARUKUSA-N,NZHGWWWHIYHZNX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001677,Trapidil,GSNOZLZNQMLSKJ-UHFFFAOYSA-N,GSNOZLZNQMLSKJ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001678,Trichlormethiazide,LMJSLTNSBFUCMU-UHFFFAOYSA-N,LMJSLTNSBFUCMU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001679,Trimebutine,LORDFXWUHHSAQU-UHFFFAOYSA-N,LORDFXWUHHSAQU,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001680,Trimetazidine,UHWVSEOVJBQKBE-UHFFFAOYSA-N,UHWVSEOVJBQKBE,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001681,Tropatepine,JOQKFRLFXDPXHX-HDICACEKSA-N,JOQKFRLFXDPXHX,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001682,Troxipide,YSIITVVESCNIPR-UHFFFAOYSA-N,YSIITVVESCNIPR,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001683,Urapidil,ICMGLRUYEQNHPF-UHFFFAOYSA-N,ICMGLRUYEQNHPF,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001684,Valpromide,OMOMUFTZPTXCHP-UHFFFAOYSA-N,OMOMUFTZPTXCHP,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001685,Vindesine,HHJUWIANJFBDHT-KOTLKJBCSA-N,HHJUWIANJFBDHT,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001686,Voglibose,FZNCGRZWXLXZSZ-CIQUZCHMSA-N,FZNCGRZWXLXZSZ,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001687,Xylometazoline,HUCJFAOMUPXHDK-UHFFFAOYSA-N,HUCJFAOMUPXHDK,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+PARENT_001688,Zaltoprofen,MUXFZBHBYYYLTH-UHFFFAOYSA-N,MUXFZBHBYYYLTH,dilist_positive,1,external_test,False,,False,20260521,dilist_nonoverlap_external
+,,,,,,,,,,,
+Note: final evaluable strict external small-molecule DILIst set = 388 compounds (286 positive / 102 negative) after removing 11 non-small-molecule or otherwise non-eligible entries.,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Table S26e: DILIst positivity by curation step,,,,,,,,,,,
+stage,n_total,positive_n,negative_n,positive_rate,,,,,,,
+DILIst raw records,1279,768,511,0.6005,,,,,,,
+"After parent-level mapping, conflict removal, and initial overlap filtering",462,294,168,0.6364,,,,,,,
+After DILIrank 2.0 overlap removal,401,291,110,0.7257,,,,,,,
+After invalid parent exclusion,399,291,108,0.7293,,,,,,,
+After non-small-molecule exclusion,388,286,102,0.7371,,,,,,,
+,,,,,,,,,,,
+"Note: Counts are reconstructed from the DILIst curation and strict non-overlap logs (Tables S26a, S26b, S26c). The 401-compound stage is 462 minus the 61 entries removed for parent-connectivity overlap with DILIrank 2.0 Task A (3 positive, 58 negative). The 399-compound stage removes two further entries, both negative. Positive rate rises monotonically across filtering stages.",,,,,,,,,,,

@@ -1,0 +1,20 @@
+{
+  "stage": "stage8",
+  "generated": "2026-05-23 13:42:10",
+  "calibration_method_selection": "oof_5fold_brier_ece_nll_ranking",
+  "selected_methods": {
+    "scaffold_HistGB": "temperature",
+    "scaffold_LGB": "platt",
+    "scaffold_ET": "platt",
+    "scaffold_XGB": "platt",
+    "temporal_HistGB": "platt",
+    "temporal_LGB": "platt",
+    "temporal_ET": "platt",
+    "temporal_XGB": "platt",
+    "cluster_out_HistGB": "temperature",
+    "cluster_out_LGB": "platt",
+    "cluster_out_ET": "platt",
+    "cluster_out_XGB": "temperature"
+  },
+  "notes": "Isotonic demoted in 12/12 cases per OOF overfit detection (9 reassigned to Platt scaling, 3 to temperature scaling)"
+}

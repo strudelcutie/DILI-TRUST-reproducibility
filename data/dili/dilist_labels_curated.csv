@@ -1,0 +1,1280 @@
+dilist_id,compound_name,dilist_classification_raw,dilist_curated,routes
+1,mercaptopurine,1,dilist_positive,Oral
+2,acetaminophen,1,dilist_positive,Oral
+3,azathioprine,1,dilist_positive,Oral
+4,chlorpheniramine,0,dilist_negative,Oral
+5,clofibrate,1,dilist_positive,Oral
+6,cyclophosphamide,1,dilist_positive,Oral
+7,dopamine,0,dilist_negative,Intravenous
+8,estradiol,1,dilist_positive,Oral
+9,fluoxetine,1,dilist_positive,Oral
+10,gemfibrozil,1,dilist_positive,Oral
+11,indomethacin,1,dilist_positive,Oral
+12,ketoprofen,1,dilist_positive,Oral
+13,mannitol,0,dilist_negative,Intravenous
+14,methotrexate,1,dilist_positive,Oral
+15,phenobarbital,1,dilist_positive,Oral
+16,phenytoin,1,dilist_positive,Oral
+17,rifampin,1,dilist_positive,Oral
+18,tetracycline,1,dilist_positive,Oral
+19,abacavir,1,dilist_positive,Oral
+20,aciclovir,1,dilist_positive,Oral
+21,allopurinol,1,dilist_positive,Oral
+22,amineptine,1,dilist_positive,Oral
+23,amiodarone,1,dilist_positive,Oral
+24,amitriptyline,1,dilist_positive,Oral
+25,amphotericin b,1,dilist_positive,Intravenous
+26,ampicillin,1,dilist_positive,Oral
+27,donepezil,1,dilist_positive,Oral
+28,aspirin,1,dilist_positive,Oral
+29,aminohippurate,0,dilist_negative,Intravenous
+30,bicalutamide,1,dilist_positive,Oral
+31,bupropion,1,dilist_positive,Oral
+32,captopril,1,dilist_positive,Oral
+33,carbamazepine,1,dilist_positive,Oral
+34,carboplatin,1,dilist_positive,Intravenous
+35,ceftazidime,1,dilist_positive,Intravenous
+36,chlorcyclizine,1,dilist_positive,Oral
+37,chlorzoxazone,1,dilist_positive,Oral
+38,chlorpromazine,1,dilist_positive,Oral
+39,cisplatin,1,dilist_positive,Intravenous
+40,dimercaprol,0,dilist_negative,Intramuscular
+41,colchicine,0,dilist_negative,Oral
+42,corticotropin,0,dilist_negative,Subcutaneous
+43,dactinomycin,1,dilist_positive,Subcutaneous
+44,dantrolene,1,dilist_positive,Oral
+45,demeclocycline,0,dilist_negative,Oral
+46,propoxyphene,1,dilist_positive,Oral
+47,diclofenac,1,dilist_positive,Oral
+48,diflunisal,1,dilist_positive,Oral
+49,diphenhydramine,0,dilist_negative,Oral
+50,epirubicin,0,dilist_negative,Intravenous
+51,erythromycin,1,dilist_positive,Oral
+52,etoposide,1,dilist_positive,Oral
+53,famotidine,1,dilist_positive,Oral
+54,felbamate,1,dilist_positive,Oral
+55,fenofibrate,1,dilist_positive,Oral
+56,fenoprofen,1,dilist_positive,Oral
+57,flutamide,1,dilist_positive,Oral
+58,hydroxyurea,1,dilist_positive,Oral
+59,imatinib,1,dilist_positive,Oral
+60,imipramine,1,dilist_positive,Oral
+61,iproniazid,1,dilist_positive,Oral
+62,ketoconazole,1,dilist_positive,Oral
+63,labetalol,1,dilist_positive,Oral
+64,leflunomide,1,dilist_positive,Oral
+65,mefenamic acid,1,dilist_positive,Oral
+66,meloxicam,1,dilist_positive,Oral
+67,metformin,1,dilist_positive,Oral
+68,methyldopa,1,dilist_positive,Oral
+69,nefazodone,1,dilist_positive,Oral
+70,nitrofurantoin,1,dilist_positive,Oral
+71,olsalazine,1,dilist_positive,Oral
+72,paroxetine,1,dilist_positive,Oral
+73,pentamidine,1,dilist_positive,Intravenous
+74,perhexiline,1,dilist_positive,Oral
+75,physostigmine,0,dilist_negative,Intravenous
+76,pioglitazone,1,dilist_positive,Oral
+77,propylthiouracil,1,dilist_positive,Oral
+78,pseudoephedrine,0,dilist_negative,Oral
+79,ranitidine,1,dilist_positive,Oral
+80,rifabutin,1,dilist_positive,Oral
+81,rosiglitazone,1,dilist_positive,Oral
+82,indocyanine green,0,dilist_negative,Intravenous
+83,simvastatin,1,dilist_positive,Oral
+84,spironolactone,1,dilist_positive,Oral
+85,stavudine,1,dilist_positive,Oral
+86,streptomycin,0,dilist_negative,Intramuscular
+87,sulfadiazine,1,dilist_positive,Oral
+88,sulfasalazine,1,dilist_positive,Oral
+89,sulindac,1,dilist_positive,Oral
+90,tamoxifen,1,dilist_positive,Oral
+91,temozolomide,1,dilist_positive,Oral
+92,theophylline,0,dilist_negative,Oral
+93,tizanidine,1,dilist_positive,Oral
+94,tolcapone,1,dilist_positive,Oral
+95,valproic acid,1,dilist_positive,Oral
+96,vancomycin,1,dilist_positive,Oral
+97,vitamin a,1,dilist_positive,Intramuscular
+98,zidovudine,1,dilist_positive,Oral
+99,zolpidem,0,dilist_negative,Oral
+100,zonisamide,1,dilist_positive,Oral
+101,pyrazinamide,1,dilist_positive,Oral
+102,finasteride,1,dilist_positive,Oral
+103,troglitazone,1,dilist_positive,Oral
+104,fluvastatin,1,dilist_positive,Oral
+105,glimepiride,1,dilist_positive,Oral
+106,venlafaxine,1,dilist_positive,Oral
+107,amlodipine,1,dilist_positive,Oral
+108,vinblastine,0,dilist_negative,Intravenous
+109,ciprofloxacin,1,dilist_positive,Oral
+110,fluconazole,1,dilist_positive,Oral
+111,prednisone,1,dilist_positive,Oral
+112,lorazepam,0,dilist_negative,Oral
+113,itraconazole,1,dilist_positive,Oral
+114,raloxifene,0,dilist_negative,Oral
+115,mifepristone,0,dilist_negative,Oral
+116,clomipramine,1,dilist_positive,Oral
+117,pravastatin,1,dilist_positive,Oral
+118,clarithromycin,1,dilist_positive,Oral
+119,hydrocortisone,0,dilist_negative,Oral
+120,progesterone,1,dilist_positive,Oral
+121,ergocalciferol,0,dilist_negative,Oral
+122,ibuprofen,1,dilist_positive,Oral
+123,isoproterenol,0,dilist_negative,Intravenous
+124,ketorolac,1,dilist_positive,Oral
+125,promethazine,1,dilist_positive,Oral
+126,omeprazole,1,dilist_positive,Oral
+127,carvedilol,1,dilist_positive,Oral
+128,cytarabine,1,dilist_positive,Intravenous
+129,pergolide,0,dilist_negative,Oral
+130,nisoldipine,0,dilist_negative,Oral
+131,citalopram,1,dilist_positive,Oral
+132,methyltestosterone,1,dilist_positive,Oral
+133,testosterone,1,dilist_positive,Oral
+134,praziquantel,0,dilist_negative,Oral
+135,ticlopidine,1,dilist_positive,Oral
+136,diazepam,0,dilist_negative,Oral
+137,clomiphene,1,dilist_positive,Oral
+138,isotretinoin,1,dilist_positive,Oral
+139,oxymetholone,1,dilist_positive,Oral
+140,etodolac,1,dilist_positive,Oral
+141,glipizide,1,dilist_positive,Oral
+142,pemoline,1,dilist_positive,Oral
+143,clotrimazole,1,dilist_positive,Oral
+144,celecoxib,1,dilist_positive,Oral
+145,amoxapine,0,dilist_negative,Oral
+146,iothalamate sodium,0,dilist_negative,Intravenous
+147,atorvastatin,1,dilist_positive,Oral
+148,olanzapine,1,dilist_positive,Oral
+149,nevirapine,1,dilist_positive,Oral
+150,primidone,0,dilist_negative,Oral
+151,vinorelbine,0,dilist_negative,Intravenous
+152,anastrozole,1,dilist_positive,Oral
+153,rabeprazole,1,dilist_positive,Oral
+154,azithromycin,1,dilist_positive,Oral
+155,tolazamide,1,dilist_positive,Oral
+156,quetiapine,1,dilist_positive,Oral
+157,famciclovir,0,dilist_negative,Oral
+158,atenolol,1,dilist_positive,Oral
+159,benzbromarone,1,dilist_positive,Oral
+160,bromocriptine,1,dilist_positive,Oral
+161,busulfan,1,dilist_positive,Oral
+162,chlorambucil,1,dilist_positive,Oral
+163,clozapine,1,dilist_positive,Oral
+164,dacarbazine,1,dilist_positive,Intravenous
+165,dapsone,1,dilist_positive,Oral
+166,digoxin,0,dilist_negative,Oral
+167,disulfiram,1,dilist_positive,Oral
+168,enalapril,1,dilist_positive,Oral
+169,furosemide,0,dilist_negative,Oral
+170,gabapentin,1,dilist_positive,Oral
+171,glibenclamide,1,dilist_positive,Oral
+172,isoniazid,1,dilist_positive,Oral
+173,lansoprazole,1,dilist_positive,Oral
+174,mebendazole,1,dilist_positive,Oral
+175,metoprolol,1,dilist_positive,Oral
+176,naltrexone,0,dilist_negative,Oral
+177,niacin,1,dilist_positive,Oral
+178,nifedipine,1,dilist_positive,Oral
+179,nimesulide,1,dilist_positive,Oral
+180,nizatidine,1,dilist_positive,Oral
+181,dextrose,0,dilist_negative,Intravenous
+182,cholestyramine,0,dilist_negative,Oral
+183,sodium lactate,0,dilist_negative,Intravenous
+184,verapamil,1,dilist_positive,Oral
+185,doxorubicin,1,dilist_positive,Intravenous
+186,clorazepate,0,dilist_negative,Oral
+187,protirelin,0,dilist_negative,Intravenous
+188,sincalide,0,dilist_negative,Intravenous
+189,secretin,0,dilist_negative,Intravenous
+190,sucralfate,0,dilist_negative,Oral
+191,cupric chloride,0,dilist_negative,Intravenous
+192,trientine hydrochloride,0,dilist_negative,Oral
+193,chlorpropamide,1,dilist_positive,Oral
+194,cyclosporine,1,dilist_positive,Oral
+195,decitabine,0,dilist_negative,Intravenous
+196,deferoxamine,1,dilist_positive,Intravenous
+197,doxycycline,1,dilist_positive,Oral
+198,exemestane,1,dilist_positive,Oral
+199,felodipine,1,dilist_positive,Oral
+200,fludrocortisone,0,dilist_negative,Oral
+201,fluphenazine,0,dilist_negative,Oral
+202,gefitinib,1,dilist_positive,Oral
+203,haloperidol,1,dilist_positive,Oral
+204,mesalazine,1,dilist_positive,Oral
+205,minocycline,1,dilist_positive,Oral
+206,ioversol,0,dilist_negative,Intravenous
+207,oxaprozin,1,dilist_positive,Oral
+208,paclitaxel,1,dilist_positive,Intravenous
+209,phentolamine,0,dilist_negative,Intravenous
+210,prazosin,0,dilist_negative,Oral
+211,prochlorperazine,1,dilist_positive,Oral
+212,corticorelin ovine triflutate,0,dilist_negative,Intravenous
+213,sodium thiosulfate,0,dilist_negative,Intravenous
+214,sirolimus,1,dilist_positive,Oral
+215,tacrolimus,1,dilist_positive,Oral
+216,thalidomide,1,dilist_positive,Oral
+217,thioridazine,1,dilist_positive,Oral
+218,thioguanine,1,dilist_positive,Oral
+219,tolbutamide,0,dilist_negative,Oral
+220,topiramate,1,dilist_positive,Oral
+221,trifluoperazine,0,dilist_negative,Oral
+222,triptorelin pamoate,1,dilist_positive,Intramuscular
+223,alatrofloxacin mesylate,1,dilist_positive,Oral
+224,vorinostat,0,dilist_negative,Oral
+225,nesiritide,0,dilist_negative,Intravenous
+226,ganirelix acetate,0,dilist_negative,Subcutaneous
+227,gemtuzumab ozogamicin,1,dilist_positive,Intravenous
+228,methylprednisolone,1,dilist_positive,Oral
+229,gamma hydroxybutyric acid,0,dilist_negative,Oral
+230,tegaserod,0,dilist_negative,Oral
+231,penicillamine,1,dilist_positive,Oral
+232,pramlintide,0,dilist_negative,Subcutaneous
+233,lanthanum carbonate,0,dilist_negative,Oral
+234,acetazolamide,1,dilist_positive,Oral
+235,albendazole,1,dilist_positive,Oral
+236,alprazolam,1,dilist_positive,Oral
+237,altretamine,0,dilist_negative,Oral
+238,amantadine,0,dilist_negative,Oral
+239,4-aminosalicylic acid,1,dilist_positive,Oral
+240,amoxicillin,1,dilist_positive,Oral
+241,atropine,0,dilist_negative,Intravenous
+242,benoxaprofen,1,dilist_positive,Oral
+243,emtricitabine,0,dilist_negative,Oral
+244,trospium,0,dilist_negative,Oral
+245,bromfenac,1,dilist_positive,Oral
+246,gadofosveset trisodium,0,dilist_negative,Intravenous
+247,clonazepam,1,dilist_positive,Oral
+248,exenatide,0,dilist_negative,Subcutaneous
+249,entecavir,0,dilist_negative,Oral
+250,danazol,1,dilist_positive,Oral
+251,daunorubicin,0,dilist_negative,Intravenous
+252,dimenhydrinate,0,dilist_negative,Intravenous
+253,doxapram,0,dilist_negative,Intravenous
+254,febuxostat,1,dilist_positive,Oral
+255,granisetron,0,dilist_negative,Oral
+256,griseofulvin,1,dilist_positive,Oral
+257,hydralazine,1,dilist_positive,Oral
+258,ibufenac,1,dilist_positive,Oral
+259,ifosfamide,1,dilist_positive,Intravenous
+260,deferasirox,1,dilist_positive,Oral
+261,sunitinib,1,dilist_positive,Oral
+262,ivermectin,1,dilist_positive,Oral
+263,lamivudine,1,dilist_positive,Oral
+264,methylnaltrexone bromide,0,dilist_negative,Subcutaneous
+265,letrozole,1,dilist_positive,Oral
+266,desvenlafaxine,1,dilist_positive,Oral
+267,lomefloxacin,0,dilist_negative,Oral
+268,lomustine,1,dilist_positive,Oral
+269,lovastatin,1,dilist_positive,Oral
+270,telbivudine,0,dilist_negative,Oral
+271,methimazole,1,dilist_positive,Oral
+272,methocarbamol,0,dilist_negative,Oral
+273,metronidazole,1,dilist_positive,Oral
+274,minoxidil,0,dilist_negative,Oral
+275,mitomycin,1,dilist_positive,Intravenous
+276,modafinil,1,dilist_positive,Oral
+277,fesoterodine,0,dilist_negative,Oral
+278,naloxone,0,dilist_negative,Intravenous
+279,naproxen,1,dilist_positive,Oral
+280,nateglinide,0,dilist_negative,Oral
+281,neomycin,0,dilist_negative,Oral
+282,levocetirizine dihydrochloride,1,dilist_positive,Oral
+283,nystatin,0,dilist_negative,Oral
+284,oxytetracycline,0,dilist_negative,Oral
+285,pantoprazole,1,dilist_positive,Oral
+286,prednisolone,1,dilist_positive,Oral
+287,primaquine,0,dilist_negative,Oral
+288,procarbazine,1,dilist_positive,Oral
+289,ambrisentan,0,dilist_negative,Oral
+290,secobarbital,0,dilist_negative,Oral
+291,sertraline,1,dilist_positive,Oral
+292,sotalol,0,dilist_negative,Oral
+293,sulfathiazole,1,dilist_positive,Oral
+294,terbinafine,1,dilist_positive,Oral
+295,thiabendazole,1,dilist_positive,Oral
+296,ticrynafen,1,dilist_positive,Oral
+297,tinidazole,1,dilist_positive,Oral
+298,maraviroc,1,dilist_positive,Oral
+299,raltegravir,1,dilist_positive,Oral
+300,clevidipine,0,dilist_negative,Intravenous
+301,trovafloxacin,1,dilist_positive,Oral
+302,regadenoson,0,dilist_negative,Intravenous
+303,warfarin,1,dilist_positive,Oral
+304,zaleplon,0,dilist_negative,Oral
+305,zileuton,1,dilist_positive,Oral
+306,ferumoxytol,0,dilist_negative,Intravenous
+307,etravirine,1,dilist_positive,Oral
+308,silodosin,0,dilist_negative,Oral
+309,fospropofol,1,dilist_positive,Intravenous
+310,bendamustine,0,dilist_negative,Intravenous
+311,tolvaptan,1,dilist_positive,Oral
+312,eltrombopag olamine,1,dilist_positive,Oral
+313,tapentadol,0,dilist_negative,Oral
+314,prasugrel hydrochloride,1,dilist_positive,Oral
+315,saxagliptin,0,dilist_negative,Oral
+316,romidepsin,0,dilist_negative,Intravenous
+317,dronedarone,1,dilist_positive,Oral
+318,pazopanib,1,dilist_positive,Oral
+319,pancrelipase,0,dilist_negative,Oral
+320,dexchlorpheniramine,0,dilist_negative,Oral
+321,ecallantide,0,dilist_negative,Subcutaneous
+322,divalproex sodium,1,dilist_positive,Oral
+323,lumiracoxib,1,dilist_positive,Oral
+324,tasosartan,1,dilist_positive,Oral
+325,oxyphenisatin,1,dilist_positive,Oral
+326,tilbroquinol,1,dilist_positive,Oral
+327,alclofenac,1,dilist_positive,Oral
+328,aplaviroc ,1,dilist_positive,Oral
+329,clomacran,1,dilist_positive,Oral
+330,dermatan,1,dilist_positive,Intravenous
+331,isaxonine,1,dilist_positive,Oral
+332,pipamazine,1,dilist_positive,Oral
+333,pralnacasan ,1,dilist_positive,Oral
+334,sulfacarbamide,1,dilist_positive,Oral
+335,triacetyldiphenolisatin,1,dilist_positive,Oral
+336,fiduxosin ,1,dilist_positive,Oral
+337,pafuramidine ,1,dilist_positive,Oral
+338,phenoxypropazine,1,dilist_positive,Oral
+339,histamine diphosphate,0,dilist_negative,Subcutaneous
+340,aminophylline,0,dilist_negative,Oral
+341,meperidine,0,dilist_negative,Oral
+342,methamphetamine,0,dilist_negative,Oral
+343,methadone,0,dilist_negative,Oral
+344,hyaluronidase,0,dilist_negative,Subcutaneous
+345,doxylamine,0,dilist_negative,Oral
+346,protamine sulfate,0,dilist_negative,Intravenous
+347,bethanechol,0,dilist_negative,Oral
+348,cortisone acetate,0,dilist_negative,Oral
+349,dicyclomine,0,dilist_negative,Oral
+350,norepinephrine,0,dilist_negative,Intravenous
+351,dyphylline,0,dilist_negative,Oral
+352,epinephrine,0,dilist_negative,Subcutaneous
+353,succinylcholine,0,dilist_negative,Intravenous
+354,thyrotropin alfa,0,dilist_negative,Intramuscular
+355,levorphanol,0,dilist_negative,Oral
+356,propantheline,0,dilist_negative,Oral
+357,carbinoxamine,0,dilist_negative,Oral
+358,diatrizoate,0,dilist_negative,Intravenous
+359,phytonadione,0,dilist_negative,Oral
+360,mecamylamine,0,dilist_negative,Oral
+361,liothyronine,0,dilist_negative,Oral
+362,methsuximide,0,dilist_negative,Oral
+363,mepenzolate,0,dilist_negative,Oral
+364,meclizine,0,dilist_negative,Oral
+365,triprolidine,0,dilist_negative,Oral
+366,benzonatate,1,dilist_positive,Oral
+367,Sodium polystyrene sulfonate,0,dilist_negative,Oral
+368,dichlorphenamide,0,dilist_negative,Oral
+369,phentermine,1,dilist_positive,Oral
+370,diethylpropion,0,dilist_negative,Oral
+371,oxymorphone,0,dilist_negative,Oral
+372,dexbrompheniramine,0,dilist_negative,Oral
+373,biperiden,0,dilist_negative,Oral
+374,isosorbide dinitrate,0,dilist_negative,Oral
+375,mepivacaine,0,dilist_negative,Subcutaneous
+376,bendroflumethiazide,1,dilist_positive,Oral
+377,phendimetrazine,0,dilist_negative,Oral
+378,oxytocin,0,dilist_negative,Intravenous
+379,guanethidine,0,dilist_negative,Oral
+380,ethosuximide,0,dilist_negative,Oral
+381,benzphetamine,0,dilist_negative,Oral
+382,glycopyrrolate,0,dilist_negative,Oral
+383,metyrapone,0,dilist_negative,Oral
+384,metaxalone,1,dilist_positive,Oral
+385,oxandrolone,1,dilist_positive,Oral
+386,oxazepam,0,dilist_negative,Oral
+387,protriptyline,0,dilist_negative,Oral
+388,cosyntropin,0,dilist_negative,Intravenous
+389,flavoxate,0,dilist_negative,Oral
+390,ketamine,1,dilist_positive,Intravenous
+391,pancuronium,0,dilist_negative,Intravenous
+392,pentagastrin,0,dilist_negative,Intravenous
+393,dextroamphetamine,0,dilist_negative,Oral
+394,terbutaline,1,dilist_positive,Oral
+395,calcitonin salmon,0,dilist_negative,Subcutaneous
+396,pentetic acid,0,dilist_negative,Intravenous
+397,nitroprusside,0,dilist_negative,Intravenous
+398,colestipol,0,dilist_negative,Oral
+399,lactulose,0,dilist_negative,Oral
+400,somatropin recombinant,0,dilist_negative,Subcutaneous
+401,fluorescein,0,dilist_negative,Intravenous
+402,metyrosine,0,dilist_negative,Oral
+403,carboprost tromethamine,0,dilist_negative,Intramuscular
+404,calcitriol,0,dilist_negative,Oral
+405,morphine,0,dilist_negative,Oral
+406,nabilone,0,dilist_negative,Oral
+407,vecuronium,0,dilist_negative,Intravenous
+408,atracurium,0,dilist_negative,Intravenous
+409,hydromorphone,0,dilist_negative,Oral
+410,sufentanil,0,dilist_negative,Intravenous
+411,tranexamic acid,0,dilist_negative,Oral
+412,alfentanil,0,dilist_negative,Intravenous
+413,ethanolamine oleate,0,dilist_negative,Intravenous
+414,rubidium chloride rb-82,0,dilist_negative,Intravenous
+415,urofollitropin,0,dilist_negative,Subcutaneous
+416,teriparatide,0,dilist_negative,Subcutaneous
+417,gadopentetate dimeglumine,0,dilist_negative,Intravenous
+418,rimantadine,0,dilist_negative,Oral
+419,pegademase bovine,0,dilist_negative,Intramuscular
+420,fenoldopam,0,dilist_negative,Intravenous
+421,calcium acetate,0,dilist_negative,Oral
+422,mivacurium,0,dilist_negative,Intravenous
+423,gadoteridol,0,dilist_negative,Intravenous
+424,enoxaparin,1,dilist_positive,Subcutaneous
+425,perindopril,0,dilist_negative,Oral
+426,rocuronium,0,dilist_negative,Intravenous
+427,dalteparin sodium,1,dilist_positive,Subcutaneous
+428,ferumoxsil,0,dilist_negative,Oral
+429,ferumoxides,0,dilist_negative,Intravenous
+430,porfimer,0,dilist_negative,Intravenous
+431,ibutilide,0,dilist_negative,Intravenous
+432,cisatracurium besylate,0,dilist_negative,Intravenous
+433,oxycodone,0,dilist_negative,Oral
+434,alendronate,1,dilist_positive,Oral
+435,tamsulosin,1,dilist_positive,Oral
+436,dolasetron,0,dilist_negative,Oral
+437,remifentanil,1,dilist_positive,Intravenous
+438,sibutramine,1,dilist_positive,Oral
+439,tiagabine,0,dilist_negative,Oral
+440,ropinirole,1,dilist_positive,Oral
+441,pramipexole,0,dilist_negative,Oral
+442,miglitol,0,dilist_negative,Oral
+443,polyethylene glycol 3350,0,dilist_negative,Oral
+444,delavirdine,0,dilist_negative,Oral
+445,tiludronate,0,dilist_negative,Oral
+446,eptifibatide,0,dilist_negative,Intravenous
+447,eprosartan,0,dilist_negative,Oral
+448,repaglinide,1,dilist_positive,Oral
+449,irbesartan,1,dilist_positive,Oral
+450,naratriptan,0,dilist_negative,Oral
+451,zolmitriptan,0,dilist_negative,Oral
+452,tolterodine,0,dilist_negative,Oral
+453,nelfinavir,1,dilist_positive,Oral
+454,rivastigmine,1,dilist_positive,Oral
+455,ziprasidone,1,dilist_positive,Oral
+456,risedronate,0,dilist_negative,Oral
+457,candesartan,1,dilist_positive,Oral
+458,clopidogrel,1,dilist_positive,Oral
+459,rizatriptan,0,dilist_negative,Oral
+460,bivalirudin,0,dilist_negative,Intravenous
+461,azacitidine,0,dilist_negative,Intravenous
+462,fluorouracil,1,dilist_positive,Intravenous
+463,argatroban,0,dilist_negative,Intravenous
+464,sildenafil,1,dilist_positive,Oral
+465,acarbose,1,dilist_positive,Oral
+466,acebutolol,1,dilist_positive,Oral
+467,tirofiban,0,dilist_negative,Intravenous
+468,sevelamer,0,dilist_negative,Oral
+469,dofetilide,0,dilist_negative,Oral
+470,acetylcysteine,0,dilist_negative,Oral
+471,acitretin,1,dilist_positive,Oral
+472,gadoversetamide,0,dilist_negative,Intravenous
+473,adenosine,0,dilist_negative,Intravenous
+474,salbutamol,0,dilist_negative,Oral
+475,almotriptan,0,dilist_negative,Oral
+476,frovatriptan,0,dilist_negative,Oral
+477,oxcarbazepine,1,dilist_positive,Oral
+478,rifapentine,0,dilist_negative,Oral
+479,levetiracetam,1,dilist_positive,Oral
+480,alpidem,1,dilist_positive,Oral
+481,bexarotene,1,dilist_positive,Oral
+482,perflutren,0,dilist_negative,Intravenous
+483,amifostine,0,dilist_negative,Intravenous
+484,amikacin,0,dilist_negative,Intravenous
+485,alosetron,1,dilist_positive,Oral
+486,aminocaproic acid,0,dilist_negative,Oral
+487,levothyroxine,1,dilist_positive,Oral
+488,linezolid,1,dilist_positive,Intravenous
+489,colesevelam,0,dilist_negative,Oral
+490,gemifloxacin,1,dilist_positive,Oral
+491,desloratadine,1,dilist_positive,Oral
+492,galantamine,0,dilist_negative,Oral
+493,cefditoren,0,dilist_negative,Oral
+494,zoledronate,1,dilist_positive,Intravenous
+495,caspofungin,0,dilist_negative,Intravenous
+496,atovaquone,0,dilist_negative,Oral
+497,voriconazole,1,dilist_positive,Oral
+498,guaifenesin,0,dilist_negative,Oral
+499,olmesartan,0,dilist_negative,Oral
+500,alfuzosin,1,dilist_positive,Oral
+501,aztreonam,0,dilist_negative,Intravenous
+502,dutasteride,0,dilist_negative,Oral
+503,baclofen,1,dilist_positive,Oral
+504,benazepril,1,dilist_positive,Oral
+505,bendazac,1,dilist_positive,Oral
+506,benzarone,1,dilist_positive,Oral
+507,benziodarone,1,dilist_positive,Oral
+508,ertapenem,0,dilist_negative,Intravenous
+509,benztropine,0,dilist_negative,Oral
+510,fondaparinux sodium,1,dilist_positive,Subcutaneous
+511,miglustat,0,dilist_negative,Oral
+512,gadobenate dimeglumine,0,dilist_negative,Intravenous
+513,rifaximin,0,dilist_negative,Oral
+514,tadalafil,0,dilist_negative,Oral
+515,palonosetron,0,dilist_negative,Intravenous
+516,betaxolol,0,dilist_negative,Oral
+517,vardenafil,0,dilist_negative,Oral
+518,bisoprolol,0,dilist_negative,Oral
+519,bleomycin,0,dilist_negative,Intravenous
+520,atomoxetine,1,dilist_positive,Oral
+521,bosentan,1,dilist_positive,Oral
+522,acamprosate,1,dilist_positive,Oral
+523,aripiprazole,0,dilist_negative,Oral
+524,budesonide,0,dilist_negative,Oral
+525,bumetanide,0,dilist_negative,Oral
+526,buspirone,0,dilist_negative,Oral
+527,eplerenone,0,dilist_negative,Oral
+528,butorphanol,0,dilist_negative,Intravenous
+529,cabergoline,0,dilist_negative,Oral
+530,ezetimibe,1,dilist_positive,Oral
+531,pregabalin,1,dilist_positive,Oral
+532,adefovir,1,dilist_positive,Oral
+533,ibandronate,0,dilist_negative,Oral
+534,carbenicillin,1,dilist_positive,Oral
+535,carbidopa,0,dilist_negative,Oral
+536,eszopiclone,0,dilist_negative,Oral
+537,cefaclor,1,dilist_positive,Oral
+538,cefadroxil,1,dilist_positive,Oral
+539,enfuvirtide,0,dilist_negative,Subcutaneous
+540,cefazolin,1,dilist_positive,Intravenous
+541,cefepime,1,dilist_positive,Intravenous
+542,cefixime,0,dilist_negative,Oral
+543,cefoperazone,1,dilist_positive,Intravenous
+544,cefotaxime,1,dilist_positive,Intravenous
+545,cefoxitin,0,dilist_negative,Intravenous
+546,cefpodoxime,0,dilist_negative,Oral
+547,oxaliplatin,1,dilist_positive,Intravenous
+548,cefprozil,1,dilist_positive,Oral
+549,ceftibuten,0,dilist_negative,Oral
+550,nitazoxanide,0,dilist_negative,Oral
+551,ceftriaxone,1,dilist_positive,Intravenous
+552,cefuroxime,1,dilist_positive,Oral
+553,micafungin,1,dilist_positive,Intravenous
+554,darifenacin,0,dilist_negative,Oral
+555,cephalexin,1,dilist_positive,Oral
+556,cetirizine,1,dilist_positive,Oral
+557,solifenacin,0,dilist_negative,Oral
+558,ranolazine,0,dilist_negative,Oral
+559,chloramphenicol,0,dilist_negative,Intravenous
+560,chlordiazepoxide,1,dilist_positive,Oral
+561,atazanavir,1,dilist_positive,Oral
+562,daptomycin,1,dilist_positive,Intravenous
+563,chlormezanone,1,dilist_positive,Oral
+564,bortezomib,1,dilist_positive,Intravenous
+565,anidulafungin,0,dilist_negative,Intravenous
+566,rasagiline,0,dilist_negative,Oral
+567,chloroquine,1,dilist_positive,Oral
+568,chlorothiazide,1,dilist_positive,Oral
+569,cinacalcet,0,dilist_negative,Oral
+570,conivaptan,0,dilist_negative,Intravenous
+571,nebivolol,0,dilist_negative,Oral
+572,chlorthalidone,0,dilist_negative,Oral
+573,erlotinib,1,dilist_positive,Oral
+574,alvimopan,0,dilist_negative,Oral
+575,cidofovir,0,dilist_negative,Intravenous
+576,ramelteon,0,dilist_negative,Oral
+577,cimetidine,1,dilist_positive,Oral
+578,cinchophen,1,dilist_positive,Oral
+579,tipranavir,1,dilist_positive,Oral
+580,tigecycline,0,dilist_negative,Intravenous
+581,cladribine,0,dilist_negative,Intravenous
+582,clindamycin,1,dilist_positive,Oral
+583,clometacin,1,dilist_positive,Oral
+584,urokinase,0,dilist_negative,Intravenous
+585,clonidine,0,dilist_negative,Oral
+586,nelarabine,1,dilist_positive,Intravenous
+587,cloxacillin,1,dilist_positive,Oral
+588,lenalidomide,1,dilist_positive,Oral
+589,lubiprostone,0,dilist_negative,Oral
+590,sorafenib,1,dilist_positive,Oral
+591,varenicline,1,dilist_positive,Oral
+592,darunavir,1,dilist_positive,Oral
+593,aliskiren,1,dilist_positive,Oral
+594,dasatinib,1,dilist_positive,Oral
+595,cyclobenzaprine,1,dilist_positive,Oral
+596,cyclofenil,1,dilist_positive,Oral
+597,sitagliptin,1,dilist_positive,Oral
+598,paliperidone,0,dilist_negative,Oral
+599,posaconazole,0,dilist_negative,Oral
+600,cyproheptadine,1,dilist_positive,Oral
+601,temsirolimus,0,dilist_negative,Intravenous
+602,tetrahydrobiopterin,0,dilist_negative,Oral
+603,milnacipran,1,dilist_positive,Oral
+604,desipramine,0,dilist_negative,Oral
+605,dexlansoprazole,1,dilist_positive,Oral
+606,everolimus,0,dilist_negative,Oral
+607,codeine,0,dilist_negative,Oral
+608,colistimethate,0,dilist_negative,Intravenous
+609,benzylpenicilloyl polylysine,0,dilist_negative,Subcutaneous
+610,cephradine,0,dilist_negative,Oral
+611,ceftizoxime,0,dilist_negative,Intravenous
+612,didanosine,1,dilist_positive,Oral
+613,mycophenolate mofetil,1,dilist_positive,Oral
+614,cefdinir,1,dilist_positive,Oral
+615,polymyxin b sulfate,0,dilist_negative,Intravenous
+616,diltiazem,1,dilist_positive,Oral
+617,sterile water,0,dilist_negative,Intravenous
+618,disopyramide,1,dilist_positive,Oral
+619,asparaginase,1,dilist_positive,Intravenous
+620,botulinum toxin type a,0,dilist_negative,Intramuscular
+621,interferon alfa-2b,1,dilist_positive,Intravenous
+622,dobutamine,0,dilist_negative,Intravenous
+623,docetaxel,1,dilist_positive,Intravenous
+624,"interferon alfa-2a, recombinant",1,dilist_positive,Subcutaneous
+625,doxazosin,0,dilist_negative,Oral
+626,doxepin,1,dilist_positive,Oral
+627,alteplase,0,dilist_negative,Intravenous
+628,epoetin alfa,0,dilist_negative,Intravenous
+629,droperidol,0,dilist_negative,Intravenous
+630,droxicam,1,dilist_positive,Oral
+631,sargramostim,0,dilist_negative,Intravenous
+632,pegaspargase,1,dilist_positive,Intravenous
+633,efavirenz,1,dilist_positive,Oral
+634,muromonab-cd3,0,dilist_negative,Intravenous
+635,interferon beta-1b,1,dilist_positive,Subcutaneous
+636,abciximab,0,dilist_negative,Intravenous
+637,interferon beta-1a,1,dilist_positive,Intramuscular
+638,esmolol,0,dilist_negative,Intravenous
+639,estazolam,0,dilist_negative,Oral
+640,interferon alfacon-1,1,dilist_positive,Subcutaneous
+641,oprelvekin,0,dilist_negative,Subcutaneous
+642,estramustine,1,dilist_positive,Oral
+643,ethambutol,1,dilist_positive,Oral
+644,basiliximab,0,dilist_negative,Intravenous
+645,ethionamide,1,dilist_positive,Oral
+646,palivizumab,0,dilist_negative,Intramuscular
+647,infliximab,1,dilist_positive,Intravenous
+648,reteplase,0,dilist_negative,Intravenous
+649,trastuzumab,1,dilist_positive,Intravenous
+650,etanercept,1,dilist_positive,Subcutaneous
+651,etidronic acid,0,dilist_negative,Oral
+652,botulinum toxin type b,0,dilist_negative,Intramuscular
+653,etomidate,0,dilist_negative,Intravenous
+654,exifone,1,dilist_positive,Oral
+655,tenecteplase,0,dilist_negative,Intravenous
+656,rasburicase,0,dilist_negative,Intravenous
+657,alemtuzumab,0,dilist_negative,Intravenous
+658,peginterferon alfa-2b,1,dilist_positive,Subcutaneous
+659,fexofenadine,0,dilist_negative,Oral
+660,fialuridine,1,dilist_positive,Oral
+661,fipexide,1,dilist_positive,Oral
+662,anakinra,1,dilist_positive,Subcutaneous
+663,darbepoetin alfa,1,dilist_positive,Intravenous
+664,flecainide,1,dilist_positive,Oral
+665,omalizumab,0,dilist_negative,Subcutaneous
+666,ibritumomab tiuxetan,0,dilist_negative,Intravenous
+667,pegfilgrastim,0,dilist_negative,Subcutaneous
+668,flucytosine,0,dilist_negative,Oral
+669,fludarabine,0,dilist_negative,Oral
+670,flumazenil,0,dilist_negative,Intravenous
+671,adalimumab,1,dilist_positive,Subcutaneous
+672,cetuximab,0,dilist_negative,Intravenous
+673,bevacizumab,0,dilist_negative,Intravenous
+674,palifermin,0,dilist_negative,Intravenous
+675,natalizumab,1,dilist_positive,Intravenous
+676,flurazepam,1,dilist_positive,Oral
+677,fluvoxamine,0,dilist_negative,Oral
+678,foscarnet,0,dilist_negative,Intravenous
+679,fosfomycin,1,dilist_positive,Oral
+680,fosinopril,1,dilist_positive,Oral
+681,fosphenytoin,1,dilist_positive,Intramuscular
+682,galsulfase,0,dilist_negative,Intravenous
+683,abatacept,1,dilist_positive,Intravenous
+684,alglucosidase alfa,0,dilist_negative,Intravenous
+685,gemcitabine,1,dilist_positive,Intravenous
+686,panitumumab,0,dilist_negative,Intravenous
+687,idursulfase,0,dilist_negative,Intravenous
+688,certolizumab pegol,0,dilist_negative,Subcutaneous
+689,eculizumab,0,dilist_negative,Intravenous
+690,rilonacept,0,dilist_negative,Subcutaneous
+691,ustekinumab,0,dilist_negative,Subcutaneous
+692,romiplostim,0,dilist_negative,Subcutaneous
+693,ofatumumab,0,dilist_negative,Intravenous
+694,hydrochlorothiazide,1,dilist_positive,Oral
+695,idarubicin,0,dilist_negative,Intravenous
+696,indapamide,0,dilist_negative,Oral
+697,indinavir,0,dilist_negative,Oral
+698,iodipamide meglumine,0,dilist_negative,Intravenous
+699,irinotecan,1,dilist_positive,Intravenous
+700,l-methionine,0,dilist_negative,Oral
+701,isradipine,1,dilist_positive,Oral
+702,kanamycin,0,dilist_negative,Intravenous
+703,riboflavin,0,dilist_negative,Oral
+704,lamotrigine,1,dilist_positive,Oral
+705,l-carnitine,0,dilist_negative,Oral
+706,levofloxacin,1,dilist_positive,Oral
+707,levonorgestrel,0,dilist_negative,Oral
+708,lisinopril,1,dilist_positive,Oral
+709,loracarbef,1,dilist_positive,Oral
+710,loratadine,0,dilist_negative,Oral
+711,losartan,1,dilist_positive,Oral
+712,loxapine,0,dilist_negative,Oral
+713,mebanazine,1,dilist_positive,Oral
+714,mechlorethamine,0,dilist_negative,Intravenous
+715,mefloquine,1,dilist_positive,Oral
+716,vitamin e,0,dilist_negative,Oral
+717,melphalan,1,dilist_positive,Oral
+718,meprobamate,0,dilist_negative,Oral
+719,meropenem,1,dilist_positive,Intravenous
+720,methazolamide,1,dilist_positive,Oral
+721,methoxsalen,1,dilist_positive,Oral
+722,methylphenidate,1,dilist_positive,Oral
+723,methylscopolamine bromide,0,dilist_negative,Oral
+724,metoclopramide,1,dilist_positive,Oral
+725,mexiletine,1,dilist_positive,Oral
+726,midazolam,0,dilist_negative,Oral
+727,midodrine,0,dilist_negative,Oral
+728,mirtazapine,1,dilist_positive,Oral
+729,mitotane,0,dilist_negative,Oral
+730,mitoxantrone,1,dilist_positive,Intravenous
+731,moexipril,0,dilist_negative,Oral
+732,moxisylyte,1,dilist_positive,Oral
+733,folic acid,0,dilist_negative,Oral
+734,nabumetone,0,dilist_negative,Oral
+735,nadolol,0,dilist_negative,Oral
+736,nafcillin,1,dilist_positive,Intravenous
+737,nalbuphine,0,dilist_negative,Intravenous
+738,nialamide,1,dilist_positive,Oral
+739,nicardipine,0,dilist_negative,Oral
+740,nimodipine,0,dilist_negative,Oral
+741,niperotidine,1,dilist_positive,Oral
+742,nitroglycerin,0,dilist_negative,Oral
+743,nomifensine,1,dilist_positive,Oral
+744,norfloxacin,1,dilist_positive,Oral
+745,nortriptyline,1,dilist_positive,Oral
+746,octreotide,1,dilist_positive,Intravenous
+747,ondansetron,1,dilist_positive,Oral
+748,ofloxacin,1,dilist_positive,Oral
+749,diphenoxylate,0,dilist_negative,Oral
+750,oxacillin,1,dilist_positive,Intravenous
+751,ambenonium,0,dilist_negative,Oral
+752,papaverine,1,dilist_positive,Intravenous
+753,penbutolol,0,dilist_negative,Oral
+754,penicillin g,1,dilist_positive,Intravenous
+755,penicillin v,0,dilist_negative,Oral
+756,pentazocine,0,dilist_negative,Intravenous
+757,pentostatin,1,dilist_positive,Intravenous
+758,perphenazine,1,dilist_positive,Oral
+759,phenelzine,1,dilist_positive,Oral
+760,ephedrine,0,dilist_negative,Intravenous
+761,pimozide,0,dilist_negative,Oral
+762,pindolol,0,dilist_negative,Oral
+763,piperacillin,0,dilist_negative,Intravenous
+764,piroxicam,1,dilist_positive,Oral
+765,pirprofen,1,dilist_positive,Oral
+766,salsalate,1,dilist_positive,Oral
+767,polythiazide,0,dilist_negative,Oral
+768,probenecid,0,dilist_negative,Oral
+769,procainamide,1,dilist_positive,Intravenous
+770,propafenone,1,dilist_positive,Oral
+771,propranolol,0,dilist_negative,Oral
+772,propofol,1,dilist_positive,Intravenous
+773,pyrantel,0,dilist_negative,Oral
+774,pyrimethamine,1,dilist_positive,Oral
+775,quazepam,0,dilist_negative,Oral
+776,quinapril,1,dilist_positive,Oral
+777,quinidine,1,dilist_positive,Oral
+778,ramipril,1,dilist_positive,Oral
+779,reserpine,0,dilist_negative,Oral
+780,ribavirin,0,dilist_negative,Oral
+781,riluzole,1,dilist_positive,Oral
+782,risperidone,1,dilist_positive,Oral
+783,ritonavir,1,dilist_positive,Oral
+784,saquinavir,1,dilist_positive,Oral
+785,selegiline,0,dilist_negative,Oral
+786,succimer,1,dilist_positive,Oral
+787,sumatriptan,0,dilist_negative,Oral
+788,temazepam,0,dilist_negative,Oral
+789,teniposide,1,dilist_positive,Intravenous
+790,terazosin,0,dilist_negative,Oral
+791,thiotepa,1,dilist_positive,Intravenous
+792,timolol,0,dilist_negative,Oral
+793,sulcotidil,1,dilist_positive,Oral
+794,tolmetin,1,dilist_positive,Oral
+795,tolrestat,1,dilist_positive,Oral
+796,topotecan,0,dilist_negative,Oral
+797,tramadol,0,dilist_negative,Oral
+798,trandolapril,1,dilist_positive,Oral
+799,tranylcypromine,1,dilist_positive,Oral
+800,trazodone,1,dilist_positive,Oral
+801,triamterene,1,dilist_positive,Oral
+802,triazolam,0,dilist_negative,Oral
+803,trihexyphenidyl,0,dilist_negative,Oral
+804,trimethobenzamide,0,dilist_negative,Oral
+805,trimethoprim,1,dilist_positive,Oral
+806,fenclozic acid,1,dilist_positive,Oral
+807,ebrotidine,1,dilist_positive,Oral
+808,aceclofenac,1,dilist_positive,Oral
+809,nitrefazole,1,dilist_positive,Oral
+810,valaciclovir,1,dilist_positive,Oral
+811,valsartan,1,dilist_positive,Oral
+812,tetrabamate,1,dilist_positive,Oral
+813,vincristine,1,dilist_positive,Intravenous
+814,xenazoic acid,1,dilist_positive,Oral
+815,zafirlukast,1,dilist_positive,Oral
+816,falnidamol ,1,dilist_positive,Oral
+817,zimelidine,1,dilist_positive,Oral
+818,caffeine,0,dilist_negative,Intravenous
+819,capreomycin,0,dilist_negative,Intravenous
+820,lidocaine,0,dilist_negative,Oral
+821,memantine,1,dilist_positive,Oral
+822,pamidronate,0,dilist_negative,Intravenous
+823,quinine,1,dilist_positive,Oral
+824,rosuvastatin,1,dilist_positive,Oral
+825,sulfamethizole,1,dilist_positive,Oral
+826,telithromycin,1,dilist_positive,Oral
+827,entacapone,1,dilist_positive,Oral
+828,valdecoxib,1,dilist_positive,Oral
+829,dexpanthenol,0,dilist_negative,Intravenous
+830,scopolamine,0,dilist_negative,Intravenous
+831,pyridoxine,0,dilist_negative,Intravenous
+832,thiamine,0,dilist_negative,Intravenous
+833,cyanocobalamin,0,dilist_negative,Subcutaneous
+834,cromoglicate,1,dilist_positive,Oral
+835,montelukast,1,dilist_positive,Oral
+836,moxifloxacin,1,dilist_positive,Oral
+837,vitamin c,0,dilist_negative,Intravenous
+838,sorbitol,0,dilist_negative,Oral
+839,capecitabine,0,dilist_negative,Oral
+840,leuprolide,1,dilist_positive,Subcutaneous
+841,eletriptan,0,dilist_negative,Oral
+842,hydroxychloroquine,1,dilist_positive,Oral
+843,ximelagatran,1,dilist_positive,Oral
+844,duloxetine,1,dilist_positive,Oral
+845,carisoprodol,0,dilist_negative,Oral
+846,dicloxacillin,1,dilist_positive,Oral
+847,metolazone,0,dilist_negative,Oral
+848,pamabrom,0,dilist_negative,Oral
+849,dextromethorphan,0,dilist_negative,Oral
+850,bacitracin,0,dilist_negative,Intramuscular
+851,paromomycin,0,dilist_negative,Oral
+852,telmisartan,1,dilist_positive,Oral
+853,ammonium chloride,0,dilist_negative,Intravenous
+854,amiloride,1,dilist_positive,Oral
+855,methysergide,0,dilist_negative,Oral
+856,methylergonovine,0,dilist_negative,Oral
+857,brompheniramine,0,dilist_negative,Oral
+858,l-arginine,0,dilist_negative,Intravenous
+859,pyridostigmine,0,dilist_negative,Oral
+860,phenoxybenzamine,0,dilist_negative,Oral
+861,oxybutynin,0,dilist_negative,Oral
+862,orphenadrine,0,dilist_negative,Oral
+863,loperamide,0,dilist_negative,Oral
+864,isoxsuprine,0,dilist_negative,Oral
+865,glafenine,1,dilist_positive,Oral
+866,acetylcholine chloride,0,dilist_negative,Oral
+867,amphetamine,1,dilist_positive,Oral
+868,mepazine,1,dilist_positive,Oral
+869,nandrolone decanoate,1,dilist_positive,Intramuscular
+870,auranofin,1,dilist_positive,Oral
+871,simethicone,0,dilist_negative,Oral
+872,betaine,0,dilist_negative,Oral
+873,bisacodyl,0,dilist_negative,Oral
+874,leucovorin,0,dilist_negative,Oral
+875,lapatinib,1,dilist_positive,Oral
+876,oseltamivir,0,dilist_negative,Oral
+877,alaproclate,1,dilist_positive,Oral
+878,orlistat,1,dilist_positive,Oral
+879,apomorphine,0,dilist_negative,Subcutaneous
+880,dihydroergotamine,0,dilist_negative,Intravenous
+881,procyclidine,0,dilist_negative,Oral
+882,clemastine,0,dilist_negative,Oral
+883,tenofovir,1,dilist_positive,Oral
+884,norethindrone acetate,0,dilist_negative,Oral
+885,exametazime,0,dilist_negative,Intravenous
+886,erythropoietin,0,dilist_negative,Intravenous
+887,Argipressin,0,dilist_negative,Intravenous
+888,sodium bicarbonate,0,dilist_negative,Intravenous
+889,plerixafor,0,dilist_negative,Subcutaneous
+890,tyramine,0,dilist_negative,Oral
+891,Hetastarch,0,dilist_negative,Intravenous
+892,imiglucerase,0,dilist_negative,Intravenous
+893,agalsidase beta,0,dilist_negative,Intravenous
+894,gadolinium ethoxybenzyl DTPA,0,dilist_negative,Intravenous
+895,canakinumab,1,dilist_positive,Subcutaneous
+896,Levoleucovorin,0,dilist_negative,Intravenous
+897,levomefolate calcium,0,dilist_negative,Oral
+898,sitaxsentan,1,dilist_positive,Oral
+899,dexmethylphenidate,1,dilist_positive,Oral
+900,hyaluronidase recombinant human,0,dilist_negative,Subcutaneous
+901,Androgenic steroids*,1,dilist_positive,nan
+902,Floxuridine,1,dilist_positive,Intra-arterial
+903,Flucloxacillin,1,dilist_positive,oral
+904,Halothane,1,dilist_positive,Respiratory (inhalation)
+905,Peginterferon,1,dilist_positive,nan
+906,Sulfonamides*,1,dilist_positive,oral
+907,Acetohexamide,1,dilist_positive,oral
+908,Dabigatran,1,dilist_positive,oral
+909,Gliclazide,1,dilist_positive,Oral
+910,Imipenem,1,dilist_positive,Intravenous
+911,Lopinavir,1,dilist_positive,Oral
+912,Molindone,1,dilist_positive,Oral
+913,Plicamycin,1,dilist_positive,nan
+914,Rilpivirine,1,dilist_positive,Oral
+915,Tibolone,1,dilist_positive,nan
+916,Tobramycin,1,dilist_positive,nan
+917,Vismodegib,1,dilist_positive,Oral
+918,Hydrocodone,0,dilist_negative,Oral
+919,Zalcitabine,0,dilist_negative,Oral
+920,Acrivastine,0,dilist_negative,Oral
+921,Amobarbital,0,dilist_negative,"Intramuscular; Intravenous, oral"
+922,Artemether,0,dilist_negative,Oral
+923,Bitolterol,0,dilist_negative,nan
+924,Butalbital,0,dilist_negative,Oral
+925,Butobarbital,0,dilist_negative,nan
+926,Carmustine,0,dilist_negative,Intravenous
+927,Chloral hydrate,0,dilist_negative,Oral
+928,Chlortetracycline,0,dilist_negative,Tropical
+929,Cilastatin,0,dilist_negative,Intravenous
+930,Cisapride,0,dilist_negative,Oral
+931,Cobicistat,0,dilist_negative,Oral
+932,Docusate,0,dilist_negative,oral
+933,Ergotamine,0,dilist_negative,oral
+934,Ethacrynate,0,dilist_negative,oral
+935,Fentanyl,0,dilist_negative,Sublingual
+936,Formoterol,0,dilist_negative,Respiratory (inhalation)
+937,Gentamicin,0,dilist_negative,Intramuscular; Intravenous
+938,Homatropine,0,dilist_negative,Ophthalmic
+939,Hyoscyamine,0,dilist_negative,oral
+940,Ipratropium,0,dilist_negative,Oral; Respiratory (inhalation)
+941,Levamisole,0,dilist_negative,Oral
+942,Levodopa,0,dilist_negative,Oral
+943,Liraglutide,0,dilist_negative,Subcutaneous
+944,Nalmefene,0,dilist_negative,Oral
+945,Pegaptanib,0,dilist_negative,Intravitreal
+946,Proguanil,0,dilist_negative,Oral
+947,Salmeterol,0,dilist_negative,Oral; Respiratory (inhalation)
+948,Tazobactam,0,dilist_negative,Intravenous; Parenteral
+949,Thiopental,0,dilist_negative,Intravenous
+950,Ticarcillin,0,dilist_negative,Intramuscular; Intravenous
+951,Tiotropium,0,dilist_negative,Oral; Respiratory (inhalation)
+952,Zanamivir,0,dilist_negative,Oral; Respiratory (inhalation)
+953,ACEMETACIN,1,dilist_positive,nan
+954,ACETARSOL,1,dilist_positive,Vaginal
+955,Alatrofloxacin,1,dilist_positive,nan
+956,Alimemazine,1,dilist_positive,Oral
+957,ANDROSTANOLONE,1,dilist_positive,nan
+958,Antithymocyte Immunoglobulin,1,dilist_positive,nan
+959,Artemisinin,1,dilist_positive,nan
+960,Artesunate,1,dilist_positive,nan
+961,bendazolic acid,1,dilist_positive,nan
+962,Bupivacaine,1,dilist_positive,Epidural; Infiltration; Intracaudal; Perineural
+963,CALCIUM CARBIMIDE,1,dilist_positive,Oral
+964,CARBIMAZOLE,1,dilist_positive,nan
+965,Cerivastatin,1,dilist_positive,Oral
+966,CILAZAPRIL,1,dilist_positive,Oral
+967,CINITAPRIDE,1,dilist_positive,nan
+968,Clomacron,1,dilist_positive,nan
+969,CLOMETHIAZOLE,1,dilist_positive,nan
+970,CLOTIAZEPAM,1,dilist_positive,nan
+971,COCAINE,1,dilist_positive,"Nasal, Torpical"
+972,CYPROTERONE,1,dilist_positive,"Oral, Intramuscular"
+973,Dehydroepiandrosterone,1,dilist_positive,nan
+974,Desflurane,1,dilist_positive,Respiratory (inhalation)
+975,DEXKETOPROFEN,1,dilist_positive,nan
+976,Diacetoxydiphenolisatin,1,dilist_positive,nan
+977,DICOUMAROL,1,dilist_positive,nan
+978,EBASTINE,1,dilist_positive,nan
+979,ENFLURANE,1,dilist_positive,Respiratory (inhalation)
+980,ESTRIOL,1,dilist_positive,nan
+981,Ethinylestradiol,1,dilist_positive,"Oral, Transdermal"
+982,ETRETINATE,1,dilist_positive,nan
+983,FLUPENTIXOL,1,dilist_positive,"Oral, Intramuscular"
+984,Fusidic Acid,1,dilist_positive,"Oral, Topical, Intravenous, optahlmic"
+985,Gemtuzumab,1,dilist_positive,nan
+986,GLUCOSAMINE,1,dilist_positive,Topical
+987,Growth Hormone,1,dilist_positive,Intravenous
+988,Interferon Unspecified,1,dilist_positive,nan
+989,Interferon-Beta-1a,1,dilist_positive,nan
+990,interferon-Beta-1b,1,dilist_positive,nan
+991,Ioxaglate And Meglumine,1,dilist_positive,Intravascular
+992,Isaxonine phosphate,1,dilist_positive,"Oral,Intramuscular; Intravenous"
+993,JOSAMYCIN,1,dilist_positive,nan
+994,LEVOMEPROMAZINE,1,dilist_positive,"Oral,Intramuscular; Intravenous"
+995,Melperone,1,dilist_positive,nan
+996,METAMIZOLE,1,dilist_positive,nan
+997,Methoxyflurane,1,dilist_positive,nan
+998,Methylene Dioxymethamphetamine,1,dilist_positive,nan
+999,NIFLUMIC ACID,1,dilist_positive,nan
+1000,Oxyiminoalkanoic acid derivative,1,dilist_positive,nan
+1001,Peginterferon-Alfa-2a,1,dilist_positive,nan
+1002,PENICILLIN,1,dilist_positive,nan
+1003,Phenisatin,1,dilist_positive,nan
+1004,Pivmecillinam,1,dilist_positive,Oral
+1005,RITODRINE,1,dilist_positive,"Oral, Intravenous"
+1006,ROFECOXIB,1,dilist_positive,Oral
+1007,ROXITHROMYCIN,1,dilist_positive,nan
+1008,STANOZOLOL,1,dilist_positive,nan
+1009,STREPTOKINASE,1,dilist_positive,Intracoronary; Intravenous
+1010,Suloctidil,1,dilist_positive,nan
+1011,TACRINE,1,dilist_positive,nan
+1012,TENOXICAM,1,dilist_positive,Oral
+1013,TIRATRICOL,1,dilist_positive,nan
+1014,TRIPTORELIN,1,dilist_positive,"Subcutaneous, Intramuscular"
+1015,phenacetin,1,dilist_positive,nan
+1016,bithionol,1,dilist_positive,nan
+1017,hexachlorophene,1,dilist_positive,Topical
+1018,methapyrilene,1,dilist_positive,nan
+1019,tripelennamine,1,dilist_positive,"Topical, Oral, vaginal"
+1020,oxyquinoline,1,dilist_positive,"oral, Topical,Vaginal, Dental"
+1021,meticillin,1,dilist_positive,nan
+1022,amsacrine,1,dilist_positive,Intravenous
+1023,furazolidone,1,dilist_positive,nan
+1024,hycanthone,1,dilist_positive,nan
+1025,idoxuridine,1,dilist_positive,"Opthalmic, Topical"
+1026,novobiocin,1,dilist_positive,nan
+1027,tianeptine,1,dilist_positive,nan
+1028,methacycline,1,dilist_positive,nan
+1029,bepridil,1,dilist_positive,nan
+1030,betahistine,1,dilist_positive,Oral
+1031,ciprofibrate,1,dilist_positive,nan
+1032,diethylcarbamazine,1,dilist_positive,Oral
+1033,fenoterol,1,dilist_positive,Oral; Respiratory (inhalation)
+1034,phenylbutazone,1,dilist_positive,Oral
+1035,ethynodiol diacetate,1,dilist_positive,Oral
+1036,atractyloside,1,dilist_positive,nan
+1037,temafloxacin,1,dilist_positive,nan
+1038,cefamandole,1,dilist_positive,Intramuscular; Intravenous
+1039,amodiaquine,1,dilist_positive,nan
+1040,glutethimide,1,dilist_positive,nan
+1041,sulfanilamide,1,dilist_positive,Vaginal
+1042,2-acetylaminofluorene,1,dilist_positive,nan
+1043,demecarium bromide,1,dilist_positive,nan
+1044,cefalotin,1,dilist_positive,Intramuscular; Intravenous
+1045,uracil mustard,1,dilist_positive,nan
+1046,methylphenobarbital,1,dilist_positive,nan
+1047,acenocoumarol,1,dilist_positive,Oral
+1048,1-naphthylisothiocyanate,1,dilist_positive,nan
+1049,aflatoxin b1,1,dilist_positive,nan
+1050,indacrinone,1,dilist_positive,nan
+1051,cefotiam,1,dilist_positive,nan
+1052,troleandomycin,1,dilist_positive,nan
+1053,perhexiline maleate,1,dilist_positive,nan
+1054,ciglitazone,1,dilist_positive,nan
+1055,fluspirilene,1,dilist_positive,Intramuscular
+1056,norgestrel,1,dilist_positive,Oral
+1057,carbon tetrachloride,1,dilist_positive,nan
+1058,aurothioglucose,1,dilist_positive,Intramuscular
+1059,phenothiazine,1,dilist_positive,nan
+1060,allyl alcohol,1,dilist_positive,nan
+1061,bromobenzene,1,dilist_positive,nan
+1062,azatadine,1,dilist_positive,Oral
+1063,allyl formate,1,dilist_positive,nan
+1064,tauroursodeoxycholic acid,1,dilist_positive,nan
+1065,octylmethoxycinnamate,1,dilist_positive,nan
+1066,ketotifen,0,dilist_negative,"Opthalmic, Topical"
+1067,permethrin,0,dilist_negative,Topical
+1068,oxyphenonium,0,dilist_negative,nan
+1069,pyridoxal phosphate,0,dilist_negative,Oral
+1070,aminoglutethimide,0,dilist_negative,Oral
+1071,tetracaine,0,dilist_negative,Topical
+1072,miconazole,0,dilist_negative,Topical
+1073,lindane,0,dilist_negative,Topical
+1074,astemizole,0,dilist_negative,Oral
+1075,ciclopirox,0,dilist_negative,Topical
+1076,pinacidil,0,dilist_negative,nan
+1077,terfenadine,0,dilist_negative,Oral
+1078,methoxamine,0,dilist_negative,Intramuscular; Intravenous
+1079,beclomethasone,0,dilist_negative,"Topical,Respiratory (inhalation)"
+1080,vidarabine,0,dilist_negative,nan
+1081,bezafibrate,0,dilist_negative,oral
+1082,bambuterol,0,dilist_negative,nan
+1083,gallamine triethiodide,0,dilist_negative,Intravenous
+1084,melatonin,0,dilist_negative,Oral
+1085,nocodazole,0,dilist_negative,nan
+1086,zomepirac,0,dilist_negative,nan
+1087,alloxan,0,dilist_negative,nan
+1088,pargyline,0,dilist_negative,nan
+1089,probucol,0,dilist_negative,Oral
+1090,lactose,0,dilist_negative,Oral
+1091,anileridine,0,dilist_negative,"Oral, Intramuscular; Intravenous; Subcutaneous"
+1092,citicoline,0,dilist_negative,nan
+1093,mometasone,0,dilist_negative,"Topical,Respiratory (inhalation)"
+1094,capsaicin,0,dilist_negative,Percutaneous; Topical; Transdermal
+1095,ergonovine,0,dilist_negative,"Oral, Intramuscular; Intravenous"
+1096,econazole,0,dilist_negative,Topical
+1097,sulconazole nitrate,0,dilist_negative,Topical
+1098,sulfabenzamide,0,dilist_negative,nan
+1099,cephapirin,0,dilist_negative,nan
+1100,azlocillin,0,dilist_negative,nan
+1101,butoconazole,0,dilist_negative,Vaginal
+1102,mibefradil,0,dilist_negative,nan
+1103,ragaglitazar,0,dilist_negative,nan
+1104,bismuth subsalicylate,0,dilist_negative,Oral
+1105,isoxicam,0,dilist_negative,nan
+1106,inositol,0,dilist_negative,"Oral, Vaginal"
+1107,latamoxef,0,dilist_negative,nan
+1108,Abiraterone,1,dilist_positive,nan
+1109,Acetorphan,1,dilist_positive,nan
+1110,Alfacalcidol,1,dilist_positive,nan
+1111,Ambroxol,1,dilist_positive,nan
+1112,Aminolevulinic acid,1,dilist_positive,nan
+1113,Amisulpride,1,dilist_positive,nan
+1114,Ampiroxicam,1,dilist_positive,nan
+1115,Anethole,1,dilist_positive,nan
+1116,Arbekacin,1,dilist_positive,nan
+1117,Axitinib,1,dilist_positive,nan
+1118,Azelnidipine,1,dilist_positive,nan
+1119,Bacampicillin,1,dilist_positive,nan
+1120,Benidipine,1,dilist_positive,nan
+1121,Beraprost,1,dilist_positive,nan
+1122,Boceprevir,1,dilist_positive,nan
+1123,Bromazepam,1,dilist_positive,nan
+1124,Bromhexine,1,dilist_positive,nan
+1125,Bromisoval,1,dilist_positive,nan
+1126,Brotizolam,1,dilist_positive,nan
+1127,Bucillamine,1,dilist_positive,nan
+1128,Buflomedil,1,dilist_positive,nan
+1129,Buprenorphine,1,dilist_positive,nan
+1130,Cabazitaxel,1,dilist_positive,nan
+1131,Cefcapene,1,dilist_positive,nan
+1132,Cefmetazole,1,dilist_positive,nan
+1133,Cefozopran,1,dilist_positive,nan
+1134,Cefpirome,1,dilist_positive,nan
+1135,Celiprolol,1,dilist_positive,nan
+1136,Chlormadinone,1,dilist_positive,nan
+1137,Cibenzoline,1,dilist_positive,nan
+1138,Cilnidipine,1,dilist_positive,nan
+1139,Clobazam,1,dilist_positive,nan
+1140,Clobetasol,1,dilist_positive,nan
+1141,Clodronic acid,1,dilist_positive,nan
+1142,Clofazimine,1,dilist_positive,nan
+1143,Cloperastine,1,dilist_positive,nan
+1144,Crizotinib,1,dilist_positive,nan
+1145,Curcumin,1,dilist_positive,nan
+1146,Cyamemazine,1,dilist_positive,nan
+1147,Cyclothiazide,1,dilist_positive,nan
+1148,Desogestrel,1,dilist_positive,nan
+1149,Diacerein,1,dilist_positive,nan
+1150,Dihydrocodeine,1,dilist_positive,nan
+1151,Dirithromycin,1,dilist_positive,nan
+1152,Domperidone,1,dilist_positive,nan
+1153,Doxifluridine,1,dilist_positive,nan
+1154,Droxidopa,1,dilist_positive,nan
+1155,Dydrogesterone,1,dilist_positive,nan
+1156,Edaravone,1,dilist_positive,nan
+1157,Eltrombopag,1,dilist_positive,nan
+1158,Eperisone,1,dilist_positive,nan
+1159,Epinastine,1,dilist_positive,nan
+1160,Eribulin Mesylate,1,dilist_positive,nan
+1161,Ethanol,1,dilist_positive,nan
+1162,Ethyl loflazepate,1,dilist_positive,nan
+1163,Ethylene glycol,1,dilist_positive,nan
+1164,Etizolam,1,dilist_positive,nan
+1165,Etoricoxib,1,dilist_positive,nan
+1166,Flomoxef,1,dilist_positive,nan
+1167,Fluindione,1,dilist_positive,nan
+1168,Flunitrazepam,1,dilist_positive,nan
+1169,Flupirtine,1,dilist_positive,nan
+1170,Fominoben,1,dilist_positive,nan
+1171,Fosfluconazole,1,dilist_positive,nan
+1172,Fudosteine,1,dilist_positive,nan
+1173,Gabapentin Enacarbil,1,dilist_positive,nan
+1174,Gabexate,1,dilist_positive,nan
+1175,Garenoxacin,1,dilist_positive,nan
+1176,Glutathione,1,dilist_positive,nan
+1177,Glycerol,1,dilist_positive,nan
+1178,Glycyrrhizin,1,dilist_positive,nan
+1179,Halofantrine,1,dilist_positive,nan
+1180,Heptaminol,1,dilist_positive,nan
+1181,Hypericin,1,dilist_positive,nan
+1182,Ibudilast,1,dilist_positive,nan
+1183,Iloprost,1,dilist_positive,nan
+1184,Irsogladine,1,dilist_positive,nan
+1185,Isepamicin,1,dilist_positive,nan
+1186,Isosorbide,1,dilist_positive,nan
+1187,Itopride,1,dilist_positive,nan
+1188,Lafutidine,1,dilist_positive,nan
+1189,Lanreotide,1,dilist_positive,nan
+1190,Lercanidipine,1,dilist_positive,nan
+1191,Levocetirizine,1,dilist_positive,nan
+1192,Lodenosine,1,dilist_positive,nan
+1193,Lormetazepam,1,dilist_positive,nan
+1194,Lornoxicam,1,dilist_positive,nan
+1195,Loxoprofen,1,dilist_positive,nan
+1196,Manidipine,1,dilist_positive,nan
+1197,Mazindol,1,dilist_positive,nan
+1198,Menatetrenone,1,dilist_positive,nan
+1199,Mequitazine,1,dilist_positive,nan
+1200,Metopimazine,1,dilist_positive,nan
+1201,Mitiglinide,1,dilist_positive,nan
+1202,Mizoribine,1,dilist_positive,nan
+1203,Molsidomine,1,dilist_positive,nan
+1204,Mosapride,1,dilist_positive,nan
+1205,Moxonidine,1,dilist_positive,nan
+1206,Nafamostat,1,dilist_positive,nan
+1207,Naftidrofuryl,1,dilist_positive,nan
+1208,Nandrolone,1,dilist_positive,nan
+1209,Nefopam,1,dilist_positive,nan
+1210,Netilmicin,1,dilist_positive,nan
+1211,Nicergoline,1,dilist_positive,nan
+1212,Nicorandil,1,dilist_positive,nan
+1213,Nitrazepam,1,dilist_positive,nan
+1214,Nitrendipine,1,dilist_positive,nan
+1215,Nordazepam,1,dilist_positive,nan
+1216,Norethisterone,1,dilist_positive,nan
+1217,Olopatadine,1,dilist_positive,nan
+1218,Oxatomide,1,dilist_positive,nan
+1219,Oxyphenbutazone,1,dilist_positive,nan
+1220,Ozagrel,1,dilist_positive,nan
+1221,Pazufloxacin,1,dilist_positive,nan
+1222,Peramivir,1,dilist_positive,nan
+1223,Phenformin,1,dilist_positive,nan
+1224,Phenprocoumon,1,dilist_positive,nan
+1225,Phenylephrine,1,dilist_positive,nan
+1226,Phloroglucinol,1,dilist_positive,nan
+1227,Picolamine,1,dilist_positive,nan
+1228,Pilsicainide,1,dilist_positive,nan
+1229,Pimecrolimus,1,dilist_positive,nan
+1230,Pinaverium,1,dilist_positive,nan
+1231,Piperacetazine,1,dilist_positive,nan
+1232,Pipobroman,1,dilist_positive,nan
+1233,Piracetam,1,dilist_positive,nan
+1234,Pirarubicin,1,dilist_positive,nan
+1235,Pranlukast,1,dilist_positive,nan
+1236,Pranoprofen,1,dilist_positive,nan
+1237,Prazepam,1,dilist_positive,nan
+1238,Propacetamol,1,dilist_positive,nan
+1239,Propiverine,1,dilist_positive,nan
+1240,Raltitrexed,1,dilist_positive,nan
+1241,Rebamipide,1,dilist_positive,nan
+1242,Rilmenidine,1,dilist_positive,nan
+1243,Rivaroxaban,1,dilist_positive,nan
+1244,Roxatidine,1,dilist_positive,nan
+1245,Salicylic acid,1,dilist_positive,nan
+1246,Sarpogrelate,1,dilist_positive,nan
+1247,Sennoside,1,dilist_positive,nan
+1248,Sofalcone,1,dilist_positive,nan
+1249,Sparfloxacin,1,dilist_positive,nan
+1250,Sulfamethoxazole,1,dilist_positive,nan
+1251,Sulpiride,1,dilist_positive,nan
+1252,Suplatast,1,dilist_positive,nan
+1253,Tandospirone,1,dilist_positive,nan
+1254,Telaprevir,1,dilist_positive,nan
+1255,Temocapril,1,dilist_positive,nan
+1256,Teprenone,1,dilist_positive,nan
+1257,Tetrazepam,1,dilist_positive,nan
+1258,Theobromine,1,dilist_positive,nan
+1259,Thiocolchicoside,1,dilist_positive,nan
+1260,Tiapride,1,dilist_positive,nan
+1261,Tiaprofenic acid,1,dilist_positive,nan
+1262,Tiquizium,1,dilist_positive,nan
+1263,Tocainide,1,dilist_positive,nan
+1264,Trabectedin,1,dilist_positive,nan
+1265,Tranilast,1,dilist_positive,nan
+1266,Trapidil,1,dilist_positive,nan
+1267,Trichlormethiazide,1,dilist_positive,nan
+1268,Trimebutine,1,dilist_positive,nan
+1269,Trimetazidine,1,dilist_positive,nan
+1270,Tropatepine,1,dilist_positive,nan
+1271,Troxipide,1,dilist_positive,nan
+1272,Urapidil,1,dilist_positive,nan
+1273,Valpromide,1,dilist_positive,nan
+1274,Vemurafenib,1,dilist_positive,nan
+1275,Vindesine,1,dilist_positive,nan
+1276,Voglibose,1,dilist_positive,nan
+1277,Xylometazoline,1,dilist_positive,nan
+1278,Zaltoprofen,1,dilist_positive,nan
+1279,Zopiclone,1,dilist_positive,nan

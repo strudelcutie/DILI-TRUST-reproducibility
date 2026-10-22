@@ -1,0 +1,17 @@
+split,model,partition,n,no_call_rate_u80,conformal_both_rate,conformal_empty_rate,ood_extreme_rate,ad_warning_rate_lt0.3,median_max_tanimoto
+kc1_internal,HistGB,valid,317,0.2019,0.0978,0.0,0.0,0.0,1.0
+kc1_internal,HistGB,test,317,0.224,0.1577,0.0,0.0,0.0,0.9989
+kc1_internal,ET,valid,317,0.2019,0.0883,0.0,0.0,0.0,1.0
+kc1_internal,ET,test,317,0.2303,0.1293,0.0,0.0,0.0,0.9989
+kc1_pc1,HistGB,valid,317,0.2019,0.0978,0.0,0.0,0.0,1.0
+kc1_pc1,HistGB,test,1109,0.5419,0.3733,0.0,0.0,0.0,0.9674
+kc1_pc1,ET,valid,317,0.2019,0.0883,0.0,0.0,0.0,1.0
+kc1_pc1,ET,test,1109,0.5627,0.2768,0.0,0.0,0.0,0.9674
+kc1_jm1,HistGB,valid,317,0.2019,0.0978,0.0,0.0,0.0,1.0
+kc1_jm1,HistGB,test,10885,0.4292,0.2776,0.0,0.0,0.0,0.9756
+kc1_jm1,ET,valid,317,0.2019,0.0883,0.0,0.0,0.0,1.0
+kc1_jm1,ET,test,10885,0.4738,0.2254,0.0,0.0,0.0,0.9756
+kc1_kc2,HistGB,valid,317,0.2019,0.0978,0.0,0.0,0.0,1.0
+kc1_kc2,HistGB,test,522,0.4061,0.2356,0.0,0.0,0.0,0.9909
+kc1_kc2,ET,valid,317,0.2019,0.0883,0.0,0.0,0.0,1.0
+kc1_kc2,ET,test,522,0.3602,0.1782,0.0,0.0,0.0,0.9909

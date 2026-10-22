@@ -1,0 +1,190 @@
+﻿Low-risk threshold sensitivity,,,,,,,,,,,,,,,
+Split,Model,Threshold rule,Cutoff,Threshold source,CS-LR n,CS-LR %,NPV,FN,FNR,No-call %,Eligible n,Total n,Positives,Negatives,used_in_main_analysis
+scaffold,HistGB,th_sens99,0.125518,validation-derived alternative rule,1,0.81,1,0,0,86.29,44,124,72,52,No
+scaffold,HistGB,th_sens95,0.4273,validation-derived alternative rule,14,11.29,0.7857,3,0.041667,75.81,44,124,72,52,Yes
+scaffold,HistGB,th_sens90,0.125518,validation-derived alternative rule,1,0.81,1,0,0,86.29,44,124,72,52,No
+scaffold,HistGB,th_sens80,0.125518,validation-derived alternative rule,1,0.81,1,0,0,86.29,44,124,72,52,No
+scaffold,HistGB,negative_score_P5,0.172122,validation-derived alternative rule,6,4.84,0.8333,1,0.013889,82.26,44,124,72,52,No
+scaffold,HistGB,negative_score_P10,0.251811,validation-derived alternative rule,13,10.48,0.7692,3,0.041667,76.62,44,124,72,52,No
+scaffold,HistGB,negative_score_P25,0.440969,validation-derived alternative rule,14,11.29,0.7857,3,0.041667,75.81,44,124,72,52,No
+scaffold,HistGB,negative_score_P50,0.598652,validation-derived alternative rule,14,11.29,0.7857,3,0.041667,75.81,44,124,72,52,No
+scaffold,HistGB,NPV_ge_0.90,0.176731,validation-derived alternative rule,6,4.84,0.8333,1,0.013889,82.26,44,124,72,52,No
+scaffold,HistGB,NPV_ge_0.95,0.176731,validation-derived alternative rule,6,4.84,0.8333,1,0.013889,82.26,44,124,72,52,No
+scaffold,HistGB,FNR_le_0.10,0.466311,validation-derived alternative rule,14,11.29,0.7857,3,0.041667,75.81,44,124,72,52,No
+scaffold,HistGB,FNR_le_0.05,0.427328,validation-derived alternative rule,14,11.29,0.7857,3,0.041667,75.81,44,124,72,52,No
+scaffold,HistGB,singleton_No-DILI_plus_th_sens95,0.4273,validation-derived alternative rule,14,11.29,0.7857,3,0.041667,75.81,44,124,72,52,No
+external_dilist,HistGB,th_sens99,0.125518,validation-derived alternative rule,10,2.58,0.4,6,0.020979,76.03,192,388,286,102,No
+external_dilist,HistGB,th_sens95,0.4273,validation-derived alternative rule,38,9.79,0.4474,21,0.073427,68.82,192,388,286,102,Yes
+external_dilist,HistGB,th_sens90,0.125518,validation-derived alternative rule,10,2.58,0.4,6,0.020979,76.03,192,388,286,102,No
+external_dilist,HistGB,th_sens80,0.125518,validation-derived alternative rule,10,2.58,0.4,6,0.020979,76.03,192,388,286,102,No
+external_dilist,HistGB,negative_score_P5,0.172122,validation-derived alternative rule,16,4.12,0.4375,9,0.031469,74.49,192,388,286,102,No
+external_dilist,HistGB,negative_score_P10,0.251811,validation-derived alternative rule,35,9.02,0.4286,20,0.06993,69.59,192,388,286,102,No
+external_dilist,HistGB,negative_score_P25,0.440969,validation-derived alternative rule,38,9.79,0.4474,21,0.073427,68.82,192,388,286,102,No
+external_dilist,HistGB,negative_score_P50,0.598652,validation-derived alternative rule,38,9.79,0.4474,21,0.073427,68.82,192,388,286,102,No
+external_dilist,HistGB,NPV_ge_0.90,0.176731,validation-derived alternative rule,17,4.38,0.4118,10,0.034965,74.23,192,388,286,102,No
+external_dilist,HistGB,NPV_ge_0.95,0.176731,validation-derived alternative rule,17,4.38,0.4118,10,0.034965,74.23,192,388,286,102,No
+external_dilist,HistGB,FNR_le_0.10,0.466311,validation-derived alternative rule,38,9.79,0.4474,21,0.073427,68.82,192,388,286,102,No
+external_dilist,HistGB,FNR_le_0.05,0.427328,validation-derived alternative rule,38,9.79,0.4474,21,0.073427,68.82,192,388,286,102,No
+external_dilist,HistGB,singleton_No-DILI_plus_th_sens95,0.4273,validation-derived alternative rule,38,9.79,0.4474,21,0.073427,68.82,192,388,286,102,No
+temporal,HistGB,th_sens99,0.290493,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,th_sens95,0.4015,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,Yes
+temporal,HistGB,th_sens90,0.290493,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,th_sens80,0.290493,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,negative_score_P5,0.313456,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,negative_score_P10,0.357266,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,negative_score_P25,0.459696,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,negative_score_P50,0.589541,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,NPV_ge_0.90,0.290493,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,NPV_ge_0.95,0.290493,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,FNR_le_0.10,0.470766,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,FNR_le_0.05,0.393907,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+temporal,HistGB,singleton_No-DILI_plus_th_sens95,0.4015,validation-derived alternative rule,2,1.37,1,0,0,89.73,63,146,44,102,No
+cluster_out,HistGB,th_sens99,0.152517,validation-derived alternative rule,1,0.81,1,0,0,91.13,47,124,77,47,No
+cluster_out,HistGB,th_sens95,0.262,validation-derived alternative rule,2,1.61,0.5,1,0.012987,90.33,47,124,77,47,Yes
+cluster_out,HistGB,th_sens90,0.152517,validation-derived alternative rule,1,0.81,1,0,0,91.13,47,124,77,47,No
+cluster_out,HistGB,th_sens80,0.152517,validation-derived alternative rule,1,0.81,1,0,0,91.13,47,124,77,47,No
+cluster_out,HistGB,negative_score_P5,0.181168,validation-derived alternative rule,1,0.81,1,0,0,91.13,47,124,77,47,No
+cluster_out,HistGB,negative_score_P10,0.249529,validation-derived alternative rule,2,1.61,0.5,1,0.012987,90.33,47,124,77,47,No
+cluster_out,HistGB,negative_score_P25,0.35518,validation-derived alternative rule,7,5.65,0.7143,2,0.025974,86.29,47,124,77,47,No
+cluster_out,HistGB,negative_score_P50,0.522293,validation-derived alternative rule,7,5.65,0.7143,2,0.025974,86.29,47,124,77,47,No
+cluster_out,HistGB,NPV_ge_0.90,0.189531,validation-derived alternative rule,1,0.81,1,0,0,91.13,47,124,77,47,No
+cluster_out,HistGB,NPV_ge_0.95,0.189531,validation-derived alternative rule,1,0.81,1,0,0,91.13,47,124,77,47,No
+cluster_out,HistGB,FNR_le_0.10,0.347731,validation-derived alternative rule,7,5.65,0.7143,2,0.025974,86.29,47,124,77,47,No
+cluster_out,HistGB,FNR_le_0.05,0.294639,validation-derived alternative rule,7,5.65,0.7143,2,0.025974,86.29,47,124,77,47,No
+cluster_out,HistGB,singleton_No-DILI_plus_th_sens95,0.262,validation-derived alternative rule,2,1.61,0.5,1,0.012987,90.33,47,124,77,47,No
+scaffold,ET,th_sens99,0.16384,validation-derived alternative rule,3,2.42,1,0,0,90.32,46,124,72,52,No
+scaffold,ET,th_sens95,0.5268,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,th_sens90,0.16384,validation-derived alternative rule,3,2.42,1,0,0,90.32,46,124,72,52,No
+scaffold,ET,th_sens80,0.16384,validation-derived alternative rule,3,2.42,1,0,0,90.32,46,124,72,52,No
+scaffold,ET,negative_score_P5,0.232356,validation-derived alternative rule,5,4.03,1,0,0,88.71,46,124,72,52,No
+scaffold,ET,negative_score_P10,0.329038,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,negative_score_P25,0.454232,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,negative_score_P50,0.613116,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,NPV_ge_0.90,0.448904,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,NPV_ge_0.95,0.382281,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,FNR_le_0.10,0.559087,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,FNR_le_0.05,0.511891,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+scaffold,ET,singleton_No-DILI_plus_th_sens95,0.5268,validation-derived alternative rule,11,8.87,1,0,0,83.87,46,124,72,52,No
+external_dilist,ET,th_sens99,0.16384,validation-derived alternative rule,25,6.44,0.36,16,0.055944,77.07,302,388,286,102,No
+external_dilist,ET,th_sens95,0.5268,validation-derived alternative rule,78,20.1,0.359,50,0.174825,63.41,302,388,286,102,No
+external_dilist,ET,th_sens90,0.16384,validation-derived alternative rule,25,6.44,0.36,16,0.055944,77.07,302,388,286,102,No
+external_dilist,ET,th_sens80,0.16384,validation-derived alternative rule,25,6.44,0.36,16,0.055944,77.07,302,388,286,102,No
+external_dilist,ET,negative_score_P5,0.232356,validation-derived alternative rule,39,10.05,0.359,25,0.087413,73.46,302,388,286,102,No
+external_dilist,ET,negative_score_P10,0.329038,validation-derived alternative rule,60,15.46,0.3333,40,0.13986,68.05,302,388,286,102,No
+external_dilist,ET,negative_score_P25,0.454232,validation-derived alternative rule,78,20.1,0.359,50,0.174825,63.41,302,388,286,102,No
+external_dilist,ET,negative_score_P50,0.613116,validation-derived alternative rule,82,21.13,0.3659,52,0.181818,62.38,302,388,286,102,No
+external_dilist,ET,NPV_ge_0.90,0.448904,validation-derived alternative rule,78,20.1,0.359,50,0.174825,63.41,302,388,286,102,No
+external_dilist,ET,NPV_ge_0.95,0.382281,validation-derived alternative rule,74,19.07,0.3784,46,0.160839,64.44,302,388,286,102,No
+external_dilist,ET,FNR_le_0.10,0.559087,validation-derived alternative rule,78,20.1,0.359,50,0.174825,63.41,302,388,286,102,No
+external_dilist,ET,FNR_le_0.05,0.511891,validation-derived alternative rule,78,20.1,0.359,50,0.174825,63.41,302,388,286,102,No
+external_dilist,ET,singleton_No-DILI_plus_th_sens95,0.5268,validation-derived alternative rule,78,20.1,0.359,50,0.174825,63.41,302,388,286,102,No
+temporal,ET,th_sens99,0.170071,validation-derived alternative rule,2,1.37,1,0,0,78.08,105,146,44,102,No
+temporal,ET,th_sens95,0.3793,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,th_sens90,0.170071,validation-derived alternative rule,2,1.37,1,0,0,78.08,105,146,44,102,No
+temporal,ET,th_sens80,0.170071,validation-derived alternative rule,2,1.37,1,0,0,78.08,105,146,44,102,No
+temporal,ET,negative_score_P5,0.240342,validation-derived alternative rule,3,2.05,1,0,0,77.4,105,146,44,102,No
+temporal,ET,negative_score_P10,0.304786,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,negative_score_P25,0.473963,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,negative_score_P50,0.572677,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,NPV_ge_0.90,0.301152,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,NPV_ge_0.95,0.301152,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,FNR_le_0.10,0.526186,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,FNR_le_0.05,0.3638,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+temporal,ET,singleton_No-DILI_plus_th_sens95,0.3793,validation-derived alternative rule,6,4.11,1,0,0,75.34,105,146,44,102,No
+cluster_out,ET,th_sens99,0.141175,validation-derived alternative rule,0,0,n/a,0,0,84.68,64,124,77,47,No
+cluster_out,ET,th_sens95,0.2821,validation-derived alternative rule,6,4.84,0.8333,1,0.012987,79.84,64,124,77,47,No
+cluster_out,ET,th_sens90,0.141175,validation-derived alternative rule,0,0,n/a,0,0,84.68,64,124,77,47,No
+cluster_out,ET,th_sens80,0.141175,validation-derived alternative rule,0,0,n/a,0,0,84.68,64,124,77,47,No
+cluster_out,ET,negative_score_P5,0.197853,validation-derived alternative rule,4,3.23,0.75,1,0.012987,81.45,64,124,77,47,No
+cluster_out,ET,negative_score_P10,0.251363,validation-derived alternative rule,5,4.03,0.8,1,0.012987,80.65,64,124,77,47,No
+cluster_out,ET,negative_score_P25,0.37561,validation-derived alternative rule,10,8.06,0.7,3,0.038961,76.62,64,124,77,47,No
+cluster_out,ET,negative_score_P50,0.498055,validation-derived alternative rule,10,8.06,0.7,3,0.038961,76.62,64,124,77,47,No
+cluster_out,ET,NPV_ge_0.90,0.221134,validation-derived alternative rule,4,3.23,0.75,1,0.012987,81.45,64,124,77,47,No
+cluster_out,ET,NPV_ge_0.95,0.221134,validation-derived alternative rule,4,3.23,0.75,1,0.012987,81.45,64,124,77,47,No
+cluster_out,ET,FNR_le_0.10,0.42167,validation-derived alternative rule,10,8.06,0.7,3,0.038961,76.62,64,124,77,47,No
+cluster_out,ET,FNR_le_0.05,0.282051,validation-derived alternative rule,6,4.84,0.8333,1,0.012987,79.84,64,124,77,47,No
+cluster_out,ET,singleton_No-DILI_plus_th_sens95,0.2821,validation-derived alternative rule,6,4.84,0.8333,1,0.012987,79.84,64,124,77,47,No
+,,,,,,,,,,,,,,,
+"Note: every alternative rule was applied to the full cohort with the eligibility gate re-anchored at that rule's cutoff. An earlier version of this table held the eligibility gate at the primary near-zero threshold (0.0202 for scaffold and external DILIst, 0.0053 for temporal, 0.0058 for cluster-out). Because that value lies below the calibrated-score range of every cohort, the eligible subset was empty in external DILIst and cluster-out and the low-score count was zero for every rule by construction. Counts here supersede that version. The th_sens95 row for HistGB is the operative low-risk rule used in the primary analysis; every other row is a sensitivity variant.",,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+Table S25b: Low-risk threshold provenance,,,,,,,,,,,,,,,
+Calibration split,Model,Threshold rule,Cutoff,Threshold source,val_called_n,val_npv,val_fn,val_fnr_all_pos,,,,,,,
+scaffold,HistGB,th_sens99,0.125518,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+scaffold,HistGB,th_sens95,0.4273,validation sensitivity positive-call cutoff,12,0.75,3,0.0357,,,,,,,
+scaffold,HistGB,th_sens90,0.125518,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+scaffold,HistGB,th_sens80,0.125518,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+scaffold,HistGB,negative_score_P5,0.172122,validation negative-score quantile,2,1,0,0,,,,,,,
+scaffold,HistGB,negative_score_P10,0.251811,validation negative-score quantile,5,0.8,1,0.0119,,,,,,,
+scaffold,HistGB,negative_score_P25,0.440969,validation negative-score quantile,16,0.625,6,0.0714,,,,,,,
+scaffold,HistGB,negative_score_P50,0.598652,validation negative-score quantile,35,0.5429,16,0.1905,,,,,,,
+scaffold,HistGB,NPV_ge_0.90,0.176731,validation low-score NPV-constrained cutoff,3,1,0,0,,,,,,,
+scaffold,HistGB,NPV_ge_0.95,0.176731,validation low-score NPV-constrained cutoff,3,1,0,0,,,,,,,
+scaffold,HistGB,FNR_le_0.10,0.466311,validation low-score FN/all-positive constrained cutoff,19,0.5789,8,0.0952,,,,,,,
+scaffold,HistGB,FNR_le_0.05,0.427328,validation low-score FN/all-positive constrained cutoff,13,0.6923,4,0.0476,,,,,,,
+scaffold,HistGB,singleton_No-DILI_plus_th_sens95,0.4273,th_sens95 plus conformal singleton negative,12,0.75,3,0.0357,,,,,,,
+temporal,HistGB,th_sens99,0.290493,validation sensitivity positive-call cutoff,2,1,0,0,,,,,,,
+temporal,HistGB,th_sens95,0.4015,validation sensitivity positive-call cutoff,12,0.5833,5,0.0556,,,,,,,
+temporal,HistGB,th_sens90,0.290493,validation sensitivity positive-call cutoff,2,1,0,0,,,,,,,
+temporal,HistGB,th_sens80,0.290493,validation sensitivity positive-call cutoff,2,1,0,0,,,,,,,
+temporal,HistGB,negative_score_P5,0.313456,validation negative-score quantile,4,0.75,1,0.0111,,,,,,,
+temporal,HistGB,negative_score_P10,0.357266,validation negative-score quantile,8,0.625,3,0.0333,,,,,,,
+temporal,HistGB,negative_score_P25,0.459696,validation negative-score quantile,20,0.55,9,0.1,,,,,,,
+temporal,HistGB,negative_score_P50,0.589541,validation negative-score quantile,40,0.55,18,0.2,,,,,,,
+temporal,HistGB,NPV_ge_0.90,0.290493,validation low-score NPV-constrained cutoff,2,1,0,0,,,,,,,
+temporal,HistGB,NPV_ge_0.95,0.290493,validation low-score NPV-constrained cutoff,2,1,0,0,,,,,,,
+temporal,HistGB,FNR_le_0.10,0.470766,validation low-score FN/all-positive constrained cutoff,22,0.5909,9,0.1,,,,,,,
+temporal,HistGB,FNR_le_0.05,0.393907,validation low-score FN/all-positive constrained cutoff,11,0.6364,4,0.0444,,,,,,,
+temporal,HistGB,singleton_No-DILI_plus_th_sens95,0.4015,th_sens95 plus conformal singleton negative,12,0.5833,5,0.0556,,,,,,,
+cluster_out,HistGB,th_sens99,0.152517,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+cluster_out,HistGB,th_sens95,0.262,validation sensitivity positive-call cutoff,9,0.7778,2,0.0286,,,,,,,
+cluster_out,HistGB,th_sens90,0.152517,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+cluster_out,HistGB,th_sens80,0.152517,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+cluster_out,HistGB,negative_score_P5,0.181168,validation negative-score quantile,3,1,0,0,,,,,,,
+cluster_out,HistGB,negative_score_P10,0.249529,validation negative-score quantile,7,0.8571,1,0.0143,,,,,,,
+cluster_out,HistGB,negative_score_P25,0.35518,validation negative-score quantile,21,0.619,8,0.1143,,,,,,,
+cluster_out,HistGB,negative_score_P50,0.522293,validation negative-score quantile,39,0.6667,13,0.1857,,,,,,,
+cluster_out,HistGB,NPV_ge_0.90,0.189531,validation low-score NPV-constrained cutoff,4,1,0,0,,,,,,,
+cluster_out,HistGB,NPV_ge_0.95,0.189531,validation low-score NPV-constrained cutoff,4,1,0,0,,,,,,,
+cluster_out,HistGB,FNR_le_0.10,0.347731,validation low-score FN/all-positive constrained cutoff,20,0.65,7,0.1,,,,,,,
+cluster_out,HistGB,FNR_le_0.05,0.294639,validation low-score FN/all-positive constrained cutoff,10,0.7,3,0.0429,,,,,,,
+cluster_out,HistGB,singleton_No-DILI_plus_th_sens95,0.262,th_sens95 plus conformal singleton negative,9,0.7778,2,0.0286,,,,,,,
+scaffold,ET,th_sens99,0.16384,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+scaffold,ET,th_sens95,0.5268,validation sensitivity positive-call cutoff,16,0.75,4,0.0476,,,,,,,
+scaffold,ET,th_sens90,0.16384,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+scaffold,ET,th_sens80,0.16384,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+scaffold,ET,negative_score_P5,0.232356,validation negative-score quantile,2,1,0,0,,,,,,,
+scaffold,ET,negative_score_P10,0.329038,validation negative-score quantile,4,1,0,0,,,,,,,
+scaffold,ET,negative_score_P25,0.454232,validation negative-score quantile,12,0.8333,2,0.0238,,,,,,,
+scaffold,ET,negative_score_P50,0.613116,validation negative-score quantile,34,0.5588,15,0.1786,,,,,,,
+scaffold,ET,NPV_ge_0.90,0.448904,validation low-score NPV-constrained cutoff,11,0.9091,1,0.0119,,,,,,,
+scaffold,ET,NPV_ge_0.95,0.382281,validation low-score NPV-constrained cutoff,6,1,0,0,,,,,,,
+scaffold,ET,FNR_le_0.10,0.559087,validation low-score FN/all-positive constrained cutoff,23,0.6522,8,0.0952,,,,,,,
+scaffold,ET,FNR_le_0.05,0.511891,validation low-score FN/all-positive constrained cutoff,16,0.75,4,0.0476,,,,,,,
+scaffold,ET,singleton_No-DILI_plus_th_sens95,0.5268,th_sens95 plus conformal singleton negative,16,0.75,4,0.0476,,,,,,,
+temporal,ET,th_sens99,0.170071,validation sensitivity positive-call cutoff,2,1,0,0,,,,,,,
+temporal,ET,th_sens95,0.3793,validation sensitivity positive-call cutoff,12,0.5833,5,0.0556,,,,,,,
+temporal,ET,th_sens90,0.170071,validation sensitivity positive-call cutoff,2,1,0,0,,,,,,,
+temporal,ET,th_sens80,0.170071,validation sensitivity positive-call cutoff,2,1,0,0,,,,,,,
+temporal,ET,negative_score_P5,0.240342,validation negative-score quantile,3,1,0,0,,,,,,,
+temporal,ET,negative_score_P10,0.304786,validation negative-score quantile,5,1,0,0,,,,,,,
+temporal,ET,negative_score_P25,0.473963,validation negative-score quantile,18,0.6111,7,0.0778,,,,,,,
+temporal,ET,negative_score_P50,0.572677,validation negative-score quantile,37,0.5946,15,0.1667,,,,,,,
+temporal,ET,NPV_ge_0.90,0.301152,validation low-score NPV-constrained cutoff,5,1,0,0,,,,,,,
+temporal,ET,NPV_ge_0.95,0.301152,validation low-score NPV-constrained cutoff,5,1,0,0,,,,,,,
+temporal,ET,FNR_le_0.10,0.526186,validation low-score FN/all-positive constrained cutoff,25,0.64,9,0.1,,,,,,,
+temporal,ET,FNR_le_0.05,0.3638,validation low-score FN/all-positive constrained cutoff,11,0.6364,4,0.0444,,,,,,,
+temporal,ET,singleton_No-DILI_plus_th_sens95,0.3793,th_sens95 plus conformal singleton negative,12,0.5833,5,0.0556,,,,,,,
+cluster_out,ET,th_sens99,0.141175,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+cluster_out,ET,th_sens95,0.2821,validation sensitivity positive-call cutoff,11,0.7273,3,0.0429,,,,,,,
+cluster_out,ET,th_sens90,0.141175,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+cluster_out,ET,th_sens80,0.141175,validation sensitivity positive-call cutoff,1,1,0,0,,,,,,,
+cluster_out,ET,negative_score_P5,0.197853,validation negative-score quantile,3,1,0,0,,,,,,,
+cluster_out,ET,negative_score_P10,0.251363,validation negative-score quantile,8,0.75,2,0.0286,,,,,,,
+cluster_out,ET,negative_score_P25,0.37561,validation negative-score quantile,20,0.65,7,0.1,,,,,,,
+cluster_out,ET,negative_score_P50,0.498055,validation negative-score quantile,38,0.6842,12,0.1714,,,,,,,
+cluster_out,ET,NPV_ge_0.90,0.221134,validation low-score NPV-constrained cutoff,4,1,0,0,,,,,,,
+cluster_out,ET,NPV_ge_0.95,0.221134,validation low-score NPV-constrained cutoff,4,1,0,0,,,,,,,
+cluster_out,ET,FNR_le_0.10,0.42167,validation low-score FN/all-positive constrained cutoff,24,0.7083,7,0.1,,,,,,,
+cluster_out,ET,FNR_le_0.05,0.282051,validation low-score FN/all-positive constrained cutoff,11,0.7273,3,0.0429,,,,,,,
+cluster_out,ET,singleton_No-DILI_plus_th_sens95,0.2821,th_sens95 plus conformal singleton negative,11,0.7273,3,0.0429,,,,,,,
