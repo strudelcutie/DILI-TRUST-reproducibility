@@ -1,0 +1,819 @@
+﻿parent_sample_id,compound_ids,primary_name,taskA_label,dilirank_concern_sensitivity
+PARENT_000001,DILI_0001,Abacavir sulfate,positive,Most-DILI
+PARENT_000003,DILI_0003,Abemaciclib,positive,Less-DILI
+PARENT_000004,DILI_0004,Abiraterone acetate,positive,Most-DILI
+PARENT_000006,DILI_0006,Acamprosate calcium,positive,Less-DILI
+PARENT_000007,DILI_0007,Acarbose,positive,Most-DILI
+PARENT_000008,DILI_0008;DILI_1408,acebutolol;Acebutolol hydrochloride,positive,Less-DILI
+PARENT_000009,DILI_0009,Aceclofenac,positive,Less-DILI
+PARENT_000010,DILI_0010,Acetaminophen,positive,Most-DILI
+PARENT_000011,DILI_0011,Acetazolamide,positive,Most-DILI
+PARENT_000013,DILI_0013,Acetylcholine chloride,negative,No-DILI
+PARENT_000014,DILI_0014,Acetylcysteine,negative,No-DILI
+PARENT_000015,DILI_0015,Acitretin,positive,Most-DILI
+PARENT_000016,DILI_0016,Acyclovir,positive,Less-DILI
+PARENT_000017,DILI_0017,Adefovir dipivoxil,positive,Less-DILI
+PARENT_000018,DILI_0018,Adenosine,negative,No-DILI
+PARENT_000020,DILI_0020,Alaproclate,positive,Most-DILI
+PARENT_000021,DILI_0021;DILI_1631,Alatrofloxacin;Alatrofloxacin mesylate,positive,Most-DILI
+PARENT_000022,DILI_0022,Albendazole,positive,Most-DILI
+PARENT_000023,DILI_0023,Albuterol,negative,No-DILI
+PARENT_000024,DILI_0024,Alclofenac,positive,Most-DILI
+PARENT_000026,DILI_0026,Alendronate sodium,positive,Less-DILI
+PARENT_000027,DILI_0027;DILI_1378,Alfentanil hydrochloride;alfentanil,negative,No-DILI
+PARENT_000028,DILI_0028;DILI_1420,Alfuzosin hydrochloride;alfuzosin,positive,Less-DILI
+PARENT_000029,DILI_0029,Aliskiren hemifumarate,positive,Less-DILI
+PARENT_000030,DILI_0030,Allopurinol,positive,Most-DILI
+PARENT_000031,DILI_0031,Almotriptan malate,negative,No-DILI
+PARENT_000033,DILI_0033;DILI_1413,Alosetron hydrochloride;alosetron,positive,Less-DILI
+PARENT_000034,DILI_0034,Alpelisib,positive,Less-DILI
+PARENT_000035,DILI_0035,Alpidem,positive,Most-DILI
+PARENT_000036,DILI_0036,Alprazolam,positive,Less-DILI
+PARENT_000038,DILI_0038,Alvimopan,negative,No-DILI
+PARENT_000040,DILI_0040;DILI_1515,ambenonium;Ambenonium chloride,negative,No-DILI
+PARENT_000043,DILI_0044,Amifostine,negative,No-DILI
+PARENT_000044,DILI_0045;DILI_1412,amikacin;Amikacin sulfate,negative,No-DILI
+PARENT_000045,DILI_0046;DILI_1561,amiloride;Amiloride hydrochloride,positive,Less-DILI
+PARENT_000046,DILI_0047,Amineptine,positive,Most-DILI
+PARENT_000047,DILI_0048,Aminocaproic acid,negative,No-DILI
+PARENT_000048,DILI_0049,Aminohippurate sodium,negative,No-DILI
+PARENT_000049,DILI_0050,Aminophylline,negative,No-DILI
+PARENT_000050,DILI_0051,Aminosalicylic acid,positive,Most-DILI
+PARENT_000051,DILI_0052;DILI_1229,Amiodarone hydrochloride;amiodarone,positive,Most-DILI
+PARENT_000052,DILI_0053,Amisulpride,positive,Less-DILI
+PARENT_000054,DILI_0055,Amlodipine besylate,positive,Less-DILI
+PARENT_000057,DILI_0058,Amoxicillin,positive,Less-DILI
+PARENT_000058,DILI_0059,Amphetamine sulfate,positive,Less-DILI
+PARENT_000059,DILI_0060,Amphotericin B,positive,Less-DILI
+PARENT_000060,DILI_0061,Ampicillin sodium,positive,Less-DILI
+PARENT_000063,DILI_0064,Anastrozole,positive,Less-DILI
+PARENT_000064,DILI_0065,Angiotensin ii acetate,negative,No-DILI
+PARENT_000066,DILI_0067,Apalutamide,negative,No-DILI
+PARENT_000067,DILI_0068,Apixaban,positive,Less-DILI
+PARENT_000068,DILI_0069,Aplaviroc,positive,Most-DILI
+PARENT_000069,DILI_0070,Apomorphine hydrochloride,negative,No-DILI
+PARENT_000070,DILI_0071,Apremilast,negative,No-DILI
+PARENT_000073,DILI_0074,Argatroban,negative,No-DILI
+PARENT_000074,DILI_0075;DILI_1565,Arginine hydrochloride;l-arginine,negative,No-DILI
+PARENT_000075,DILI_0076,Argipressin,negative,No-DILI
+PARENT_000077,DILI_0078,Aripiprazole lauroxil,positive,Less-DILI
+PARENT_000083,DILI_0084;DILI_1451,atazanavir;Atazanavir sulfate,positive,Less-DILI
+PARENT_000086,DILI_0087;DILI_1429,Atomoxetine hydrochloride;atomoxetine,positive,Most-DILI
+PARENT_000087,DILI_0088,Atorvastatin calcium,positive,Most-DILI
+PARENT_000089,DILI_0090,Atracurium,negative,No-DILI
+PARENT_000090,DILI_0091,Atropine,negative,No-DILI
+PARENT_000091,DILI_0092,Auranofin,positive,Less-DILI
+PARENT_000093,DILI_0094,Avanafil,negative,No-DILI
+PARENT_000095,DILI_0096,Avatrombopag maleate,negative,No-DILI
+PARENT_000098,DILI_0099,Azathioprine,positive,Most-DILI
+PARENT_000099,DILI_0100,Azilsartan kamedoxomil,negative,No-DILI
+PARENT_000100,DILI_0101,Azithromycin,positive,Less-DILI
+PARENT_000102,DILI_0103,Bacitracin,negative,No-DILI
+PARENT_000103,DILI_0104,Baclofen,positive,Less-DILI
+PARENT_000104,DILI_0105,Baloxavir marboxil,negative,No-DILI
+PARENT_000112,DILI_0113;DILI_1421,benazepril;Benazepril hydrochloride,positive,Less-DILI
+PARENT_000113,DILI_0114;DILI_1332,bendamustine;Bendamustine hydrochloride,negative,No-DILI
+PARENT_000114,DILI_0115,Bendazac,positive,Most-DILI
+PARENT_000115,DILI_0116,Bendroflumethiazide,positive,Less-DILI
+PARENT_000116,DILI_0117,Benoxaprofen,positive,Most-DILI
+PARENT_000117,DILI_0118,Benzarone,positive,Most-DILI
+PARENT_000118,DILI_0119,Benzbromarone,positive,Most-DILI
+PARENT_000119,DILI_0120,Benziodarone,positive,Most-DILI
+PARENT_000122,DILI_0123;DILI_1364,benzphetamine;Benzphetamine hydrochloride,negative,No-DILI
+PARENT_000123,DILI_0124,Benztropine mesylate,negative,No-DILI
+PARENT_000125,DILI_0126,Betaine,negative,No-DILI
+PARENT_000127,DILI_0128;DILI_1343,Bethanechol chloride;bethanechol,negative,No-DILI
+PARENT_000128,DILI_0129,Betrixaban,negative,No-DILI
+PARENT_000129,DILI_0130,Bexarotene,positive,Most-DILI
+PARENT_000130,DILI_0131,Bicalutamide,positive,Most-DILI
+PARENT_000132,DILI_0133;DILI_1360,biperiden;Biperiden hydrochloride,negative,No-DILI
+PARENT_000133,DILI_0134,Bisacodyl,negative,No-DILI
+PARENT_000137,DILI_0138,Bortezomib,positive,Most-DILI
+PARENT_000138,DILI_0139,Bosentan,positive,Most-DILI
+PARENT_000139,DILI_0140,Bosutinib monohydrate,positive,Most-DILI
+PARENT_000141,DILI_0142,Brexanolone,negative,No-DILI
+PARENT_000142,DILI_0143,Brexpiprazole,negative,No-DILI
+PARENT_000144,DILI_0145,Brilliant blue g,negative,No-DILI
+PARENT_000145,DILI_0146,Brivaracetam,negative,No-DILI
+PARENT_000146,DILI_0147,Bromfenac sodium,positive,Most-DILI
+PARENT_000147,DILI_0148;DILI_1287,Bromocriptine mesylate;bromocriptine,positive,Less-DILI
+PARENT_000148,DILI_0149;DILI_1564,brompheniramine;Brompheniramine maleate,negative,No-DILI
+PARENT_000149,DILI_0150,Budesonide,negative,No-DILI
+PARENT_000153,DILI_0154,Busulfan,positive,Most-DILI
+PARENT_000155,DILI_0156;DILI_1432,butorphanol;Butorphanol tartrate,negative,No-DILI
+PARENT_000157,DILI_0158,Cabergoline,negative,No-DILI
+PARENT_000160,DILI_0161,Caffeine citrate,negative,No-DILI
+PARENT_000162,DILI_0163,Calcitriol,negative,No-DILI
+PARENT_000164,DILI_0165,Canagliflozin,positive,Less-DILI
+PARENT_000165,DILI_0166,Candesartan cilexetil,positive,Less-DILI
+PARENT_000166,DILI_0167,Cangrelor,negative,No-DILI
+PARENT_000169,DILI_0170,Capmatinib hydrochloride,positive,Less-DILI
+PARENT_000171,DILI_0172,Captopril,positive,Less-DILI
+PARENT_000172,DILI_0173,Carbamazepine,positive,Most-DILI
+PARENT_000173,DILI_0174,Carbenicillin disodium,positive,Less-DILI
+PARENT_000175,DILI_0176;DILI_1349,carbinoxamine;Carbinoxamine maleate,negative,No-DILI
+PARENT_000176,DILI_0177,Carboplatin,positive,Less-DILI
+PARENT_000177,DILI_0178,Carboprost tromethamine,negative,No-DILI
+PARENT_000178,DILI_0179,Carfilzomib,positive,Most-DILI
+PARENT_000179,DILI_0180,Carglumic acid,negative,No-DILI
+PARENT_000181,DILI_0182,Carisoprodol,negative,No-DILI
+PARENT_000182,DILI_0183,Carvedilol,positive,Less-DILI
+PARENT_000184,DILI_0185,Cefaclor,positive,Less-DILI
+PARENT_000185,DILI_0186,Cefadroxil hemihydrate,positive,Less-DILI
+PARENT_000186,DILI_0187,Cefazolin sodium,positive,Less-DILI
+PARENT_000187,DILI_0188,Cefdinir,positive,Less-DILI
+PARENT_000188,DILI_0189,Cefditoren pivoxil,positive,Less-DILI
+PARENT_000189,DILI_0190,Cefepime hydrochloride,positive,Less-DILI
+PARENT_000192,DILI_0193,Cefoperazone sodium,positive,Less-DILI
+PARENT_000193,DILI_0194,Cefotaxime sodium,positive,Less-DILI
+PARENT_000197,DILI_0198,Cefprozil,positive,Less-DILI
+PARENT_000198,DILI_0199,Ceftaroline fosamil,positive,Less-DILI
+PARENT_000199,DILI_0200,Ceftazidime,positive,Less-DILI
+PARENT_000202,DILI_0203,Ceftriaxone sodium,positive,Less-DILI
+PARENT_000203,DILI_0204,Cefuroxime sodium,positive,Less-DILI
+PARENT_000204,DILI_0205,Celecoxib,positive,Less-DILI
+PARENT_000206,DILI_0207,Cephalexin,positive,Less-DILI
+PARENT_000208,DILI_0209,Ceritinib,positive,Most-DILI
+PARENT_000209,DILI_0210;DILI_1448,Cetirizine hydrochloride;cetirizine,positive,Less-DILI
+PARENT_000213,DILI_0214,Chlorambucil,positive,Less-DILI
+PARENT_000214,DILI_0215,Chloramphenicol,negative,No-DILI
+PARENT_000216,DILI_0217;DILI_1450,Chlordiazepoxide hydrochloride;chlordiazepoxide,positive,Less-DILI
+PARENT_000217,DILI_0218,Chlormezanone,positive,Most-DILI
+PARENT_000218,DILI_0219;DILI_1453,chloroquine;Chloroquine phosphate,positive,Less-DILI
+PARENT_000219,DILI_0220,Chlorothiazide,positive,Less-DILI
+PARENT_000220,DILI_0221;DILI_1221,chlorpheniramine;Chlorpheniramine maleate,negative,No-DILI
+PARENT_000221,DILI_0222;DILI_1236,Chlorpromazine hydrochloride;chlorpromazine,positive,Less-DILI
+PARENT_000222,DILI_0223,Chlorpropamide,positive,Less-DILI
+PARENT_000224,DILI_0225,Chlorzoxazone,positive,Most-DILI
+PARENT_000226,DILI_0227,Choline c-11,negative,No-DILI
+PARENT_000229,DILI_0230,Cimetidine,positive,Less-DILI
+PARENT_000230,DILI_0231;DILI_1454,cinacalcet;Cinacalcet hydrochloride,negative,No-DILI
+PARENT_000231,DILI_0232,Cinchophen,positive,Most-DILI
+PARENT_000232,DILI_0233;DILI_1269,ciprofloxacin;Ciprofloxacin hydrochloride,positive,Most-DILI
+PARENT_000233,DILI_0234,Cisatracurium besylate,negative,No-DILI
+PARENT_000234,DILI_0235,Cisplatin,positive,Less-DILI
+PARENT_000237,DILI_0238,Clarithromycin,positive,Most-DILI
+PARENT_000238,DILI_0239;DILI_1581,clemastine;Clemastine fumarate,negative,No-DILI
+PARENT_000239,DILI_0240,Clevidipine,negative,No-DILI
+PARENT_000240,DILI_0241;DILI_1458,Clindamycin hydrochloride;clindamycin,positive,Less-DILI
+PARENT_000241,DILI_0242,Clindamycin phosphate,positive,Less-DILI
+PARENT_000244,DILI_0245,Clofibrate,positive,Less-DILI
+PARENT_000245,DILI_0246,Clomacran,positive,Most-DILI
+PARENT_000246,DILI_0247,Clometacin,positive,Most-DILI
+PARENT_000247,DILI_0248,Clomiphene citrate,positive,Less-DILI
+PARENT_000248,DILI_0249;DILI_1271,clomipramine;Clomipramine hydrochloride,positive,Most-DILI
+PARENT_000249,DILI_0250,Clonazepam,positive,Less-DILI
+PARENT_000251,DILI_0252;DILI_1405,clopidogrel;Clopidogrel bisulfate,positive,Less-DILI
+PARENT_000253,DILI_0254,Clotrimazole,positive,Less-DILI
+PARENT_000254,DILI_0255,Cloxacillin sodium,positive,Less-DILI
+PARENT_000255,DILI_0256,Clozapine,positive,Most-DILI
+PARENT_000258,DILI_0259,Codeine sulfate,negative,No-DILI
+PARENT_000260,DILI_0261,Colestipol hydrochloride,positive,Less-DILI
+PARENT_000261,DILI_0262,Colistimethate sodium,negative,No-DILI
+PARENT_000262,DILI_0263;DILI_1455,Conivaptan hydrochloride;conivaptan,negative,No-DILI
+PARENT_000263,DILI_0264,Copanlisib dihydrochloride,negative,No-DILI
+PARENT_000264,DILI_0265,Copper cu-64 dotatate,negative,No-DILI
+PARENT_000267,DILI_0268,Cortisone acetate,negative,No-DILI
+PARENT_000269,DILI_0270,Crizotinib,positive,Most-DILI
+PARENT_000270,DILI_0271,Cromoglicate,positive,Less-DILI
+PARENT_000271,DILI_0272,Cupric chloride,negative,No-DILI
+PARENT_000272,DILI_0273,Cyanocobalamin,negative,No-DILI
+PARENT_000273,DILI_0274;DILI_1464,Cyclobenzaprine hydrochloride;cyclobenzaprine,positive,Less-DILI
+PARENT_000274,DILI_0275,Cyclofenil,positive,Most-DILI
+PARENT_000275,DILI_0276,Cyclophosphamide,positive,Less-DILI
+PARENT_000277,DILI_0278,Cyclosporine,positive,Most-DILI
+PARENT_000278,DILI_0279;DILI_1466,Cyproheptadine hydrochloride;cyproheptadine,positive,Less-DILI
+PARENT_000280,DILI_0281,Cytarabine,positive,Most-DILI
+PARENT_000281,DILI_0282,Dabigatran etexilate mesylate,positive,Less-DILI
+PARENT_000283,DILI_0284,Dacarbazine,positive,Most-DILI
+PARENT_000284,DILI_0285,Dacomitinib,positive,Less-DILI
+PARENT_000285,DILI_0286,Dactinomycin,positive,Most-DILI
+PARENT_000286,DILI_0287,Dalfampridine,negative,No-DILI
+PARENT_000287,DILI_0288,Danazol,positive,Most-DILI
+PARENT_000288,DILI_0289,Dantrolene sodium,positive,Most-DILI
+PARENT_000289,DILI_0290,Dapagliflozin,negative,No-DILI
+PARENT_000290,DILI_0291,Dapsone,positive,Less-DILI
+PARENT_000291,DILI_0292,Daptomycin,positive,Less-DILI
+PARENT_000292,DILI_0293;DILI_1447,darifenacin;Darifenacin hydrobromide,negative,No-DILI
+PARENT_000294,DILI_0295,Darunavir,positive,Most-DILI
+PARENT_000295,DILI_0296,Dasatinib,positive,Less-DILI
+PARENT_000296,DILI_0297;DILI_1311,daunorubicin;Daunorubicin hydrochloride,negative,No-DILI
+PARENT_000298,DILI_0299,Deferasirox,positive,Most-DILI
+PARENT_000301,DILI_0302,Deflazacort,negative,No-DILI
+PARENT_000306,DILI_0307,Deoxycholic acid,negative,No-DILI
+PARENT_000308,DILI_0309,Desloratadine,positive,Less-DILI
+PARENT_000310,DILI_0311,Desvenlafaxine succinate,positive,Less-DILI
+PARENT_000311,DILI_0312,Deutetrabenazine,negative,No-DILI
+PARENT_000313,DILI_0314;DILI_1359,Dexbrompheniramine maleate;dexbrompheniramine,negative,No-DILI
+PARENT_000314,DILI_0315;DILI_1337,Dexchlorpheniramine maleate;dexchlorpheniramine,negative,No-DILI
+PARENT_000315,DILI_0316,Dexlansoprazole,positive,Less-DILI
+PARENT_000317,DILI_0318;DILI_1584,Dexmethylphenidate hydrochloride;dexmethylphenidate,positive,Less-DILI
+PARENT_000318,DILI_0319,Dexpanthenol,negative,No-DILI
+PARENT_000320,DILI_0321,Dextroamphetamine sulfate,negative,No-DILI
+PARENT_000321,DILI_0322;DILI_1559,dextromethorphan;Dextromethorphan polistirex,negative,No-DILI
+PARENT_000322,DILI_0323,Dextrose,negative,No-DILI
+PARENT_000323,DILI_0324,Diatrizoate sodium,negative,No-DILI
+PARENT_000326,DILI_0327,Dichlorphenamide,negative,No-DILI
+PARENT_000327,DILI_0328,Diclofenac sodium,positive,Most-DILI
+PARENT_000328,DILI_0329,Dicloxacillin sodium,positive,Less-DILI
+PARENT_000329,DILI_0330;DILI_1344,dicyclomine;Dicyclomine hydrochloride,negative,No-DILI
+PARENT_000330,DILI_0331,Didanosine,positive,Most-DILI
+PARENT_000331,DILI_0332;DILI_1357,Diethylpropion hydrochloride;diethylpropion,negative,No-DILI
+PARENT_000332,DILI_0333,Difelikefalin acetate,negative,No-DILI
+PARENT_000333,DILI_0334,Diflunisal,positive,Most-DILI
+PARENT_000334,DILI_0335,Digoxin,negative,No-DILI
+PARENT_000335,DILI_0336;DILI_1579,Dihydroergotamine mesylate;dihydroergotamine,negative,No-DILI
+PARENT_000336,DILI_0337;DILI_1472,diltiazem;Diltiazem hydrochloride,positive,Most-DILI
+PARENT_000337,DILI_0338,Dimenhydrinate,negative,No-DILI
+PARENT_000339,DILI_0340,Dimethyl fumarate,positive,Most-DILI
+PARENT_000340,DILI_0341;DILI_1241,Diphenhydramine hydrochloride;diphenhydramine,negative,No-DILI
+PARENT_000341,DILI_0342,Diphenoxylate,negative,No-DILI
+PARENT_000344,DILI_0345;DILI_1473,disopyramide;Disopyramide phosphate,positive,Less-DILI
+PARENT_000345,DILI_0346,Disulfiram,positive,Most-DILI
+PARENT_000346,DILI_0347,Divalproex sodium,positive,Most-DILI
+PARENT_000347,DILI_0348;DILI_1474,Dobutamine hydrochloride;dobutamine,negative,No-DILI
+PARENT_000348,DILI_0349,Docetaxel,positive,Less-DILI
+PARENT_000351,DILI_0352,Dolutegravir sodium,positive,Most-DILI
+PARENT_000353,DILI_0354;DILI_1222,dopamine;Dopamine hydrochloride,negative,No-DILI
+PARENT_000356,DILI_0357;DILI_1312,doxapram;Doxapram hydrochloride,negative,No-DILI
+PARENT_000358,DILI_0359,Doxepin hydrochloride,positive,Less-DILI
+PARENT_000360,DILI_0361;DILI_1292,doxorubicin;Doxorubicin hydrochloride,positive,Less-DILI
+PARENT_000361,DILI_0362,Doxycycline,positive,Less-DILI
+PARENT_000362,DILI_0363,Doxylamine succinate,negative,No-DILI
+PARENT_000364,DILI_0365;DILI_1335,dronedarone;Dronedarone hydrochloride,positive,Most-DILI
+PARENT_000365,DILI_0366,Droperidol,negative,No-DILI
+PARENT_000366,DILI_0367,Droxicam,positive,Most-DILI
+PARENT_000368,DILI_0369;DILI_1557,duloxetine;Duloxetine hydrochloride,positive,Most-DILI
+PARENT_000369,DILI_0370,Dutasteride,negative,No-DILI
+PARENT_000371,DILI_0372,Dyphylline,negative,No-DILI
+PARENT_000372,DILI_0373,Ebrotidine,positive,Most-DILI
+PARENT_000377,DILI_0378,Edrophonium chloride,negative,No-DILI
+PARENT_000378,DILI_0379,Efavirenz,positive,Most-DILI
+PARENT_000381,DILI_0382,Eliglustat tartrate,negative,No-DILI
+PARENT_000382,DILI_0383,Eltrombopag olamine,positive,Most-DILI
+PARENT_000384,DILI_0385,Empagliflozin,negative,No-DILI
+PARENT_000386,DILI_0387;DILI_1288,Enalapril maleate;enalapril,positive,Less-DILI
+PARENT_000391,DILI_0392,Entacapone,positive,Less-DILI
+PARENT_000394,DILI_0395,Enzalutamide,negative,No-DILI
+PARENT_000395,DILI_0396,Ephedrine sulfate,negative,No-DILI
+PARENT_000396,DILI_0397,Epinephrine,negative,No-DILI
+PARENT_000399,DILI_0400,Epoetin alfa,negative,No-DILI
+PARENT_000402,DILI_0403,Eptifibatide,negative,No-DILI
+PARENT_000405,DILI_0406,Ergocalciferol,negative,No-DILI
+PARENT_000407,DILI_0408;DILI_1457,erlotinib;Erlotinib hydrochloride,positive,Most-DILI
+PARENT_000409,DILI_0410,Ertugliflozin,negative,No-DILI
+PARENT_000410,DILI_0411,Erythromycin estolate,positive,Most-DILI
+PARENT_000411,DILI_0412,Escitalopram oxalate,positive,Less-DILI
+PARENT_000413,DILI_0414;DILI_1477,esmolol;Esmolol hydrochloride,negative,No-DILI
+PARENT_000414,DILI_0415,Esomeprazole sodium,positive,Less-DILI
+PARENT_000415,DILI_0416,Estazolam,negative,No-DILI
+PARENT_000416,DILI_0417,Estradiol valerate,positive,Less-DILI
+PARENT_000417,DILI_0418,Estramustine phosphate sodium,positive,Most-DILI
+PARENT_000422,DILI_0423,Etelcalcetide,negative,No-DILI
+PARENT_000424,DILI_0425;DILI_1479,Ethambutol hydrochloride;ethambutol,positive,Most-DILI
+PARENT_000425,DILI_0426,Ethanolamine oleate,negative,No-DILI
+PARENT_000426,DILI_0427,Ethionamide,positive,Less-DILI
+PARENT_000429,DILI_0430,Etidronate disodium,negative,No-DILI
+PARENT_000430,DILI_0431,Etodolac,positive,Most-DILI
+PARENT_000431,DILI_0432,Etomidate,negative,No-DILI
+PARENT_000433,DILI_0434,Etoposide,positive,Less-DILI
+PARENT_000434,DILI_0435,Etravirine,positive,Most-DILI
+PARENT_000436,DILI_0437,Exemestane,positive,Most-DILI
+PARENT_000438,DILI_0439,Exifone,positive,Most-DILI
+PARENT_000439,DILI_0440,Ezetimibe,positive,Less-DILI
+PARENT_000440,DILI_0441,Falnidamol,positive,Most-DILI
+PARENT_000442,DILI_0443,Famotidine,positive,Less-DILI
+PARENT_000443,DILI_0444,Febuxostat,positive,Most-DILI
+PARENT_000445,DILI_0446,Felbamate,positive,Most-DILI
+PARENT_000446,DILI_0447,Felodipine,positive,Less-DILI
+PARENT_000447,DILI_0448,Fenclozic acid,positive,Most-DILI
+PARENT_000448,DILI_0449,Fenofibrate,positive,Less-DILI
+PARENT_000449,DILI_0450,Fenofibric acid,positive,Less-DILI
+PARENT_000450,DILI_0451;DILI_1381,Fenoldopam mesylate;fenoldopam,negative,No-DILI
+PARENT_000451,DILI_0452,Fenoprofen calcium,positive,Most-DILI
+PARENT_000452,DILI_0453,Ferric maltol,negative,No-DILI
+PARENT_000453,DILI_0454,Ferumoxytol,negative,No-DILI
+PARENT_000454,DILI_0455;DILI_1318,fesoterodine;Fesoterodine fumarate,negative,No-DILI
+PARENT_000456,DILI_0457;DILI_1481,Fexofenadine hydrochloride;fexofenadine,negative,No-DILI
+PARENT_000457,DILI_0458,Fialuridine,positive,Most-DILI
+PARENT_000459,DILI_0460,Fiduxosin,positive,Most-DILI
+PARENT_000460,DILI_0461,Finasteride,positive,Less-DILI
+PARENT_000461,DILI_0462,Finerenone,negative,No-DILI
+PARENT_000462,DILI_0463,Fingolimod hydrochloride,positive,Most-DILI
+PARENT_000463,DILI_0464,Fipexide,positive,Most-DILI
+PARENT_000465,DILI_0466;DILI_1482,flecainide;Flecainide acetate,positive,Less-DILI
+PARENT_000466,DILI_0467,Flibanserin,negative,No-DILI
+PARENT_000467,DILI_0468,Florbetaben f-18,negative,No-DILI
+PARENT_000468,DILI_0469,Florbetapir f-18,negative,No-DILI
+PARENT_000469,DILI_0470,Flortaucipir f-18,negative,No-DILI
+PARENT_000470,DILI_0471,Fluciclovine f-18,negative,No-DILI
+PARENT_000471,DILI_0472,Fluconazole,positive,Most-DILI
+PARENT_000473,DILI_0474,Fludarabine phosphate,negative,No-DILI
+PARENT_000474,DILI_0475,Fludrocortisone acetate,negative,No-DILI
+PARENT_000475,DILI_0476,Flumazenil,negative,No-DILI
+PARENT_000476,DILI_0477,Fluorescein sodium,negative,No-DILI
+PARENT_000477,DILI_0478,Fluorodopa f-18,negative,No-DILI
+PARENT_000478,DILI_0479,Fluoroestradiol f-18,negative,No-DILI
+PARENT_000479,DILI_0480,Fluorouracil,positive,Less-DILI
+PARENT_000483,DILI_0484;DILI_1484,flurazepam;Flurazepam hydrochloride,positive,Less-DILI
+PARENT_000484,DILI_0485,Flurbiprofen sodium,positive,Less-DILI
+PARENT_000485,DILI_0486,Flutamide,positive,Most-DILI
+PARENT_000486,DILI_0487,Flutemetamol f-18,negative,No-DILI
+PARENT_000487,DILI_0488,Fluvastatin sodium,positive,Less-DILI
+PARENT_000489,DILI_0490,Folic acid,negative,No-DILI
+PARENT_000491,DILI_0492,Fondaparinux sodium,positive,Less-DILI
+PARENT_000495,DILI_0496,Fosdenopterin hydrobromide,negative,No-DILI
+PARENT_000496,DILI_0497,Fosfomycin tromethamine,positive,Less-DILI
+PARENT_000497,DILI_0498,Fosinopril sodium,positive,Less-DILI
+PARENT_000498,DILI_0499,Fosphenytoin sodium,positive,Most-DILI
+PARENT_000499,DILI_0500,Fospropofol disodium,positive,Less-DILI
+PARENT_000502,DILI_0503,Frovatriptan succinate,negative,No-DILI
+PARENT_000507,DILI_0508,Gadobenate dimeglumine,negative,No-DILI
+PARENT_000508,DILI_0509,Gadobutrol,negative,No-DILI
+PARENT_000510,DILI_0511,Gadofosveset trisodium,negative,No-DILI
+PARENT_000511,DILI_0512,Gadopentetate dimeglumine,negative,No-DILI
+PARENT_000512,DILI_0513,Gadoterate meglumine,negative,No-DILI
+PARENT_000513,DILI_0514,Gadoteridol,negative,No-DILI
+PARENT_000514,DILI_0515,Gadoversetamide,negative,No-DILI
+PARENT_000515,DILI_0516,Gadoxetate disodium,negative,No-DILI
+PARENT_000517,DILI_0518,Gallium dotatate ga-68,negative,No-DILI
+PARENT_000518,DILI_0519,Gallium ga-68 edotreotide,negative,No-DILI
+PARENT_000519,DILI_0520,Gallium ga-68 gozetotide,negative,No-DILI
+PARENT_000522,DILI_0523,Ganirelix acetate,negative,No-DILI
+PARENT_000523,DILI_0524,Gefitinib,positive,Most-DILI
+PARENT_000524,DILI_0525;DILI_1490,gemcitabine;Gemcitabine hydrochloride,positive,Most-DILI
+PARENT_000525,DILI_0526,Gemfibrozil,positive,Most-DILI
+PARENT_000526,DILI_0527;DILI_1415,Gemifloxacin mesylate;gemifloxacin,positive,Less-DILI
+PARENT_000528,DILI_0529,Glafenine,positive,Most-DILI
+PARENT_000530,DILI_0531,Glimepiride,positive,Less-DILI
+PARENT_000531,DILI_0532,Glipizide,positive,Less-DILI
+PARENT_000532,DILI_0533,Glyburide,positive,Less-DILI
+PARENT_000533,DILI_0534,Glycopyrrolate,negative,No-DILI
+PARENT_000536,DILI_0537,Griseofulvin,positive,Most-DILI
+PARENT_000537,DILI_0538,Guaifenesin,negative,No-DILI
+PARENT_000538,DILI_0539;DILI_1363,guanethidine;Guanethidine monosulfate,negative,No-DILI
+PARENT_000541,DILI_0542,Haloperidol decanoate,positive,Less-DILI
+PARENT_000542,DILI_0543,Haloperidol lactate,positive,Less-DILI
+PARENT_000543,DILI_0544,Heparin sodium,positive,Less-DILI
+PARENT_000544,DILI_0545,Histamine phosphate,negative,No-DILI
+PARENT_000546,DILI_0547;DILI_1314,Hydralazine hydrochloride;hydralazine,positive,Less-DILI
+PARENT_000547,DILI_0548,Hydrochlorothiazide,positive,Less-DILI
+PARENT_000548,DILI_0549,Hydrocortisone acetate,negative,No-DILI
+PARENT_000552,DILI_0553;DILI_1556,hydroxychloroquine;Hydroxychloroquine sulfate,positive,Less-DILI
+PARENT_000554,DILI_0555,Hydroxyurea,positive,Most-DILI
+PARENT_000555,DILI_0556,Hydroxyzine hydrochloride,negative,No-DILI
+PARENT_000556,DILI_0557,Ibandronate sodium,positive,Less-DILI
+PARENT_000558,DILI_0559,Ibrutinib,positive,Most-DILI
+PARENT_000559,DILI_0560,Ibufenac,positive,Most-DILI
+PARENT_000560,DILI_0561,Ibuprofen,positive,Less-DILI
+PARENT_000561,DILI_0562,Ibutilide fumarate,negative,No-DILI
+PARENT_000564,DILI_0565,Idelalisib,positive,Most-DILI
+PARENT_000565,DILI_0566,Ifosfamide,positive,Less-DILI
+PARENT_000567,DILI_0568;DILI_1245,imatinib;Imatinib mesylate,positive,Most-DILI
+PARENT_000568,DILI_0569;DILI_1246,imipramine;Imipramine hydrochloride,positive,Less-DILI
+PARENT_000572,DILI_0573,Indocyanine green,negative,No-DILI
+PARENT_000573,DILI_0574,Indomethacin,positive,Most-DILI
+PARENT_000575,DILI_0576,Iodipamide sodium,negative,No-DILI
+PARENT_000576,DILI_0577,Ioflupane i-123,negative,No-DILI
+PARENT_000577,DILI_0578,Iothalamate meglumine,negative,No-DILI
+PARENT_000578,DILI_0579,Ioversol,negative,No-DILI
+PARENT_000579,DILI_0580,Iproniazid,positive,Most-DILI
+PARENT_000580,DILI_0581,Irbesartan,positive,Less-DILI
+PARENT_000581,DILI_0582;DILI_1494,irinotecan;Irinotecan hydrochloride,positive,Less-DILI
+PARENT_000583,DILI_0584;DILI_1658,Isaxonine phosphate;Isaxonine,positive,Most-DILI
+PARENT_000585,DILI_0586,Isoniazid,positive,Most-DILI
+PARENT_000586,DILI_0587;DILI_1274,Isoproterenol hydrochloride;isoproterenol,negative,No-DILI
+PARENT_000587,DILI_0588,Isosorbide dinitrate,negative,No-DILI
+PARENT_000589,DILI_0590,Isotretinoin,positive,Most-DILI
+PARENT_000590,DILI_0591,Isoxsuprine hydrochloride,negative,No-DILI
+PARENT_000591,DILI_0592,Isradipine,positive,Less-DILI
+PARENT_000592,DILI_0593,Istradefylline,negative,No-DILI
+PARENT_000593,DILI_0594,Itraconazole,positive,Most-DILI
+PARENT_000594,DILI_0595,Ivabradine hydrochloride,negative,No-DILI
+PARENT_000595,DILI_0596,Ivacaftor,positive,Less-DILI
+PARENT_000599,DILI_0600,Kanamycin,negative,No-DILI
+PARENT_000601,DILI_0602,Ketoconazole,positive,Most-DILI
+PARENT_000602,DILI_0603,Ketoprofen,positive,Less-DILI
+PARENT_000603,DILI_0604,Ketorolac tromethamine,positive,Less-DILI
+PARENT_000604,DILI_0605;DILI_1247,Labetalol hydrochloride;labetalol,positive,Most-DILI
+PARENT_000606,DILI_0607,Lactitol,negative,No-DILI
+PARENT_000607,DILI_0608,Lactulose,negative,No-DILI
+PARENT_000608,DILI_0609,Lamivudine,positive,Less-DILI
+PARENT_000609,DILI_0610,Lamotrigine,positive,Most-DILI
+PARENT_000611,DILI_0612,Lansoprazole,positive,Less-DILI
+PARENT_000612,DILI_0613,Lanthanum carbonate,negative,No-DILI
+PARENT_000613,DILI_0614;DILI_1576,lapatinib;Lapatinib ditosylate,positive,Most-DILI
+PARENT_000615,DILI_0616,Lasmiditan succinate,negative,No-DILI
+PARENT_000618,DILI_0619,Leflunomide,positive,Most-DILI
+PARENT_000619,DILI_0620,Lemborexant,negative,No-DILI
+PARENT_000620,DILI_0621,Lenalidomide,positive,Less-DILI
+PARENT_000623,DILI_0624,Letermovir,positive,Less-DILI
+PARENT_000624,DILI_0625,Letrozole,positive,Less-DILI
+PARENT_000625,DILI_0626,Leucovorin calcium,negative,No-DILI
+PARENT_000626,DILI_0627;DILI_1554,leuprolide;Leuprolide acetate,positive,Less-DILI
+PARENT_000628,DILI_0629,Levetiracetam,positive,Less-DILI
+PARENT_000629,DILI_0630,Levocarnitine,negative,No-DILI
+PARENT_000630,DILI_0631;DILI_1840,Levocetirizine;Levocetirizine dihydrochloride,positive,Less-DILI
+PARENT_000631,DILI_0632,Levofloxacin,positive,Most-DILI
+PARENT_000632,DILI_0633,Levoleucovorin,negative,No-DILI
+PARENT_000633,DILI_0634,Levomefolate calcium,negative,No-DILI
+PARENT_000634,DILI_0635,Levonorgestrel,negative,No-DILI
+PARENT_000635,DILI_0636;DILI_1347,levorphanol;Levorphanol tartrate,negative,No-DILI
+PARENT_000636,DILI_0637,Levothyroxine sodium,positive,Less-DILI
+PARENT_000638,DILI_0639,Lidocaine,negative,No-DILI
+PARENT_000639,DILI_0640,Linaclotide,negative,No-DILI
+PARENT_000640,DILI_0641,Linagliptin,positive,Less-DILI
+PARENT_000642,DILI_0643,Linezolid,positive,Less-DILI
+PARENT_000643,DILI_0644,Liothyronine sodium,negative,No-DILI
+PARENT_000646,DILI_0647,Lisinopril,positive,Less-DILI
+PARENT_000647,DILI_0648,Lofexidine hydrochloride,negative,No-DILI
+PARENT_000649,DILI_0650,Lomitapide mesylate,positive,Most-DILI
+PARENT_000650,DILI_0651,Lomustine,positive,Less-DILI
+PARENT_000652,DILI_0653;DILI_1570,loperamide;Loperamide hydrochloride,negative,No-DILI
+PARENT_000653,DILI_0654,Loracarbef,positive,Less-DILI
+PARENT_000654,DILI_0655,Loratadine,negative,No-DILI
+PARENT_000657,DILI_0658,Losartan potassium,positive,Less-DILI
+PARENT_000658,DILI_0659,Lovastatin,positive,Less-DILI
+PARENT_000660,DILI_0661,Lubiprostone,negative,No-DILI
+PARENT_000662,DILI_0663,Lumiracoxib,positive,Most-DILI
+PARENT_000663,DILI_0664,Lurasidone hydrochloride,negative,No-DILI
+PARENT_000665,DILI_0666,Lusutrombopag,negative,No-DILI
+PARENT_000667,DILI_0668,Macimorelin acetate,negative,No-DILI
+PARENT_000668,DILI_0669,Macitentan,positive,Most-DILI
+PARENT_000669,DILI_0670,Mannitol,negative,No-DILI
+PARENT_000672,DILI_0673,Maraviroc,positive,Most-DILI
+PARENT_000673,DILI_0674,Maribavir,negative,No-DILI
+PARENT_000674,DILI_0675,Mebanazine,positive,Most-DILI
+PARENT_000675,DILI_0676,Mebendazole,positive,Less-DILI
+PARENT_000676,DILI_0677;DILI_1351,mecamylamine;Mecamylamine hydrochloride,negative,No-DILI
+PARENT_000678,DILI_0679;DILI_1354,Meclizine hydrochloride;meclizine,negative,No-DILI
+PARENT_000681,DILI_0682,Mefenamic acid,positive,Most-DILI
+PARENT_000682,DILI_0683,Mefloquine hydrochloride,positive,Less-DILI
+PARENT_000684,DILI_0685,Meloxicam,positive,Less-DILI
+PARENT_000685,DILI_0686,Melphalan,positive,Less-DILI
+PARENT_000687,DILI_0688,Mepazine,positive,Most-DILI
+PARENT_000688,DILI_0689;DILI_1353,mepenzolate;Mepenzolate bromide,negative,No-DILI
+PARENT_000689,DILI_0690;DILI_1339,Meperidine hydrochloride;meperidine,negative,No-DILI
+PARENT_000692,DILI_0693,Meprobamate,negative,No-DILI
+PARENT_000693,DILI_0694,Mercaptopurine,positive,Most-DILI
+PARENT_000694,DILI_0695,Meropenem,positive,Less-DILI
+PARENT_000695,DILI_0696,Mesalamine,positive,Less-DILI
+PARENT_000698,DILI_0699,Metaproterenol sulfate,negative,No-DILI
+PARENT_000699,DILI_0700,Metaxalone,positive,Less-DILI
+PARENT_000702,DILI_0703;DILI_1340,methamphetamine;Methamphetamine hydrochloride,negative,No-DILI
+PARENT_000703,DILI_0704,Methazolamide,positive,Less-DILI
+PARENT_000705,DILI_0706,Methimazole,positive,Most-DILI
+PARENT_000706,DILI_0707,Methionine,negative,No-DILI
+PARENT_000709,DILI_0710,Methotrexate sodium,positive,Most-DILI
+PARENT_000710,DILI_0711,Methoxsalen,positive,Less-DILI
+PARENT_000711,DILI_0712,Methscopolamine bromide,negative,No-DILI
+PARENT_000712,DILI_0713,Methsuximide,negative,No-DILI
+PARENT_000714,DILI_0715,Methyldopa,positive,Most-DILI
+PARENT_000715,DILI_0716;DILI_1563,Methylergonovine maleate;methylergonovine,negative,No-DILI
+PARENT_000716,DILI_0717,Methylnaltrexone bromide,negative,No-DILI
+PARENT_000717,DILI_0718;DILI_1500,methylphenidate;Methylphenidate hydrochloride,positive,Less-DILI
+PARENT_000718,DILI_0719,Methylprednisolone,positive,Less-DILI
+PARENT_000719,DILI_0720,Methyltestosterone,positive,Less-DILI
+PARENT_000720,DILI_0721;DILI_1562,Methysergide maleate;methysergide,negative,No-DILI
+PARENT_000721,DILI_0722;DILI_1502,metoclopramide;Metoclopramide hydrochloride,positive,Less-DILI
+PARENT_000724,DILI_0725,Metoprolol tartrate,positive,Less-DILI
+PARENT_000725,DILI_0726,Metronidazole,positive,Less-DILI
+PARENT_000726,DILI_0727,Metyrapone,negative,No-DILI
+PARENT_000727,DILI_0728,Metyrosine,negative,No-DILI
+PARENT_000728,DILI_0729;DILI_1503,Mexiletine hydrochloride;mexiletine,positive,Most-DILI
+PARENT_000729,DILI_0730,Micafungin sodium,positive,Most-DILI
+PARENT_000730,DILI_0731;DILI_1504,midazolam;Midazolam hydrochloride,negative,No-DILI
+PARENT_000731,DILI_0732;DILI_1505,Midodrine hydrochloride;midodrine,negative,No-DILI
+PARENT_000734,DILI_0735,Migalastat hydrochloride,negative,No-DILI
+PARENT_000735,DILI_0736,Miglitol,negative,No-DILI
+PARENT_000736,DILI_0737,Miglustat,negative,No-DILI
+PARENT_000737,DILI_0738;DILI_1468,Milnacipran hydrochloride;milnacipran,positive,Most-DILI
+PARENT_000740,DILI_0741;DILI_1299,Minocycline hydrochloride;minocycline,positive,Most-DILI
+PARENT_000741,DILI_0742,Minoxidil,negative,No-DILI
+PARENT_000743,DILI_0744,Mirtazapine,positive,Less-DILI
+PARENT_000745,DILI_0746,Mitomycin,positive,Less-DILI
+PARENT_000746,DILI_0747,Mitotane,negative,No-DILI
+PARENT_000747,DILI_0748;DILI_1506,mitoxantrone;Mitoxantrone hydrochloride,positive,Less-DILI
+PARENT_000748,DILI_0749;DILI_1382,mivacurium;Mivacurium chloride,negative,No-DILI
+PARENT_000750,DILI_0751,Modafinil,positive,Less-DILI
+PARENT_000753,DILI_0754,Montelukast sodium,positive,Less-DILI
+PARENT_000755,DILI_0756,Morphine sulfate,negative,No-DILI
+PARENT_000757,DILI_0758;DILI_1553,moxifloxacin;Moxifloxacin hydrochloride,positive,Less-DILI
+PARENT_000758,DILI_0759,Moxisylyte,positive,Most-DILI
+PARENT_000759,DILI_0760,Mycophenolate mofetil,positive,Less-DILI
+PARENT_000761,DILI_0762,Nabilone,negative,No-DILI
+PARENT_000764,DILI_0765,Nafcillin sodium,positive,Less-DILI
+PARENT_000765,DILI_0766;DILI_1509,Nalbuphine hydrochloride;nalbuphine,negative,No-DILI
+PARENT_000766,DILI_0767,Naldemedine tosylate,negative,No-DILI
+PARENT_000769,DILI_0770,Naloxegol oxalate,negative,No-DILI
+PARENT_000770,DILI_0771;DILI_1319,naloxone;Naloxone hydrochloride,negative,No-DILI
+PARENT_000772,DILI_0773,Nandrolone phenpropionate,positive,Most-DILI
+PARENT_000773,DILI_0774,Naproxen,positive,Less-DILI
+PARENT_000777,DILI_0778;DILI_1249,Nefazodone hydrochloride;nefazodone,positive,Most-DILI
+PARENT_000778,DILI_0779,Nelarabine,positive,Less-DILI
+PARENT_000779,DILI_0780;DILI_1400,Nelfinavir mesylate;nelfinavir,positive,Less-DILI
+PARENT_000780,DILI_0781;DILI_1320,neomycin;Neomycin sulfate,negative,No-DILI
+PARENT_000783,DILI_0784,Nevirapine,positive,Most-DILI
+PARENT_000784,DILI_0785,Niacin,positive,Most-DILI
+PARENT_000785,DILI_0786,Nialamide,positive,Most-DILI
+PARENT_000787,DILI_0788,Nifedipine,positive,Less-DILI
+PARENT_000788,DILI_0789,Nifurtimox,negative,No-DILI
+PARENT_000789,DILI_0790,Nilotinib hydrochloride,positive,Most-DILI
+PARENT_000790,DILI_0791,Nilutamide,positive,Most-DILI
+PARENT_000791,DILI_0792,Nimesulide,positive,Most-DILI
+PARENT_000793,DILI_0794,Nintedanib esylate,positive,Most-DILI
+PARENT_000794,DILI_0795,Niperotidine,positive,Most-DILI
+PARENT_000797,DILI_0798,Nitazoxanide,negative,No-DILI
+PARENT_000799,DILI_0800,Nitrefazole,positive,Most-DILI
+PARENT_000800,DILI_0801,Nitrofurantoin,positive,Most-DILI
+PARENT_000801,DILI_0802,Nitroglycerin,negative,No-DILI
+PARENT_000802,DILI_0803,Nizatidine,positive,Less-DILI
+PARENT_000803,DILI_0804,Nomifensine,positive,Most-DILI
+PARENT_000804,DILI_0805;DILI_1345,norepinephrine;Norepinephrine bitartrate,negative,No-DILI
+PARENT_000806,DILI_0807,Norethindrone acetate,negative,No-DILI
+PARENT_000807,DILI_0808,Norfloxacin,positive,Less-DILI
+PARENT_000808,DILI_0809;DILI_1511,Nortriptyline hydrochloride;nortriptyline,positive,Most-DILI
+PARENT_000809,DILI_0810,Nystatin,negative,No-DILI
+PARENT_000810,DILI_0811,Obeticholic acid,positive,Most-DILI
+PARENT_000811,DILI_0812;DILI_1512,Octreotide acetate;octreotide,positive,Less-DILI
+PARENT_000813,DILI_0814,Ofloxacin,positive,Less-DILI
+PARENT_000814,DILI_0815,Olanzapine,positive,Less-DILI
+PARENT_000815,DILI_0816,Olaparib,positive,Less-DILI
+PARENT_000817,DILI_0818,Olmesartan medoxomil,positive,Less-DILI
+PARENT_000818,DILI_0819,Olsalazine sodium,positive,Less-DILI
+PARENT_000821,DILI_0822,Omeprazole,positive,Less-DILI
+PARENT_000822,DILI_0823;DILI_1513,ondansetron;Ondansetron hydrochloride,positive,Less-DILI
+PARENT_000823,DILI_0824,Opicapone,negative,No-DILI
+PARENT_000825,DILI_0826,Orlistat,positive,Most-DILI
+PARENT_000826,DILI_0827;DILI_1569,orphenadrine;Orphenadrine hydrochloride,negative,No-DILI
+PARENT_000829,DILI_0830,Osimertinib mesylate,positive,Less-DILI
+PARENT_000830,DILI_0831,Ospemifene,negative,No-DILI
+PARENT_000831,DILI_0832,Oxacillin sodium,positive,Less-DILI
+PARENT_000832,DILI_0833,Oxaliplatin,positive,Most-DILI
+PARENT_000833,DILI_0834,Oxandrolone,positive,Most-DILI
+PARENT_000834,DILI_0835,Oxaprozin,positive,Less-DILI
+PARENT_000836,DILI_0837,Oxcarbazepine,positive,Less-DILI
+PARENT_000839,DILI_0840,Oxymetholone,positive,Most-DILI
+PARENT_000840,DILI_0841;DILI_1358,oxymorphone;Oxymorphone hydrochloride,negative,No-DILI
+PARENT_000841,DILI_0842,Oxyphenisatin,positive,Most-DILI
+PARENT_000843,DILI_0844,Oxytocin,negative,No-DILI
+PARENT_000845,DILI_0846,Paclitaxel,positive,Less-DILI
+PARENT_000846,DILI_0847,Pafolacianine sodium,negative,No-DILI
+PARENT_000847,DILI_0848,Palbociclib,positive,Less-DILI
+PARENT_000850,DILI_0851,Pamabrom,negative,No-DILI
+PARENT_000852,DILI_0853;DILI_1368,Pancuronium bromide;pancuronium,negative,No-DILI
+PARENT_000854,DILI_0855,Pantoprazole sodium,positive,Less-DILI
+PARENT_000855,DILI_0856;DILI_1516,Papaverine hydrochloride;papaverine,positive,Most-DILI
+PARENT_000857,DILI_0858;DILI_1560,Paromomycin sulfate;paromomycin,negative,No-DILI
+PARENT_000858,DILI_0859;DILI_1251,Paroxetine hydrochloride;paroxetine,positive,Less-DILI
+PARENT_000860,DILI_0861;DILI_1336,Pazopanib hydrochloride;pazopanib,positive,Most-DILI
+PARENT_000863,DILI_0864,Pemoline,positive,Most-DILI
+PARENT_000864,DILI_0865,Penbutolol sulfate,negative,No-DILI
+PARENT_000865,DILI_0866,Penicillamine,positive,Less-DILI
+PARENT_000866,DILI_0867,Penicillin g benzathine,positive,Less-DILI
+PARENT_000867,DILI_0868,Penicillin v potassium,negative,No-DILI
+PARENT_000868,DILI_0869,Pentagastrin,negative,No-DILI
+PARENT_000869,DILI_0870,Pentamidine isethionate,positive,Less-DILI
+PARENT_000870,DILI_0871,Pentazocine lactate,negative,No-DILI
+PARENT_000871,DILI_0872,Pentetate calcium trisodium yb-169,negative,No-DILI
+PARENT_000873,DILI_0874,Pentostatin,positive,Most-DILI
+PARENT_000876,DILI_0877,Perampanel,negative,No-DILI
+PARENT_000877,DILI_0878,Perflutren,negative,No-DILI
+PARENT_000879,DILI_0880;DILI_1713,perhexiline maleate;Perhexiline,positive,Most-DILI
+PARENT_000881,DILI_0882,Perphenazine,positive,Less-DILI
+PARENT_000882,DILI_0883,Pexidartinib hydrochloride,positive,Most-DILI
+PARENT_000883,DILI_0884;DILI_1362,phendimetrazine;Phendimetrazine tartrate,negative,No-DILI
+PARENT_000885,DILI_0886,Phenobarbital sodium,positive,Less-DILI
+PARENT_000886,DILI_0887;DILI_1567,Phenoxybenzamine hydrochloride;phenoxybenzamine,negative,No-DILI
+PARENT_000887,DILI_0888,Phenoxypropazine,positive,Most-DILI
+PARENT_000888,DILI_0889;DILI_1300,Phentolamine mesylate;phentolamine,negative,No-DILI
+PARENT_000889,DILI_0890,Phenytoin,positive,Most-DILI
+PARENT_000890,DILI_0891,Physostigmine salicylate,negative,No-DILI
+PARENT_000891,DILI_0892,Phytonadione,negative,No-DILI
+PARENT_000892,DILI_0893,Piflufolastat f-18,negative,No-DILI
+PARENT_000894,DILI_0895,Pimavanserin tartrate,negative,No-DILI
+PARENT_000895,DILI_0896,Pimozide,negative,No-DILI
+PARENT_000896,DILI_0897,Pindolol,negative,No-DILI
+PARENT_000897,DILI_0898;DILI_1254,pioglitazone;Pioglitazone hydrochloride,positive,Less-DILI
+PARENT_000898,DILI_0899,Pipamazine,positive,Most-DILI
+PARENT_000900,DILI_0901,Pirfenidone,positive,Most-DILI
+PARENT_000901,DILI_0902,Piroxicam,positive,Less-DILI
+PARENT_000902,DILI_0903,Pirprofen,positive,Most-DILI
+PARENT_000904,DILI_0905,Pitolisant hydrochloride,negative,No-DILI
+PARENT_000907,DILI_0908,Plerixafor,negative,No-DILI
+PARENT_000908,DILI_0909,Polidocanol,negative,No-DILI
+PARENT_000909,DILI_0910,Pomalidomide,positive,Most-DILI
+PARENT_000915,DILI_0916,Pralnacasan,positive,Most-DILI
+PARENT_000920,DILI_0921,Pravastatin sodium,positive,Less-DILI
+PARENT_000923,DILI_0924,Prednisolone,positive,Less-DILI
+PARENT_000924,DILI_0925,Prednisone,positive,Less-DILI
+PARENT_000925,DILI_0926,Pregabalin,positive,Less-DILI
+PARENT_000927,DILI_0928;DILI_1322,Primaquine phosphate;primaquine,negative,No-DILI
+PARENT_000928,DILI_0929,Primidone,negative,No-DILI
+PARENT_000930,DILI_0931;DILI_1524,Procainamide hydrochloride;procainamide,positive,Less-DILI
+PARENT_000931,DILI_0932;DILI_1323,Procarbazine hydrochloride;procarbazine,positive,Less-DILI
+PARENT_000932,DILI_0933;DILI_1302,prochlorperazine;Prochlorperazine maleate,positive,Less-DILI
+PARENT_000933,DILI_0934;DILI_1580,Procyclidine hydrochloride;procyclidine,negative,No-DILI
+PARENT_000934,DILI_0935,Progesterone,positive,Less-DILI
+PARENT_000935,DILI_0936;DILI_1276,promethazine;Promethazine hydrochloride,positive,Less-DILI
+PARENT_000937,DILI_0938;DILI_1348,Propantheline bromide;propantheline,negative,No-DILI
+PARENT_000939,DILI_0940;DILI_1239,propoxyphene;Propoxyphene hydrochloride,positive,Less-DILI
+PARENT_000941,DILI_0942,Propylthiouracil,positive,Most-DILI
+PARENT_000942,DILI_0943,Protirelin,negative,No-DILI
+PARENT_000943,DILI_0944;DILI_1365,protriptyline;Protriptyline hydrochloride,negative,No-DILI
+PARENT_000944,DILI_0945,Prucalopride succinate,negative,No-DILI
+PARENT_000945,DILI_0946;DILI_1255,Pseudoephedrine hydrochloride;pseudoephedrine,negative,No-DILI
+PARENT_000946,DILI_0947,Pyrantel pamoate,negative,No-DILI
+PARENT_000947,DILI_0948,Pyrazinamide,positive,Less-DILI
+PARENT_000949,DILI_0950;DILI_1550,pyridoxine;Pyridoxine hydrochloride,negative,No-DILI
+PARENT_000950,DILI_0951,Pyrimethamine,positive,Less-DILI
+PARENT_000951,DILI_0952,Quazepam,negative,No-DILI
+PARENT_000952,DILI_0953,Quetiapine fumarate,positive,Less-DILI
+PARENT_000953,DILI_0954;DILI_1528,quinapril;Quinapril hydrochloride,positive,Less-DILI
+PARENT_000954,DILI_0955,Quinidine gluconate,positive,Less-DILI
+PARENT_000955,DILI_0956,Quinine sulfate,positive,Less-DILI
+PARENT_000956,DILI_0957,Rabeprazole sodium,positive,Less-DILI
+PARENT_000958,DILI_0959,Raltegravir potassium,positive,Most-DILI
+PARENT_000959,DILI_0960,Ramelteon,negative,No-DILI
+PARENT_000960,DILI_0961,Ramipril,positive,Less-DILI
+PARENT_000961,DILI_0962;DILI_1256,ranitidine;Ranitidine hydrochloride,positive,Less-DILI
+PARENT_000962,DILI_0963,Ranolazine,negative,No-DILI
+PARENT_000964,DILI_0965,Regadenoson,negative,No-DILI
+PARENT_000965,DILI_0966,Regorafenib,positive,Most-DILI
+PARENT_000967,DILI_0968,Remdesivir,positive,Less-DILI
+PARENT_000968,DILI_0969;DILI_1390,Remifentanil hydrochloride;remifentanil,positive,Less-DILI
+PARENT_000969,DILI_0970,Remimazolam besylate,negative,No-DILI
+PARENT_000970,DILI_0971,Repaglinide,positive,Less-DILI
+PARENT_000971,DILI_0972,Reserpine,negative,No-DILI
+PARENT_000973,DILI_0974,Ribociclib succinate,positive,Most-DILI
+PARENT_000974,DILI_0975,Riboflavin 5'-phosphate,negative,No-DILI
+PARENT_000975,DILI_0976,Rifabutin,positive,Less-DILI
+PARENT_000976,DILI_0977,Rifampin,positive,Most-DILI
+PARENT_000977,DILI_0978,Rifamycin sodium,negative,No-DILI
+PARENT_000980,DILI_0981;DILI_1595,Rilpivirine hydrochloride;Rilpivirine,positive,Less-DILI
+PARENT_000981,DILI_0982,Riluzole,positive,Most-DILI
+PARENT_000982,DILI_0983;DILI_1380,Rimantadine hydrochloride;rimantadine,negative,No-DILI
+PARENT_000983,DILI_0984,Rimegepant sulfate,negative,No-DILI
+PARENT_000984,DILI_0985,Riociguat,negative,No-DILI
+PARENT_000986,DILI_0987,Risdiplam,negative,No-DILI
+PARENT_000988,DILI_0989,Risperidone,positive,Less-DILI
+PARENT_000989,DILI_0990,Ritonavir,positive,Most-DILI
+PARENT_000990,DILI_0991,Rivaroxaban,positive,Less-DILI
+PARENT_000991,DILI_0992;DILI_1401,rivastigmine;Rivastigmine tartrate,positive,Less-DILI
+PARENT_000992,DILI_0993,Rizatriptan benzoate,positive,Less-DILI
+PARENT_000993,DILI_0994;DILI_1384,Rocuronium bromide;rocuronium,negative,No-DILI
+PARENT_000994,DILI_0995,Roflumilast,negative,No-DILI
+PARENT_000995,DILI_0996,Rolapitant hydrochloride,negative,No-DILI
+PARENT_000996,DILI_0997,Romidepsin,negative,No-DILI
+PARENT_000997,DILI_0998;DILI_1393,ropinirole;Ropinirole hydrochloride,positive,Less-DILI
+PARENT_000998,DILI_0999;DILI_1257,rosiglitazone;Rosiglitazone maleate,positive,Less-DILI
+PARENT_000999,DILI_1000,Rosuvastatin calcium,positive,Less-DILI
+PARENT_001000,DILI_1001,Rubidium chloride rb-82,negative,No-DILI
+PARENT_001004,DILI_1005,Safinamide mesylate,negative,No-DILI
+PARENT_001005,DILI_1006,Salsalate,positive,Less-DILI
+PARENT_001006,DILI_1007,Sapropterin dihydrochloride,negative,No-DILI
+PARENT_001007,DILI_1008;DILI_1530,saquinavir;Saquinavir mesylate,positive,Less-DILI
+PARENT_001008,DILI_1009,Sarecycline hydrochloride,negative,No-DILI
+PARENT_001010,DILI_1011,Scopolamine,negative,No-DILI
+PARENT_001013,DILI_1014;DILI_1531,Selegiline hydrochloride;selegiline,negative,No-DILI
+PARENT_001015,DILI_1016,Selexipag,negative,No-DILI
+PARENT_001020,DILI_1021;DILI_1325,Sertraline hydrochloride;sertraline,positive,Less-DILI
+PARENT_001021,DILI_1022,Setmelanotide acetate,negative,No-DILI
+PARENT_001022,DILI_1023;DILI_1391,Sibutramine hydrochloride;sibutramine,positive,Less-DILI
+PARENT_001023,DILI_1024,Sildenafil citrate,positive,Less-DILI
+PARENT_001025,DILI_1026,Simvastatin,positive,Less-DILI
+PARENT_001026,DILI_1027,Sincalide,negative,No-DILI
+PARENT_001028,DILI_1029,Sirolimus,positive,Less-DILI
+PARENT_001029,DILI_1030;DILI_1465,Sitagliptin phosphate;sitagliptin,positive,Less-DILI
+PARENT_001030,DILI_1031,Sitaxsentan,positive,Most-DILI
+PARENT_001031,DILI_1032,Sodium bicarbonate,negative,No-DILI
+PARENT_001032,DILI_1033,Sodium fluoride f-18,negative,No-DILI
+PARENT_001033,DILI_1034,Sodium lactate,negative,No-DILI
+PARENT_001034,DILI_1035,Sodium nitroprusside,negative,No-DILI
+PARENT_001035,DILI_1036,Sodium oxybate,negative,No-DILI
+PARENT_001037,DILI_1038,Sodium thiosulfate,negative,No-DILI
+PARENT_001038,DILI_1039,Sodium zirconium cyclosilicate,negative,No-DILI
+PARENT_001039,DILI_1040,Sofosbuvir,negative,No-DILI
+PARENT_001040,DILI_1041,Solifenacin succinate,positive,Less-DILI
+PARENT_001041,DILI_1042,Solriamfetol hydrochloride,negative,No-DILI
+PARENT_001043,DILI_1044;DILI_1461,Sorafenib tosylate;sorafenib,positive,Most-DILI
+PARENT_001044,DILI_1045,Sorbitol,negative,No-DILI
+PARENT_001048,DILI_1049,Spironolactone,positive,Less-DILI
+PARENT_001049,DILI_1050,Stavudine,positive,Most-DILI
+PARENT_001050,DILI_1051,Stiripentol,negative,No-DILI
+PARENT_001051,DILI_1052,Streptomycin sulfate,negative,No-DILI
+PARENT_001053,DILI_1054,Succimer,positive,Less-DILI
+PARENT_001054,DILI_1055;DILI_1346,succinylcholine;Succinylcholine chloride,negative,No-DILI
+PARENT_001055,DILI_1056,Sufentanil citrate,negative,No-DILI
+PARENT_001056,DILI_1057,Sugammadex sodium,negative,No-DILI
+PARENT_001057,DILI_1058,suloctidil,positive,Most-DILI
+PARENT_001058,DILI_1059,Sulfacarbamide,positive,Most-DILI
+PARENT_001059,DILI_1060,Sulfadiazine,positive,Less-DILI
+PARENT_001060,DILI_1061,Sulfamethizole,positive,Less-DILI
+PARENT_001061,DILI_1062,Sulfasalazine,positive,Most-DILI
+PARENT_001062,DILI_1063,Sulfathiazole,positive,Most-DILI
+PARENT_001063,DILI_1064,Sulindac,positive,Most-DILI
+PARENT_001065,DILI_1066,Sunitinib malate,positive,Most-DILI
+PARENT_001066,DILI_1067,Suvorexant,negative,No-DILI
+PARENT_001067,DILI_1068,Tacrolimus,positive,Less-DILI
+PARENT_001069,DILI_1070,Tafamidis meglumine,negative,No-DILI
+PARENT_001072,DILI_1073,Tamoxifen citrate,positive,Most-DILI
+PARENT_001073,DILI_1074;DILI_1388,tamsulosin;Tamsulosin hydrochloride,positive,Less-DILI
+PARENT_001074,DILI_1075;DILI_1333,Tapentadol hydrochloride;tapentadol,negative,No-DILI
+PARENT_001076,DILI_1077,Tasosartan,positive,Most-DILI
+PARENT_001078,DILI_1079,Tecovirimat,negative,No-DILI
+PARENT_001082,DILI_1083,Telithromycin,positive,Most-DILI
+PARENT_001083,DILI_1084,Telmisartan,positive,Less-DILI
+PARENT_001087,DILI_1088,Temsirolimus,negative,No-DILI
+PARENT_001088,DILI_1089,Tenapanor hydrochloride,negative,No-DILI
+PARENT_001089,DILI_1090,Teniposide,positive,Less-DILI
+PARENT_001090,DILI_1091,Tenofovir disoproxil fumarate,positive,Less-DILI
+PARENT_001092,DILI_1093;DILI_1533,Terazosin hydrochloride;terazosin,negative,No-DILI
+PARENT_001093,DILI_1094;DILI_1327,terbinafine;Terbinafine hydrochloride,positive,Most-DILI
+PARENT_001094,DILI_1095,Terbutaline sulfate,positive,Less-DILI
+PARENT_001095,DILI_1096,Teriflunomide,positive,Most-DILI
+PARENT_001097,DILI_1098,Testosterone enanthate,positive,Most-DILI
+PARENT_001098,DILI_1099,Tetrabamate,positive,Most-DILI
+PARENT_001100,DILI_1101,Thalidomide,positive,Less-DILI
+PARENT_001101,DILI_1102,Theophylline sodium glycinate,negative,No-DILI
+PARENT_001102,DILI_1103,Thiabendazole,positive,Most-DILI
+PARENT_001103,DILI_1104;DILI_1551,thiamine;Thiamine hydrochloride,negative,No-DILI
+PARENT_001104,DILI_1105,Thioguanine,positive,Less-DILI
+PARENT_001105,DILI_1106;DILI_1303,Thioridazine hydrochloride;thioridazine,positive,Less-DILI
+PARENT_001106,DILI_1107,Thiotepa,positive,Less-DILI
+PARENT_001109,DILI_1110,Ticagrelor,negative,No-DILI
+PARENT_001110,DILI_1111;DILI_1280,ticlopidine;Ticlopidine hydrochloride,positive,Most-DILI
+PARENT_001111,DILI_1112,Ticrynafen,positive,Most-DILI
+PARENT_001113,DILI_1114,Tilbroquinol,positive,Most-DILI
+PARENT_001114,DILI_1115,Tiludronate disodium,negative,No-DILI
+PARENT_001116,DILI_1117,Tinidazole,positive,Less-DILI
+PARENT_001118,DILI_1119,Tipranavir,positive,Most-DILI
+PARENT_001119,DILI_1120;DILI_1409,Tirofiban hydrochloride;tirofiban,negative,No-DILI
+PARENT_001121,DILI_1122;DILI_1261,Tizanidine hydrochloride;tizanidine,positive,Most-DILI
+PARENT_001123,DILI_1124,Tolazamide,positive,Less-DILI
+PARENT_001125,DILI_1126,Tolcapone,positive,Most-DILI
+PARENT_001126,DILI_1127,Tolmetin sodium,positive,Less-DILI
+PARENT_001127,DILI_1128,Tolrestat,positive,Most-DILI
+PARENT_001129,DILI_1130,Tolvaptan,positive,Most-DILI
+PARENT_001130,DILI_1131,Topiramate,positive,Less-DILI
+PARENT_001131,DILI_1132;DILI_1537,topotecan;Topotecan hydrochloride,negative,No-DILI
+PARENT_001136,DILI_1137,Trametinib dimethyl sulfoxide,positive,Less-DILI
+PARENT_001137,DILI_1138,Trandolapril,positive,Less-DILI
+PARENT_001138,DILI_1139,Tranexamic acid,negative,No-DILI
+PARENT_001139,DILI_1140,Tranylcypromine sulfate,positive,Less-DILI
+PARENT_001140,DILI_1141;DILI_1540,trazodone;Trazodone hydrochloride,positive,Less-DILI
+PARENT_001141,DILI_1142,Tretinoin,positive,Less-DILI
+PARENT_001142,DILI_1143,Triacetyldiphenolisatin,positive,Most-DILI
+PARENT_001143,DILI_1144,Triamterene,positive,Less-DILI
+PARENT_001146,DILI_1147,Trientine hydrochloride,negative,No-DILI
+PARENT_001148,DILI_1149,Triheptanoin,negative,No-DILI
+PARENT_001149,DILI_1150;DILI_1541,Trihexyphenidyl hydrochloride;trihexyphenidyl,negative,No-DILI
+PARENT_001153,DILI_1154,Trimethoprim,positive,Less-DILI
+PARENT_001156,DILI_1157;DILI_1355,triprolidine;Triprolidine hydrochloride,negative,No-DILI
+PARENT_001157,DILI_1158,Triptorelin pamoate,positive,Less-DILI
+PARENT_001158,DILI_1159,Troglitazone,positive,Most-DILI
+PARENT_001160,DILI_1161;DILI_1309,Trospium chloride;trospium,negative,No-DILI
+PARENT_001161,DILI_1162;DILI_1329,Trovafloxacin mesylate;trovafloxacin,positive,Most-DILI
+PARENT_001163,DILI_1164,Tyramine,negative,No-DILI
+PARENT_001164,DILI_1165,Ubrogepant,negative,No-DILI
+PARENT_001165,DILI_1166,Ulipristal acetate,positive,Less-DILI
+PARENT_001167,DILI_1168,Umeclidinium bromide,negative,No-DILI
+PARENT_001169,DILI_1170,Uridine triacetate,negative,No-DILI
+PARENT_001170,DILI_1171,Urofollitropin,negative,No-DILI
+PARENT_001172,DILI_1173,Valaciclovir,positive,Less-DILI
+PARENT_001174,DILI_1175,Valdecoxib,positive,Less-DILI
+PARENT_001176,DILI_1177,Valproic acid,positive,Most-DILI
+PARENT_001177,DILI_1178,Valsartan,positive,Less-DILI
+PARENT_001178,DILI_1179;DILI_1262,Vancomycin hydrochloride;vancomycin,positive,Less-DILI
+PARENT_001181,DILI_1182;DILI_1462,varenicline;Varenicline tartrate,positive,Less-DILI
+PARENT_001182,DILI_1183;DILI_1375,vecuronium;Vecuronium bromide,negative,No-DILI
+PARENT_001183,DILI_1184,Vemurafenib,positive,Less-DILI
+PARENT_001184,DILI_1185,Venetoclax,positive,Less-DILI
+PARENT_001185,DILI_1186;DILI_1266,venlafaxine;Venlafaxine hydrochloride,positive,Less-DILI
+PARENT_001186,DILI_1187;DILI_1291,verapamil;Verapamil hydrochloride,positive,Less-DILI
+PARENT_001187,DILI_1188,Vericiguat,negative,No-DILI
+PARENT_001188,DILI_1189,Vibegron,negative,No-DILI
+PARENT_001190,DILI_1191,Vilazodone hydrochloride,negative,No-DILI
+PARENT_001191,DILI_1192,Viloxazine hydrochloride,negative,No-DILI
+PARENT_001193,DILI_1194;DILI_1543,Vincristine sulfate;vincristine,positive,Less-DILI
+PARENT_001196,DILI_1197,Vitamin A palmitate,positive,Less-DILI
+PARENT_001197,DILI_1198,Vitamin C,negative,No-DILI
+PARENT_001198,DILI_1199,Vitamin E,negative,No-DILI
+PARENT_001199,DILI_1200,Voclosporin,negative,No-DILI
+PARENT_001200,DILI_1201,Vorapaxar sulfate,negative,No-DILI
+PARENT_001201,DILI_1202,Voriconazole,positive,Most-DILI
+PARENT_001202,DILI_1203,Vorinostat,negative,No-DILI
+PARENT_001203,DILI_1204,Vortioxetine hydrobromide,positive,Less-DILI
+PARENT_001205,DILI_1206,Voxelotor,negative,No-DILI
+PARENT_001206,DILI_1207,Warfarin sodium,positive,Less-DILI
+PARENT_001207,DILI_1208,Xenazoic acid,positive,Most-DILI
+PARENT_001208,DILI_1209,Ximelagatran,positive,Most-DILI
+PARENT_001209,DILI_1210,Zafirlukast,positive,Most-DILI
+PARENT_001210,DILI_1211,Zaleplon,negative,No-DILI
+PARENT_001211,DILI_1212,Zanubrutinib,positive,Most-DILI
+PARENT_001212,DILI_1213,Zidovudine,positive,Most-DILI
+PARENT_001213,DILI_1214,Zileuton,positive,Most-DILI
+PARENT_001214,DILI_1215,Zimelidine,positive,Most-DILI
+PARENT_001215,DILI_1216;DILI_1402,ziprasidone;Ziprasidone hydrochloride,positive,Less-DILI
+PARENT_001216,DILI_1217,Zoledronic acid,positive,Less-DILI
+PARENT_001219,DILI_1220,Zonisamide,positive,Less-DILI

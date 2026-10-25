@@ -1,0 +1,24 @@
+{
+  "stage": "stage8",
+  "generated": "2026-05-23 13:42:10",
+  "primary_analysis_mode": "validation_locked_empirical_conformal_sets",
+  "legacy_stage8_config": false,
+  "alphas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "modes": [
+    "validation_locked_empirical_conformal_sets",
+    "cross_conformal_sensitivity"
+  ],
+  "nonconformity_score": "1 - p_true_class",
+  "cross_conformal_folds": 5,
+  "cross_conformal_random_state": 20260521,
+  "locked_mode": "validation_locked_empirical_conformal_sets",
+  "q_hat_computation": "quantile(n+1)(1-alpha)/n",
+  "q_hat_computation_detail": "ceiling((n+1)*(1-alpha))/n; alpha=0.10 primary",
+  "test_external_labels_used_for_q_hat": "No",
+  "external_dilist_q_hat_source": "scaffold validation split",
+  "post2021_lockbox_q_hat_source": "scaffold validation split"
+}

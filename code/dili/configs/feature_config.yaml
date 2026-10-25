@@ -1,0 +1,23 @@
+{
+  "project_stage": "stage6_feature_engineering",
+  "feature_version": "stage6_v1",
+  "input_stage5_verdict": "PASS_ready_for_stage6",
+  "split_seed": 20260521,
+  "morgan_radius": 2,
+  "morgan_n_bits": 2048,
+  "maccs_enabled": true,
+  "rdkit_2d_enabled": true,
+  "mordred_enabled": "auto",
+  "mordred_status": "unavailable_deferred",
+  "chemprop_input_enabled": true,
+  "embedding_generation": "deferred_unless_local_models_available",
+  "pk_features": "template_with_missing_indicators",
+  "proxy_features": "template_with_missing_indicators",
+  "evidence_features_usage": "calibration_rejection_weighting_sensitivity_only_by_default",
+  "scaler_fit_policy": "train_only_per_split",
+  "imputation_policy": "train_only_per_split",
+  "negative_controls": [
+    "source_only",
+    "missingness_only"
+  ]
+}

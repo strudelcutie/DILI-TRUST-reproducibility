@@ -1,0 +1,37 @@
+﻿stage: stage10
+updated: 2026-07-03
+threshold_source: Stage 8 validation only; no held-out, external DILIst, or post-2021 label retuning
+primary_model: HistGB
+robustness_comparator: ET
+high_risk_threshold:
+  source: calibration_thresholds.csv column th_youden
+  rule: calibrated_score >= th_youden and not OOD and not no-call
+low_score_candidate_threshold:
+  source: calibration_thresholds.csv column th_sens95
+  rule: calibrated_score < th_sens95 and not OOD and not no-call
+  interpretation: low-score candidate group only; not automatic low-risk exclusion
+uncertainty:
+  source: uncertainty_thresholds.csv
+  primary_rule: validation_locked_U80
+  reason_name: validation_locked_U80_high_uncertainty
+conformal:
+  primary_alpha: 0.10
+  mode: validation_locked_empirical_conformal_sets
+  source: Stage 8 validation-locked q_hat, applied to held-out test/external sets
+  limitation: Coverage under external distribution shift is interpreted empirically, not as a finite-sample guarantee.
+no_call_rules:
+  - OOD_extreme_Tanimoto_lt_0p15
+  - conformal_both
+  - validation_locked_U80_high_uncertainty
+  - indeterminate_score
+decision_classes:
+  - high_score_high_risk_priority
+  - low_score_candidate_not_automatic_low_risk_exclusion
+  - uncertain_or_conflict
+  - out_of_domain_no_call
+external_dilist_lock:
+  model_training_split: scaffold
+  calibrator_source: scaffold validation
+  threshold_source: scaffold validation
+  external_labels_used_for_training_or_thresholds: false
+

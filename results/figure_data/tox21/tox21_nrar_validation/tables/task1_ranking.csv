@@ -1,0 +1,17 @@
+split,model,partition,score,n,positives,prevalence,auroc,auroc_ci_lower,auroc_ci_upper,auprc,auprc_ci_lower,auprc_ci_upper,prevalence_baseline_auprc
+scaffold,HistGB,valid,raw,1114,34,0.0305,0.7382,0.6272,0.8446,0.4118,0.2464,0.5775,0.0305
+scaffold,HistGB,valid,calibrated,1114,34,0.0305,0.7382,0.6272,0.8446,0.4118,0.2464,0.5775,0.0305
+scaffold,HistGB,test,raw,1116,31,0.0278,0.7089,0.5828,0.8166,0.39,0.2244,0.5508,0.0278
+scaffold,HistGB,test,calibrated,1116,31,0.0278,0.7089,0.5828,0.8166,0.39,0.2244,0.5508,0.0278
+scaffold,ET,valid,raw,1114,34,0.0305,0.7719,0.6754,0.8611,0.4275,0.2602,0.5905,0.0305
+scaffold,ET,valid,calibrated,1114,34,0.0305,0.7719,0.6754,0.8611,0.4275,0.2602,0.5905,0.0305
+scaffold,ET,test,raw,1116,31,0.0278,0.7023,0.5824,0.8121,0.3638,0.2011,0.5277,0.0278
+scaffold,ET,test,calibrated,1116,31,0.0278,0.7023,0.5824,0.8121,0.3638,0.2011,0.5277,0.0278
+cluster_out,HistGB,valid,raw,1114,37,0.0332,0.7001,0.6092,0.7906,0.2885,0.153,0.4391,0.0332
+cluster_out,HistGB,valid,calibrated,1114,37,0.0332,0.7001,0.6092,0.7906,0.2885,0.153,0.4391,0.0332
+cluster_out,HistGB,test,raw,1116,35,0.0314,0.6203,0.5023,0.734,0.1991,0.0804,0.3373,0.0314
+cluster_out,HistGB,test,calibrated,1116,35,0.0314,0.6203,0.5023,0.734,0.1991,0.0804,0.3373,0.0314
+cluster_out,ET,valid,raw,1114,37,0.0332,0.7733,0.687,0.8562,0.3201,0.1814,0.4663,0.0332
+cluster_out,ET,valid,calibrated,1114,37,0.0332,0.8061,0.728,0.8798,0.3141,0.1798,0.454,0.0332
+cluster_out,ET,test,raw,1116,35,0.0314,0.6206,0.5176,0.7195,0.1789,0.0725,0.3048,0.0314
+cluster_out,ET,test,calibrated,1116,35,0.0314,0.6057,0.5,0.7091,0.1669,0.0664,0.2855,0.0314

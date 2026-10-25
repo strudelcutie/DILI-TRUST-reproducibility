@@ -1,0 +1,5 @@
+split,model,calibration_method,n_valid,n_pos,n_neg,prevalence,threshold_source,th_spec95,sens_at_spec95,th_sens95,spec_at_sens95,th_youden,sens_at_youden,spec_at_youden,u80_threshold
+scaffold,HistGB,platt,946,104,842,0.1099,validation partition only,0.226,0.3365,0.0348,0.0487,0.1363,0.4904,0.8219,0.545201
+scaffold,ET,platt,946,104,842,0.1099,validation partition only,0.2186,0.3942,0.0476,0.0748,0.16,0.4904,0.899,0.480826
+cluster_out,HistGB,platt,946,96,850,0.1015,validation partition only,0.1783,0.1875,0.0572,0.0306,0.1198,0.3542,0.8188,0.485284
+cluster_out,ET,platt,946,96,850,0.1015,validation partition only,0.1887,0.1771,0.0579,0.0447,0.1091,0.4896,0.7659,0.480997

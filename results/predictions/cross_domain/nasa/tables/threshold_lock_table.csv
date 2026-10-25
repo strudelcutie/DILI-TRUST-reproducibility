@@ -1,0 +1,9 @@
+split,model,calibration_method,n_valid,n_pos,n_neg,prevalence,threshold_source,th_spec95,sens_at_spec95,th_sens95,spec_at_sens95,th_youden,sens_at_youden,spec_at_youden,u80_threshold
+kc1_internal,HistGB,platt,317,49,268,0.1546,validation partition only,0.4354,0.3469,0.0512,0.3843,0.1728,0.7959,0.8396,0.760856
+kc1_internal,ET,platt,317,49,268,0.1546,validation partition only,0.4212,0.3673,0.0514,0.459,0.1749,0.8367,0.7948,0.785624
+kc1_pc1,HistGB,platt,317,49,268,0.1546,validation partition only,0.4354,0.3469,0.0512,0.3843,0.1728,0.7959,0.8396,0.760856
+kc1_pc1,ET,platt,317,49,268,0.1546,validation partition only,0.4212,0.3673,0.0514,0.459,0.1749,0.8367,0.7948,0.785624
+kc1_jm1,HistGB,platt,317,49,268,0.1546,validation partition only,0.4354,0.3469,0.0512,0.3843,0.1728,0.7959,0.8396,0.760856
+kc1_jm1,ET,platt,317,49,268,0.1546,validation partition only,0.4212,0.3673,0.0514,0.459,0.1749,0.8367,0.7948,0.785624
+kc1_kc2,HistGB,platt,317,49,268,0.1546,validation partition only,0.4354,0.3469,0.0512,0.3843,0.1728,0.7959,0.8396,0.760856
+kc1_kc2,ET,platt,317,49,268,0.1546,validation partition only,0.4212,0.3673,0.0514,0.459,0.1749,0.8367,0.7948,0.785624

@@ -1,0 +1,17 @@
+﻿revision: v3.0
+date: 2026-07-03
+conformal_policy:
+  mode: validation_locked_empirical_conformal_sets
+  source: Stage 8 validation-locked q_hat, applied to held-out test/external sets
+  limitation: Coverage under external distribution shift is interpreted empirically, not as a finite-sample guarantee.
+uncertainty_policy:
+  score: U(p)=H(p)+0.5*M(p)
+  threshold: validation-set 80th percentile, locked independently for each threshold_source_split x model
+  previous_rule: evaluation-set-internal top-K percentile retained only as sensitivity analysis
+decision_language:
+  high_score_group: structure-only models can identify a small high-score high-risk priority group, with limited coverage
+  low_score_group: low-score candidate group (not automatic low-risk exclusion)
+notes:
+  - External DILIst labels are not used for training, calibrator fitting, threshold selection, or feature selection.
+  - Early protocol language referring to -log(variance) is superseded because stored prediction outputs do not support a per-sample ensemble variance term for the final decision rule.
+

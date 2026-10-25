@@ -1,0 +1,13 @@
+setting,gate,removed,expected_removed,low_n,expected_low_n,pass
+DILI scaffold,conformal binds,0,0,14,14,True
+DILI external,conformal binds,0,0,38,38,True
+DILI temporal,conformal binds,0,0,2,2,True
+DILI cluster-out,conformal binds,0,0,2,2,True
+Tox21 NR-AR scaffold,uncertainty binds,59,59,122,122,True
+Tox21 NR-AR cluster-out,uncertainty binds,53,53,172,172,True
+Tox21 NR-ER scaffold,uncertainty binds,47,47,40,40,True
+Tox21 NR-ER cluster-out,uncertainty binds,44,44,32,32,True
+NASA KC1,uncertainty binds,33,33,89,89,True
+NASA PC1,uncertainty binds,315,315,101,101,True
+NASA JM1,uncertainty binds,2375,2375,1472,1472,True
+NASA KC2,uncertainty binds,68,68,36,36,True

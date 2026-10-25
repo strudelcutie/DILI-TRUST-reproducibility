@@ -1,0 +1,15 @@
+stage: stage8
+updated: 2026-07-03
+uncertainty_score:
+  formula: U(p)=H(p)+0.5*M(p)
+  H: -p*ln(p)-(1-p)*ln(1-p)
+  M: 1-|2p-1|
+primary_high_uncertainty_rule:
+  mode: validation_locked_U80
+  threshold: 80th percentile of U(p) on Stage 8 validation predictions
+  grouping: threshold_source_split x model
+  output: results/final/processed_outputs/uncertainty_thresholds.csv
+sensitivity_rule:
+  previous_mode: evaluation_set_internal_topK
+  status: retained only as sensitivity analysis
+implementation_note: The -log(variance) term in an earlier protocol version was not implemented because final decision outputs store ensemble mean scores rather than per-seed calibrated predictions.
