@@ -4,8 +4,7 @@ Code, curated input data, and final result tables for the manuscript
 "One score, three decisions: why ranking well does not mean usable risk or justified exclusion".
 
 The study asks whether a single screening score can support three different
-decisions — ranking candidates, estimating risk, and excluding low-score cases — and evaluates this question in drug-induced liver injury (DILI) data, two Tox21
-assays, and four NASA software-defect projects.
+decisions — ranking candidates, estimating risk, and excluding low-score cases — and evaluates this question in drug-induced liver injury (DILI) data, two Tox21 assays, and four NASA software-defect projects.
 
 ## Contents
 
